@@ -1,4 +1,8 @@
-# Implementation status
+# Original implementation status · 0.1.0
+
+This document records the first release. See [0.2.0 release notes](releases/0.2.0.md)
+for the 310-card library, four languages, performance changes, icon and GitHub updater.
+The owner made the repository public for direct APK distribution in 0.2.0.
 
 Implemented locally on 2026-10-15 in the initially empty Shuo-APK repository.
 The original specification is preserved in [implementation-plan.md](implementation-plan.md).

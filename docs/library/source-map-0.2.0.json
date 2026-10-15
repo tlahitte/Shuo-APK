@@ -1,0 +1,2486 @@
+{
+  "source_file": "phrases-voyage-chine.xlsx",
+  "source_sha256": "96c71b5bef3514cdd148a311e73b7e2b5c3883c7a8e7ae8faf7ddeba51749d79",
+  "cards": [
+    {
+      "id": "hello",
+      "source_id": "SHUO-0001",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "thanks",
+      "source_id": "SHUO-0002",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0003",
+      "source_id": "SHUO-0003",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0004",
+      "source_id": "SHUO-0004",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0005",
+      "source_id": "SHUO-0005",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Pour attirer poliment l'attention ou s'excuser d'un petit dérangement."
+    },
+    {
+      "id": "SHUO-0006",
+      "source_id": "SHUO-0006",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Pour présenter des excuses."
+    },
+    {
+      "id": "SHUO-0007",
+      "source_id": "SHUO-0007",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Pour décliner une proposition, pas pour répondre à toute question négative."
+    },
+    {
+      "id": "SHUO-0008",
+      "source_id": "SHUO-0008",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Pour accepter une proposition ou une instruction."
+    },
+    {
+      "id": "SHUO-0009",
+      "source_id": "SHUO-0009",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0010",
+      "source_id": "SHUO-0010",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0011",
+      "source_id": "SHUO-0011",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0012",
+      "source_id": "SHUO-0012",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "understand",
+      "source_id": "SHUO-0013",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Incompréhension de la langue parlée."
+    },
+    {
+      "id": "SHUO-0014",
+      "source_id": "SHUO-0014",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0015",
+      "source_id": "SHUO-0015",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0016",
+      "source_id": "SHUO-0016",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0017",
+      "source_id": "SHUO-0017",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0018",
+      "source_id": "SHUO-0018",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0019",
+      "source_id": "SHUO-0019",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0020",
+      "source_id": "SHUO-0020",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Annonce l'utilisation d'une application de traduction."
+    },
+    {
+      "id": "SHUO-0021",
+      "source_id": "SHUO-0021",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 1,
+      "context": "Tendre l'écran de saisie à la personne."
+    },
+    {
+      "id": "SHUO-0022",
+      "source_id": "SHUO-0022",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0023",
+      "source_id": "SHUO-0023",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0024",
+      "source_id": "SHUO-0024",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": "À utiliser uniquement si cela correspond au voyageur."
+    },
+    {
+      "id": "SHUO-0025",
+      "source_id": "SHUO-0025",
+      "source_category": "Communication",
+      "app_category": "communication",
+      "priority": 2,
+      "context": "Montrer l'objet concerné."
+    },
+    {
+      "id": "toilets",
+      "source_id": "SHUO-0026",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0027",
+      "source_id": "SHUO-0027",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0028",
+      "source_id": "SHUO-0028",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0029",
+      "source_id": "SHUO-0029",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": "Montrer le lieu sur une carte ou son nom en chinois."
+    },
+    {
+      "id": "SHUO-0030",
+      "source_id": "SHUO-0030",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0031",
+      "source_id": "SHUO-0031",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0032",
+      "source_id": "SHUO-0032",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0033",
+      "source_id": "SHUO-0033",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0034",
+      "source_id": "SHUO-0034",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": "Montrer la direction envisagée."
+    },
+    {
+      "id": "SHUO-0035",
+      "source_id": "SHUO-0035",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0036",
+      "source_id": "SHUO-0036",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0037",
+      "source_id": "SHUO-0037",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0038",
+      "source_id": "SHUO-0038",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": "Le rez-de-chaussée est généralement le premier niveau, 一楼."
+    },
+    {
+      "id": "SHUO-0039",
+      "source_id": "SHUO-0039",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0040",
+      "source_id": "SHUO-0040",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": "Demande un accès praticable, sans présumer d'une certification."
+    },
+    {
+      "id": "SHUO-0041",
+      "source_id": "SHUO-0041",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0042",
+      "source_id": "SHUO-0042",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0043",
+      "source_id": "SHUO-0043",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0044",
+      "source_id": "SHUO-0044",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0045",
+      "source_id": "SHUO-0045",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0046",
+      "source_id": "SHUO-0046",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "metro",
+      "source_id": "SHUO-0047",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0048",
+      "source_id": "SHUO-0048",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0049",
+      "source_id": "SHUO-0049",
+      "source_category": "Orientation",
+      "app_category": "directions",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0050",
+      "source_id": "SHUO-0050",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer l'adresse complète en chinois."
+    },
+    {
+      "id": "SHUO-0051",
+      "source_id": "SHUO-0051",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer le nom et l'adresse de l'hôtel."
+    },
+    {
+      "id": "SHUO-0052",
+      "source_id": "SHUO-0052",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Confirmer le bon aéroport et le terminal."
+    },
+    {
+      "id": "SHUO-0053",
+      "source_id": "SHUO-0053",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer le nom exact : une ville peut avoir plusieurs gares."
+    },
+    {
+      "id": "SHUO-0054",
+      "source_id": "SHUO-0054",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0055",
+      "source_id": "SHUO-0055",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0056",
+      "source_id": "SHUO-0056",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Vérifier aussi la plaque dans l'application."
+    },
+    {
+      "id": "SHUO-0057",
+      "source_id": "SHUO-0057",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0058",
+      "source_id": "SHUO-0058",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Préciser l'entrée dans le message ou sur la carte."
+    },
+    {
+      "id": "SHUO-0059",
+      "source_id": "SHUO-0059",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0060",
+      "source_id": "SHUO-0060",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0061",
+      "source_id": "SHUO-0061",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0062",
+      "source_id": "SHUO-0062",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0063",
+      "source_id": "SHUO-0063",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0064",
+      "source_id": "SHUO-0064",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Pour un taxi au compteur, pas une course VTC à tarif fixé."
+    },
+    {
+      "id": "SHUO-0065",
+      "source_id": "SHUO-0065",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Uniquement à un endroit où l'arrêt est autorisé et sûr."
+    },
+    {
+      "id": "SHUO-0066",
+      "source_id": "SHUO-0066",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0067",
+      "source_id": "SHUO-0067",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0068",
+      "source_id": "SHUO-0068",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0069",
+      "source_id": "SHUO-0069",
+      "source_category": "Taxis et VTC",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Confirmer les éventuels frais d'attente."
+    },
+    {
+      "id": "SHUO-0070",
+      "source_id": "SHUO-0070",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0071",
+      "source_id": "SHUO-0071",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer la destination et préciser la date."
+    },
+    {
+      "id": "SHUO-0072",
+      "source_id": "SHUO-0072",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0073",
+      "source_id": "SHUO-0073",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0074",
+      "source_id": "SHUO-0074",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0075",
+      "source_id": "SHUO-0075",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0076",
+      "source_id": "SHUO-0076",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer le numéro de train."
+    },
+    {
+      "id": "SHUO-0077",
+      "source_id": "SHUO-0077",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0078",
+      "source_id": "SHUO-0078",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0079",
+      "source_id": "SHUO-0079",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0080",
+      "source_id": "SHUO-0080",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Pour l'identification ou le passage d'un contrôle."
+    },
+    {
+      "id": "SHUO-0081",
+      "source_id": "SHUO-0081",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer la réservation."
+    },
+    {
+      "id": "SHUO-0082",
+      "source_id": "SHUO-0082",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0083",
+      "source_id": "SHUO-0083",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer la destination écrite."
+    },
+    {
+      "id": "SHUO-0084",
+      "source_id": "SHUO-0084",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0085",
+      "source_id": "SHUO-0085",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0086",
+      "source_id": "SHUO-0086",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0087",
+      "source_id": "SHUO-0087",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0088",
+      "source_id": "SHUO-0088",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Montrer l'arrêt souhaité sur une carte."
+    },
+    {
+      "id": "SHUO-0089",
+      "source_id": "SHUO-0089",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Indiquer d'abord l'arrêt souhaité."
+    },
+    {
+      "id": "SHUO-0090",
+      "source_id": "SHUO-0090",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0091",
+      "source_id": "SHUO-0091",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Demander les conditions et frais au personnel."
+    },
+    {
+      "id": "SHUO-0092",
+      "source_id": "SHUO-0092",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Ne suppose pas que le remboursement est possible."
+    },
+    {
+      "id": "SHUO-0093",
+      "source_id": "SHUO-0093",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Terme utilisé pour les trains à grande vitesse."
+    },
+    {
+      "id": "SHUO-0094",
+      "source_id": "SHUO-0094",
+      "source_category": "Trains, métro et bus",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0095",
+      "source_id": "SHUO-0095",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0096",
+      "source_id": "SHUO-0096",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 1,
+      "context": "Montrer le numéro de porte."
+    },
+    {
+      "id": "SHUO-0097",
+      "source_id": "SHUO-0097",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0098",
+      "source_id": "SHUO-0098",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0099",
+      "source_id": "SHUO-0099",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0100",
+      "source_id": "SHUO-0100",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0101",
+      "source_id": "SHUO-0101",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0102",
+      "source_id": "SHUO-0102",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0103",
+      "source_id": "SHUO-0103",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": "Montrer l'objet et suivre les consignes du personnel."
+    },
+    {
+      "id": "SHUO-0104",
+      "source_id": "SHUO-0104",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0105",
+      "source_id": "SHUO-0105",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0106",
+      "source_id": "SHUO-0106",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0107",
+      "source_id": "SHUO-0107",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0108",
+      "source_id": "SHUO-0108",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0109",
+      "source_id": "SHUO-0109",
+      "source_category": "Aéroport",
+      "app_category": "transport",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "reservation",
+      "source_id": "SHUO-0110",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0111",
+      "source_id": "SHUO-0111",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": "Montrer la confirmation de réservation."
+    },
+    {
+      "id": "SHUO-0112",
+      "source_id": "SHUO-0112",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0113",
+      "source_id": "SHUO-0113",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0114",
+      "source_id": "SHUO-0114",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0115",
+      "source_id": "SHUO-0115",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": "Demande l'heure limite de départ."
+    },
+    {
+      "id": "SHUO-0116",
+      "source_id": "SHUO-0116",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0117",
+      "source_id": "SHUO-0117",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": "Demander si des frais s'appliquent."
+    },
+    {
+      "id": "SHUO-0118",
+      "source_id": "SHUO-0118",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0119",
+      "source_id": "SHUO-0119",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0120",
+      "source_id": "SHUO-0120",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0121",
+      "source_id": "SHUO-0121",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0122",
+      "source_id": "SHUO-0122",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0123",
+      "source_id": "SHUO-0123",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0124",
+      "source_id": "SHUO-0124",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0125",
+      "source_id": "SHUO-0125",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0126",
+      "source_id": "SHUO-0126",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0127",
+      "source_id": "SHUO-0127",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0128",
+      "source_id": "SHUO-0128",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0129",
+      "source_id": "SHUO-0129",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0130",
+      "source_id": "SHUO-0130",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0131",
+      "source_id": "SHUO-0131",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0132",
+      "source_id": "SHUO-0132",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0133",
+      "source_id": "SHUO-0133",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0134",
+      "source_id": "SHUO-0134",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0135",
+      "source_id": "SHUO-0135",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0136",
+      "source_id": "SHUO-0136",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0137",
+      "source_id": "SHUO-0137",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0138",
+      "source_id": "SHUO-0138",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0139",
+      "source_id": "SHUO-0139",
+      "source_category": "Hôtel",
+      "app_category": "hotel",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0140",
+      "source_id": "SHUO-0140",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0141",
+      "source_id": "SHUO-0141",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0142",
+      "source_id": "SHUO-0142",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "menu",
+      "source_id": "SHUO-0143",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0144",
+      "source_id": "SHUO-0144",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0145",
+      "source_id": "SHUO-0145",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0146",
+      "source_id": "SHUO-0146",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0147",
+      "source_id": "SHUO-0147",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0148",
+      "source_id": "SHUO-0148",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Montrer le plat sur le menu."
+    },
+    {
+      "id": "SHUO-0149",
+      "source_id": "SHUO-0149",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Montrer le plat ou l'article."
+    },
+    {
+      "id": "SHUO-0150",
+      "source_id": "SHUO-0150",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0151",
+      "source_id": "SHUO-0151",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0152",
+      "source_id": "SHUO-0152",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0153",
+      "source_id": "SHUO-0153",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "no-spice",
+      "source_id": "SHUO-0154",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Demande zéro piment ajouté ; préciser aussi les sauces si nécessaire."
+    },
+    {
+      "id": "SHUO-0155",
+      "source_id": "SHUO-0155",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Demande un peu de piment, et non une absence de piment."
+    },
+    {
+      "id": "SHUO-0156",
+      "source_id": "SHUO-0156",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0157",
+      "source_id": "SHUO-0157",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0158",
+      "source_id": "SHUO-0158",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0159",
+      "source_id": "SHUO-0159",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0160",
+      "source_id": "SHUO-0160",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0161",
+      "source_id": "SHUO-0161",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0162",
+      "source_id": "SHUO-0162",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0163",
+      "source_id": "SHUO-0163",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "常温 = température ambiante ; ne signifie pas eau chaude."
+    },
+    {
+      "id": "SHUO-0164",
+      "source_id": "SHUO-0164",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0165",
+      "source_id": "SHUO-0165",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0166",
+      "source_id": "SHUO-0166",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Ne garantit pas l'absence de sucre déjà présent dans les ingrédients."
+    },
+    {
+      "id": "SHUO-0167",
+      "source_id": "SHUO-0167",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Préférence ; pour une allergie, utiliser la déclaration dédiée."
+    },
+    {
+      "id": "SHUO-0168",
+      "source_id": "SHUO-0168",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0169",
+      "source_id": "SHUO-0169",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0170",
+      "source_id": "SHUO-0170",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0171",
+      "source_id": "SHUO-0171",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0172",
+      "source_id": "SHUO-0172",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0173",
+      "source_id": "SHUO-0173",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Réponse à la question du mode de consommation."
+    },
+    {
+      "id": "SHUO-0174",
+      "source_id": "SHUO-0174",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0175",
+      "source_id": "SHUO-0175",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0176",
+      "source_id": "SHUO-0176",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0177",
+      "source_id": "SHUO-0177",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0178",
+      "source_id": "SHUO-0178",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0179",
+      "source_id": "SHUO-0179",
+      "source_category": "Restaurant et boissons",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0180",
+      "source_id": "SHUO-0180",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Ne précise pas le poisson, les fruits de mer ou les bouillons."
+    },
+    {
+      "id": "SHUO-0181",
+      "source_id": "SHUO-0181",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0182",
+      "source_id": "SHUO-0182",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0183",
+      "source_id": "SHUO-0183",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0184",
+      "source_id": "SHUO-0184",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Préciser notamment viande, poisson, lait, œufs, miel et bouillons si nécessaire."
+    },
+    {
+      "id": "SHUO-0185",
+      "source_id": "SHUO-0185",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0186",
+      "source_id": "SHUO-0186",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0187",
+      "source_id": "SHUO-0187",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0188",
+      "source_id": "SHUO-0188",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Comprend l'alcool utilisé en cuisine."
+    },
+    {
+      "id": "allergy",
+      "source_id": "SHUO-0189",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Allergie : ne pas remplacer par une simple préférence alimentaire."
+    },
+    {
+      "id": "SHUO-0190",
+      "source_id": "SHUO-0190",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Désigne les crevettes ; ne décrit pas toutes les allergies aux fruits de mer."
+    },
+    {
+      "id": "SHUO-0191",
+      "source_id": "SHUO-0191",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Allergie au lait ; différente de l'intolérance au lactose."
+    },
+    {
+      "id": "SHUO-0192",
+      "source_id": "SHUO-0192",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0193",
+      "source_id": "SHUO-0193",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0194",
+      "source_id": "SHUO-0194",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0195",
+      "source_id": "SHUO-0195",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Allergie au blé ; différente de la maladie cœliaque."
+    },
+    {
+      "id": "SHUO-0196",
+      "source_id": "SHUO-0196",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "麸质 = gluten ; préciser ingrédients et contamination croisée."
+    },
+    {
+      "id": "SHUO-0197",
+      "source_id": "SHUO-0197",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "À utiliser pour une allergie concernée ; nécessite une validation humaine renforcée."
+    },
+    {
+      "id": "SHUO-0198",
+      "source_id": "SHUO-0198",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 1,
+      "context": "Complément à une déclaration d'allergie précise."
+    },
+    {
+      "id": "SHUO-0199",
+      "source_id": "SHUO-0199",
+      "source_category": "Alimentation et allergies",
+      "app_category": "restaurant",
+      "priority": 2,
+      "context": "Complément à une déclaration précise ; ne garantit pas l’absence de contamination croisée."
+    },
+    {
+      "id": "price",
+      "source_id": "SHUO-0200",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0201",
+      "source_id": "SHUO-0201",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "card-payment",
+      "source_id": "SHUO-0202",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0203",
+      "source_id": "SHUO-0203",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0204",
+      "source_id": "SHUO-0204",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0205",
+      "source_id": "SHUO-0205",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0206",
+      "source_id": "SHUO-0206",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0207",
+      "source_id": "SHUO-0207",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0208",
+      "source_id": "SHUO-0208",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": "付款码 = code présenté pour être scanné par le commerçant."
+    },
+    {
+      "id": "SHUO-0209",
+      "source_id": "SHUO-0209",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0210",
+      "source_id": "SHUO-0210",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": "Montrer la confirmation dans l'application si nécessaire."
+    },
+    {
+      "id": "SHUO-0211",
+      "source_id": "SHUO-0211",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0212",
+      "source_id": "SHUO-0212",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0213",
+      "source_id": "SHUO-0213",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0214",
+      "source_id": "SHUO-0214",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 2,
+      "context": "收据 = reçu ; ne signifie pas une facture fiscale officielle."
+    },
+    {
+      "id": "SHUO-0215",
+      "source_id": "SHUO-0215",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 2,
+      "context": "发票 = facture fiscale ; des informations supplémentaires peuvent être demandées."
+    },
+    {
+      "id": "SHUO-0216",
+      "source_id": "SHUO-0216",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0217",
+      "source_id": "SHUO-0217",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0218",
+      "source_id": "SHUO-0218",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0219",
+      "source_id": "SHUO-0219",
+      "source_category": "Paiements",
+      "app_category": "payment",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0220",
+      "source_id": "SHUO-0220",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0221",
+      "source_id": "SHUO-0221",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0222",
+      "source_id": "SHUO-0222",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0223",
+      "source_id": "SHUO-0223",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0224",
+      "source_id": "SHUO-0224",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0225",
+      "source_id": "SHUO-0225",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0226",
+      "source_id": "SHUO-0226",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0227",
+      "source_id": "SHUO-0227",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0228",
+      "source_id": "SHUO-0228",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0229",
+      "source_id": "SHUO-0229",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": "Pour un contexte où la négociation est appropriée."
+    },
+    {
+      "id": "SHUO-0230",
+      "source_id": "SHUO-0230",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0231",
+      "source_id": "SHUO-0231",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0232",
+      "source_id": "SHUO-0232",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0233",
+      "source_id": "SHUO-0233",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0234",
+      "source_id": "SHUO-0234",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0235",
+      "source_id": "SHUO-0235",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0236",
+      "source_id": "SHUO-0236",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0237",
+      "source_id": "SHUO-0237",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": "Pour un produit alimentaire emballé ; montrer l'étiquette."
+    },
+    {
+      "id": "SHUO-0238",
+      "source_id": "SHUO-0238",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0239",
+      "source_id": "SHUO-0239",
+      "source_category": "Achats",
+      "app_category": "shopping",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0240",
+      "source_id": "SHUO-0240",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0241",
+      "source_id": "SHUO-0241",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0242",
+      "source_id": "SHUO-0242",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0243",
+      "source_id": "SHUO-0243",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0244",
+      "source_id": "SHUO-0244",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0245",
+      "source_id": "SHUO-0245",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0246",
+      "source_id": "SHUO-0246",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0247",
+      "source_id": "SHUO-0247",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0248",
+      "source_id": "SHUO-0248",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0249",
+      "source_id": "SHUO-0249",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0250",
+      "source_id": "SHUO-0250",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0251",
+      "source_id": "SHUO-0251",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0252",
+      "source_id": "SHUO-0252",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0253",
+      "source_id": "SHUO-0253",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0254",
+      "source_id": "SHUO-0254",
+      "source_category": "Téléphone et connexion",
+      "app_category": "other",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0255",
+      "source_id": "SHUO-0255",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0256",
+      "source_id": "SHUO-0256",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0257",
+      "source_id": "SHUO-0257",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0258",
+      "source_id": "SHUO-0258",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0259",
+      "source_id": "SHUO-0259",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0260",
+      "source_id": "SHUO-0260",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0261",
+      "source_id": "SHUO-0261",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0262",
+      "source_id": "SHUO-0262",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0263",
+      "source_id": "SHUO-0263",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0264",
+      "source_id": "SHUO-0264",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0265",
+      "source_id": "SHUO-0265",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0266",
+      "source_id": "SHUO-0266",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0267",
+      "source_id": "SHUO-0267",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": "Montrer aussi la réservation si nécessaire."
+    },
+    {
+      "id": "SHUO-0268",
+      "source_id": "SHUO-0268",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0269",
+      "source_id": "SHUO-0269",
+      "source_category": "Visites et loisirs",
+      "app_category": "tourism",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0270",
+      "source_id": "SHUO-0270",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0271",
+      "source_id": "SHUO-0271",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0272",
+      "source_id": "SHUO-0272",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 1,
+      "context": "Ne pas supposer qu'une réponse suffit à vérifier une source d'eau inconnue."
+    },
+    {
+      "id": "SHUO-0273",
+      "source_id": "SHUO-0273",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0274",
+      "source_id": "SHUO-0274",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": "Pour distinguer les toilettes assises des toilettes à la turque."
+    },
+    {
+      "id": "SHUO-0275",
+      "source_id": "SHUO-0275",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0276",
+      "source_id": "SHUO-0276",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0277",
+      "source_id": "SHUO-0277",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0278",
+      "source_id": "SHUO-0278",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0279",
+      "source_id": "SHUO-0279",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0280",
+      "source_id": "SHUO-0280",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0281",
+      "source_id": "SHUO-0281",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": "Montrer l'objet et demander l'accord du responsable."
+    },
+    {
+      "id": "SHUO-0282",
+      "source_id": "SHUO-0282",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0283",
+      "source_id": "SHUO-0283",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0284",
+      "source_id": "SHUO-0284",
+      "source_category": "Besoins quotidiens",
+      "app_category": "other",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "help",
+      "source_id": "SHUO-0285",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0286",
+      "source_id": "SHUO-0286",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0287",
+      "source_id": "SHUO-0287",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0288",
+      "source_id": "SHUO-0288",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0289",
+      "source_id": "SHUO-0289",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0290",
+      "source_id": "SHUO-0290",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0291",
+      "source_id": "SHUO-0291",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0292",
+      "source_id": "SHUO-0292",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": "Montrer l'endroit douloureux."
+    },
+    {
+      "id": "SHUO-0293",
+      "source_id": "SHUO-0293",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0294",
+      "source_id": "SHUO-0294",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0295",
+      "source_id": "SHUO-0295",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0296",
+      "source_id": "SHUO-0296",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": "Pour signaler une urgence, sans retarder la demande de secours."
+    },
+    {
+      "id": "SHUO-0297",
+      "source_id": "SHUO-0297",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": "Montrer le médicament ou son nom exact."
+    },
+    {
+      "id": "SHUO-0298",
+      "source_id": "SHUO-0298",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0299",
+      "source_id": "SHUO-0299",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0300",
+      "source_id": "SHUO-0300",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0301",
+      "source_id": "SHUO-0301",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": "Déclare un vol, et non une simple perte."
+    },
+    {
+      "id": "SHUO-0302",
+      "source_id": "SHUO-0302",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": "Signaler immédiatement au personnel ou à la police."
+    },
+    {
+      "id": "SHUO-0303",
+      "source_id": "SHUO-0303",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0304",
+      "source_id": "SHUO-0304",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": "Adapter la nationalité si nécessaire."
+    },
+    {
+      "id": "SHUO-0305",
+      "source_id": "SHUO-0305",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0306",
+      "source_id": "SHUO-0306",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0307",
+      "source_id": "SHUO-0307",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": null
+    },
+    {
+      "id": "SHUO-0308",
+      "source_id": "SHUO-0308",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 1,
+      "context": null
+    },
+    {
+      "id": "SHUO-0309",
+      "source_id": "SHUO-0309",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": "Demander au médecin ou au pharmacien ; la carte ne donne aucune posologie."
+    },
+    {
+      "id": "SHUO-0310",
+      "source_id": "SHUO-0310",
+      "source_category": "Santé et aide",
+      "app_category": "emergency",
+      "priority": 2,
+      "context": "Dans cette catégorie : instructions d'utilisation du médicament."
+    }
+  ]
+}

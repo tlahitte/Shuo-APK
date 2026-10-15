@@ -41,6 +41,16 @@ interface LibraryDao {
     @Query("UPDATE phrases SET lastUsedAt = :now WHERE id = :id") suspend fun markUsed(id: String, now: Long)
 }
 
-@Database(entities = [CategoryEntity::class, PhraseEntity::class, Metadata::class], version = 1, exportSchema = true)
+@Database(entities = [CategoryEntity::class, PhraseEntity::class, Metadata::class], version = 2, exportSchema = true)
 @TypeConverters(Converters::class)
-abstract class ShuoDatabase : RoomDatabase() { abstract fun libraryDao(): LibraryDao }
+abstract class ShuoDatabase : RoomDatabase() {
+    abstract fun libraryDao(): LibraryDao
+    companion object {
+        val MIGRATION_1_2 = object : androidx.room.migration.Migration(1, 2) {
+            override fun migrate(db: androidx.sqlite.db.SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE phrases ADD COLUMN spanish TEXT")
+                db.execSQL("ALTER TABLE phrases ADD COLUMN italian TEXT")
+            }
+        }
+    }
+}

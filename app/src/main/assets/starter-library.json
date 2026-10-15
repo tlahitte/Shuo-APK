@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "categories": [
     {
       "id": "transport",
@@ -84,92 +84,376 @@
   ],
   "phrases": [
     {
-      "id": "no-spice",
-      "chinese": "不要辣",
-      "pinyin": "Bú yào là",
-      "french": "Pas de piment, s’il vous plaît.",
-      "english": "Not spicy, please.",
-      "categoryId": "restaurant",
+      "id": "hello",
+      "chinese": "你好。",
+      "pinyin": "Nǐ hǎo.",
+      "french": "Bonjour.",
+      "english": "Hello.",
+      "spanish": "Hola.",
+      "italian": "Buongiorno.",
+      "categoryId": "communication",
       "keywords": [
-        "piment",
-        "épicé",
-        "restaurant",
-        "nourriture"
-      ],
-      "favorite": true,
-      "builtIn": true
-    },
-    {
-      "id": "menu",
-      "chinese": "请给我菜单",
-      "pinyin": "Qǐng gěi wǒ càidān",
-      "french": "La carte, s’il vous plaît.",
-      "english": "The menu, please.",
-      "categoryId": "restaurant",
-      "keywords": [
-        "menu",
-        "restaurant"
+        "Communication"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "vegetarian",
-      "chinese": "我吃素",
-      "pinyin": "Wǒ chī sù",
-      "french": "Je suis végétarien / végétarienne.",
-      "english": "I am vegetarian.",
-      "categoryId": "restaurant",
+      "id": "thanks",
+      "chinese": "谢谢。",
+      "pinyin": "Xiè xie.",
+      "french": "Merci.",
+      "english": "Thank you.",
+      "spanish": "Gracias.",
+      "italian": "Grazie.",
+      "categoryId": "communication",
       "keywords": [
-        "végétarien",
-        "restaurant",
-        "viande"
+        "Communication"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "metro",
-      "chinese": "地铁站在哪里？",
-      "pinyin": "Dìtiězhàn zài nǎlǐ?",
-      "french": "Où est la station de métro ?",
-      "english": "Where is the subway station?",
-      "categoryId": "transport",
+      "id": "SHUO-0003",
+      "chinese": "非常感谢。",
+      "pinyin": "Fēi cháng gǎn xiè.",
+      "french": "Merci beaucoup.",
+      "english": "Thank you very much.",
+      "spanish": "Muchas gracias.",
+      "italian": "Grazie mille.",
+      "categoryId": "communication",
       "keywords": [
-        "métro",
-        "gare",
-        "train",
-        "transport"
+        "Communication"
       ],
-      "favorite": true,
+      "favorite": false,
       "builtIn": true
     },
     {
-      "id": "price",
-      "chinese": "多少钱？",
-      "pinyin": "Duōshao qián?",
-      "french": "Combien ça coûte ?",
-      "english": "How much does it cost?",
-      "categoryId": "shopping",
+      "id": "SHUO-0004",
+      "chinese": "再见。",
+      "pinyin": "Zài jiàn.",
+      "french": "Au revoir.",
+      "english": "Goodbye.",
+      "spanish": "Adiós.",
+      "italian": "Arrivederci.",
+      "categoryId": "communication",
       "keywords": [
-        "prix",
-        "argent",
-        "achats"
+        "Communication"
       ],
-      "favorite": true,
+      "favorite": false,
       "builtIn": true
     },
     {
-      "id": "reservation",
-      "chinese": "我有预订",
-      "pinyin": "Wǒ yǒu yùdìng",
-      "french": "J’ai une réservation.",
-      "english": "I have a reservation.",
-      "categoryId": "hotel",
+      "id": "SHUO-0005",
+      "chinese": "不好意思。",
+      "pinyin": "Bù hǎo yì si.",
+      "french": "Excusez-moi.",
+      "english": "Excuse me.",
+      "spanish": "Disculpe.",
+      "italian": "Mi scusi.",
+      "categoryId": "communication",
       "keywords": [
-        "hôtel",
-        "chambre",
-        "réservation"
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0006",
+      "chinese": "对不起。",
+      "pinyin": "Duì bu qǐ.",
+      "french": "Je suis désolé.",
+      "english": "I'm sorry.",
+      "spanish": "Lo siento.",
+      "italian": "Mi dispiace.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0007",
+      "chinese": "不用了，谢谢。",
+      "pinyin": "Bù yòng le, xiè xie.",
+      "french": "Non merci.",
+      "english": "No, thank you.",
+      "spanish": "No, gracias.",
+      "italian": "No, grazie.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0008",
+      "chinese": "好的。",
+      "pinyin": "Hǎo de.",
+      "french": "D'accord.",
+      "english": "All right.",
+      "spanish": "De acuerdo.",
+      "italian": "Va bene.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0009",
+      "chinese": "没问题。",
+      "pinyin": "Méi wèn tí.",
+      "french": "Pas de problème.",
+      "english": "No problem.",
+      "spanish": "No hay problema.",
+      "italian": "Nessun problema.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0010",
+      "chinese": "请等一下。",
+      "pinyin": "Qǐng děng yī xià.",
+      "french": "Attendez un instant, s'il vous plaît.",
+      "english": "Please wait a moment.",
+      "spanish": "Espere un momento, por favor.",
+      "italian": "Aspetti un momento, per favore.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0011",
+      "chinese": "我不会说中文。",
+      "pinyin": "Wǒ bù huì shuō zhōng wén.",
+      "french": "Je ne parle pas chinois.",
+      "english": "I don't speak Chinese.",
+      "spanish": "No hablo chino.",
+      "italian": "Non parlo cinese.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0012",
+      "chinese": "我会说一点中文。",
+      "pinyin": "Wǒ huì shuō yī diǎn zhōng wén.",
+      "french": "Je parle un peu chinois.",
+      "english": "I speak a little Chinese.",
+      "spanish": "Hablo un poco de chino.",
+      "italian": "Parlo un po' di cinese.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "understand",
+      "chinese": "我听不懂。",
+      "pinyin": "Wǒ tīng bù dǒng.",
+      "french": "Je ne comprends pas ce que vous dites.",
+      "english": "I don't understand what you're saying.",
+      "spanish": "No entiendo lo que dice.",
+      "italian": "Non capisco quello che dice.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0014",
+      "chinese": "请说慢一点。",
+      "pinyin": "Qǐng shuō màn yī diǎn.",
+      "french": "Parlez plus lentement, s'il vous plaît.",
+      "english": "Please speak more slowly.",
+      "spanish": "Hable más despacio, por favor.",
+      "italian": "Parli più lentamente, per favore.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0015",
+      "chinese": "请再说一遍。",
+      "pinyin": "Qǐng zài shuō yī biàn.",
+      "french": "Répétez, s'il vous plaît.",
+      "english": "Please say it again.",
+      "spanish": "Repítalo, por favor.",
+      "italian": "Ripeta, per favore.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0016",
+      "chinese": "可以写下来吗？",
+      "pinyin": "Kě yǐ xiě xià lai ma?",
+      "french": "Pouvez-vous l'écrire ?",
+      "english": "Could you write it down?",
+      "spanish": "¿Puede escribirlo?",
+      "italian": "Può scriverlo?",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0017",
+      "chinese": "您会说英语吗？",
+      "pinyin": "Nín huì shuō yīng yǔ ma?",
+      "french": "Pouvez-vous parler anglais ?",
+      "english": "Can you speak English?",
+      "spanish": "¿Habla inglés?",
+      "italian": "Parla inglese?",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0018",
+      "chinese": "您会说法语吗？",
+      "pinyin": "Nín huì shuō fǎ yǔ ma?",
+      "french": "Pouvez-vous parler français ?",
+      "english": "Can you speak French?",
+      "spanish": "¿Habla francés?",
+      "italian": "Parla francese?",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0019",
+      "chinese": "您能帮我吗？",
+      "pinyin": "Nín néng bāng wǒ ma?",
+      "french": "Pouvez-vous m'aider ?",
+      "english": "Can you help me?",
+      "spanish": "¿Puede ayudarme?",
+      "italian": "Può aiutarmi?",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0020",
+      "chinese": "我用一下翻译软件。",
+      "pinyin": "Wǒ yòng yī xià fān yì ruǎn jiàn.",
+      "french": "Je vais utiliser un traducteur.",
+      "english": "I'll use a translation app.",
+      "spanish": "Voy a usar una aplicación de traducción.",
+      "italian": "Userò un'app di traduzione.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0021",
+      "chinese": "请在我的手机上打字。",
+      "pinyin": "Qǐng zài wǒ de shǒu jī shàng dǎ zì.",
+      "french": "Écrivez-le sur mon téléphone, s'il vous plaît.",
+      "english": "Please type it on my phone.",
+      "spanish": "Escríbalo en mi teléfono, por favor.",
+      "italian": "Lo scriva sul mio telefono, per favore.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0022",
+      "chinese": "请给我看一下。",
+      "pinyin": "Qǐng gěi wǒ kàn yī xià.",
+      "french": "Montrez-moi, s'il vous plaît.",
+      "english": "Please show me.",
+      "spanish": "Muéstremelo, por favor.",
+      "italian": "Me lo mostri, per favore.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0023",
+      "chinese": "我是来旅游的。",
+      "pinyin": "Wǒ shì lái lǚ yóu de.",
+      "french": "Je suis ici en touriste.",
+      "english": "I'm here as a tourist.",
+      "spanish": "Estoy aquí de turismo.",
+      "italian": "Sono qui per turismo.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0024",
+      "chinese": "我来自法国。",
+      "pinyin": "Wǒ lái zì fǎ guó.",
+      "french": "Je viens de France.",
+      "english": "I'm from France.",
+      "spanish": "Soy de Francia.",
+      "italian": "Vengo dalla Francia.",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0025",
+      "chinese": "这个叫什么？",
+      "pinyin": "Zhè ge jiào shén me?",
+      "french": "Comment cela s'appelle-t-il ?",
+      "english": "What is this called?",
+      "spanish": "¿Cómo se llama esto?",
+      "italian": "Come si chiama questo?",
+      "categoryId": "communication",
+      "keywords": [
+        "Communication"
       ],
       "favorite": false,
       "builtIn": true
@@ -177,134 +461,4285 @@
     {
       "id": "toilets",
       "chinese": "洗手间在哪里？",
-      "pinyin": "Xǐshǒujiān zài nǎlǐ?",
+      "pinyin": "Xǐ shǒu jiān zài nǎ lǐ?",
       "french": "Où sont les toilettes ?",
-      "english": "Where is the restroom?",
+      "english": "Where are the toilets?",
+      "spanish": "¿Dónde están los baños?",
+      "italian": "Dove sono i bagni?",
       "categoryId": "directions",
       "keywords": [
-        "toilettes",
+        "Orientation",
         "wc",
-        "où"
+        "toilet",
+        "restroom",
+        "baño",
+        "bagno"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "help",
-      "chinese": "请帮帮我",
-      "pinyin": "Qǐng bāngbang wǒ",
-      "french": "Aidez-moi, s’il vous plaît.",
-      "english": "Please help me.",
-      "categoryId": "emergency",
+      "id": "SHUO-0027",
+      "chinese": "出口在哪里？",
+      "pinyin": "Chū kǒu zài nǎ lǐ?",
+      "french": "Où est la sortie ?",
+      "english": "Where is the exit?",
+      "spanish": "¿Dónde está la salida?",
+      "italian": "Dov'è l'uscita?",
+      "categoryId": "directions",
       "keywords": [
-        "aide",
-        "urgence",
-        "secours"
+        "Orientation"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "hello",
-      "chinese": "你好",
-      "pinyin": "Nǐ hǎo",
-      "french": "Bonjour.",
-      "english": "Hello.",
-      "categoryId": "communication",
+      "id": "SHUO-0028",
+      "chinese": "入口在哪里？",
+      "pinyin": "Rù kǒu zài nǎ lǐ?",
+      "french": "Où est l'entrée ?",
+      "english": "Where is the entrance?",
+      "spanish": "¿Dónde está la entrada?",
+      "italian": "Dov'è l'ingresso?",
+      "categoryId": "directions",
       "keywords": [
-        "salut",
-        "bonjour",
-        "politesse"
+        "Orientation"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "thanks",
-      "chinese": "谢谢",
-      "pinyin": "Xièxie",
-      "french": "Merci.",
-      "english": "Thank you.",
-      "categoryId": "communication",
+      "id": "SHUO-0029",
+      "chinese": "去这个地方怎么走？",
+      "pinyin": "Qù zhè ge dì fāng zěn me zǒu?",
+      "french": "Comment aller à cet endroit ?",
+      "english": "How do I get to this place?",
+      "spanish": "¿Cómo llego a este lugar?",
+      "italian": "Come arrivo in questo posto?",
+      "categoryId": "directions",
       "keywords": [
-        "merci",
-        "politesse"
+        "Orientation"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "understand",
-      "chinese": "我听不懂中文",
-      "pinyin": "Wǒ tīng bù dǒng Zhōngwén",
-      "french": "Je ne comprends pas le chinois.",
-      "english": "I do not understand Chinese.",
-      "categoryId": "communication",
+      "id": "SHUO-0030",
+      "chinese": "可以在地图上指给我看吗？",
+      "pinyin": "Kě yǐ zài dì tú shàng zhǐ gěi wǒ kàn ma?",
+      "french": "Pouvez-vous me le montrer sur la carte ?",
+      "english": "Could you show me on the map?",
+      "spanish": "¿Puede indicármelo en el mapa?",
+      "italian": "Può indicarmelo sulla mappa?",
+      "categoryId": "directions",
       "keywords": [
-        "comprendre",
-        "langue",
-        "chinois"
+        "Orientation"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "card-payment",
-      "chinese": "可以刷卡吗？",
-      "pinyin": "Kěyǐ shuākǎ ma?",
-      "french": "Puis-je payer par carte ?",
-      "english": "Can I pay by card?",
-      "categoryId": "payment",
+      "id": "SHUO-0031",
+      "chinese": "离这里远吗？",
+      "pinyin": "Lí zhè lǐ yuǎn ma?",
+      "french": "Est-ce loin d'ici ?",
+      "english": "Is it far from here?",
+      "spanish": "¿Está lejos de aquí?",
+      "italian": "È lontano da qui?",
+      "categoryId": "directions",
       "keywords": [
-        "payer",
-        "carte bancaire",
-        "paiement"
+        "Orientation"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "ticket",
-      "chinese": "请给我一张票",
-      "pinyin": "Qǐng gěi wǒ yì zhāng piào",
-      "french": "Un billet, s’il vous plaît.",
-      "english": "One ticket, please.",
-      "categoryId": "tourism",
+      "id": "SHUO-0032",
+      "chinese": "可以走路去吗？",
+      "pinyin": "Kě yǐ zǒu lù qù ma?",
+      "french": "Peut-on y aller à pied ?",
+      "english": "Can I walk there?",
+      "spanish": "¿Se puede ir andando?",
+      "italian": "Si può andare a piedi?",
+      "categoryId": "directions",
       "keywords": [
-        "billet",
-        "ticket",
-        "visite"
+        "Orientation"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
-      "id": "water",
-      "chinese": "请给我一杯水",
-      "pinyin": "Qǐng gěi wǒ yì bēi shuǐ",
-      "french": "Un verre d’eau, s’il vous plaît.",
-      "english": "A glass of water, please.",
-      "categoryId": "other",
+      "id": "SHUO-0033",
+      "chinese": "走路要多久？",
+      "pinyin": "Zǒu lù yào duō jiǔ?",
+      "french": "Combien de temps faut-il à pied ?",
+      "english": "How long does it take on foot?",
+      "spanish": "¿Cuánto se tarda andando?",
+      "italian": "Quanto ci vuole a piedi?",
+      "categoryId": "directions",
       "keywords": [
-        "eau",
-        "boire",
-        "soif"
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0034",
+      "chinese": "是往这边走吗？",
+      "pinyin": "Shì wǎng zhè biān zǒu ma?",
+      "french": "Est-ce par ici ?",
+      "english": "Is it this way?",
+      "spanish": "¿Es por aquí?",
+      "italian": "È da questa parte?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0035",
+      "chinese": "是在左边吗？",
+      "pinyin": "Shì zài zuǒ biān ma?",
+      "french": "Est-ce à gauche ?",
+      "english": "Is it on the left?",
+      "spanish": "¿Está a la izquierda?",
+      "italian": "È a sinistra?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0036",
+      "chinese": "是在右边吗？",
+      "pinyin": "Shì zài yòu biān ma?",
+      "french": "Est-ce à droite ?",
+      "english": "Is it on the right?",
+      "spanish": "¿Está a la derecha?",
+      "italian": "È a destra?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0037",
+      "chinese": "要过马路吗？",
+      "pinyin": "Yào guò mǎ lù ma?",
+      "french": "Faut-il traverser la route ?",
+      "english": "Do I need to cross the road?",
+      "spanish": "¿Tengo que cruzar la calle?",
+      "italian": "Devo attraversare la strada?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0038",
+      "chinese": "在几楼？",
+      "pinyin": "Zài jǐ lóu?",
+      "french": "Quel étage ?",
+      "english": "Which floor?",
+      "spanish": "¿En qué planta?",
+      "italian": "A che piano?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0039",
+      "chinese": "电梯在哪里？",
+      "pinyin": "Diàn tī zài nǎ lǐ?",
+      "french": "Où est l'ascenseur ?",
+      "english": "Where is the elevator?",
+      "spanish": "¿Dónde está el ascensor?",
+      "italian": "Dov'è l'ascensore?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0040",
+      "chinese": "有轮椅可以通行的入口吗？",
+      "pinyin": "Yǒu lún yǐ kě yǐ tōng xíng de rù kǒu ma?",
+      "french": "Y a-t-il une entrée accessible en fauteuil roulant ?",
+      "english": "Is there a wheelchair-accessible entrance?",
+      "spanish": "¿Hay una entrada accesible en silla de ruedas?",
+      "italian": "C'è un ingresso accessibile in sedia a rotelle?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0041",
+      "chinese": "自动取款机在哪里？",
+      "pinyin": "Zì dòng qǔ kuǎn jī zài nǎ lǐ?",
+      "french": "Où est le distributeur de billets ?",
+      "english": "Where is the ATM?",
+      "spanish": "¿Dónde está el cajero automático?",
+      "italian": "Dov'è il bancomat?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0042",
+      "chinese": "附近有超市吗？",
+      "pinyin": "Fù jìn yǒu chāo shì ma?",
+      "french": "Y a-t-il un supermarché à proximité ?",
+      "english": "Is there a supermarket nearby?",
+      "spanish": "¿Hay un supermercado cerca?",
+      "italian": "C'è un supermercato qui vicino?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0043",
+      "chinese": "哪里可以买水？",
+      "pinyin": "Nǎ lǐ kě yǐ mǎi shuǐ?",
+      "french": "Où puis-je acheter de l'eau ?",
+      "english": "Where can I buy water?",
+      "spanish": "¿Dónde puedo comprar agua?",
+      "italian": "Dove posso comprare dell'acqua?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0044",
+      "chinese": "我迷路了。",
+      "pinyin": "Wǒ mí lù le.",
+      "french": "Je me suis perdu.",
+      "english": "I'm lost.",
+      "spanish": "Me he perdido.",
+      "italian": "Mi sono perso.",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0045",
+      "chinese": "这条街叫什么？",
+      "pinyin": "Zhè tiáo jiē jiào shén me?",
+      "french": "Quelle est cette rue ?",
+      "english": "What is this street called?",
+      "spanish": "¿Cómo se llama esta calle?",
+      "italian": "Come si chiama questa strada?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0046",
+      "chinese": "最近的公交车站在哪里？",
+      "pinyin": "Zuì jìn de gōng jiāo chē zhàn zài nǎ lǐ?",
+      "french": "Où est l'arrêt de bus le plus proche ?",
+      "english": "Where is the nearest bus stop?",
+      "spanish": "¿Dónde está la parada de autobús más cercana?",
+      "italian": "Dov'è la fermata dell'autobus più vicina?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "metro",
+      "chinese": "最近的地铁站在哪里？",
+      "pinyin": "Zuì jìn de dì tiě zhàn zài nǎ lǐ?",
+      "french": "Où est la station de métro la plus proche ?",
+      "english": "Where is the nearest metro station?",
+      "spanish": "¿Dónde está la estación de metro más cercana?",
+      "italian": "Dov'è la stazione della metropolitana più vicina?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": true,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0048",
+      "chinese": "哪里可以过马路？",
+      "pinyin": "Nǎ lǐ kě yǐ guò mǎ lù?",
+      "french": "Où peut-on traverser ?",
+      "english": "Where can I cross the road?",
+      "spanish": "¿Por dónde se puede cruzar la calle?",
+      "italian": "Dove si può attraversare la strada?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0049",
+      "chinese": "集合地点在哪里？",
+      "pinyin": "Jí hé dì diǎn zài nǎ lǐ?",
+      "french": "Où est le point de rendez-vous ?",
+      "english": "Where is the meeting point?",
+      "spanish": "¿Dónde está el punto de encuentro?",
+      "italian": "Dov'è il punto d'incontro?",
+      "categoryId": "directions",
+      "keywords": [
+        "Orientation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0050",
+      "chinese": "请送我到这个地址。",
+      "pinyin": "Qǐng sòng wǒ dào zhè ge dì zhǐ.",
+      "french": "Emmenez-moi à cette adresse, s'il vous plaît.",
+      "english": "Please take me to this address.",
+      "spanish": "Lléveme a esta dirección, por favor.",
+      "italian": "Mi porti a questo indirizzo, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0051",
+      "chinese": "请送我到这家酒店。",
+      "pinyin": "Qǐng sòng wǒ dào zhè jiā jiǔ diàn.",
+      "french": "Emmenez-moi à cet hôtel, s'il vous plaît.",
+      "english": "Please take me to this hotel.",
+      "spanish": "Lléveme a este hotel, por favor.",
+      "italian": "Mi porti in questo hotel, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0052",
+      "chinese": "我想去机场。",
+      "pinyin": "Wǒ xiǎng qù jī chǎng.",
+      "french": "Je voudrais aller à l'aéroport.",
+      "english": "I'd like to go to the airport.",
+      "spanish": "Quisiera ir al aeropuerto.",
+      "italian": "Vorrei andare all'aeroporto.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0053",
+      "chinese": "我想去这个火车站。",
+      "pinyin": "Wǒ xiǎng qù zhè ge huǒ chē zhàn.",
+      "french": "Je voudrais aller à cette gare.",
+      "english": "I'd like to go to this train station.",
+      "spanish": "Quisiera ir a esta estación de tren.",
+      "italian": "Vorrei andare in questa stazione ferroviaria.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0054",
+      "chinese": "可以帮我叫出租车吗？",
+      "pinyin": "Kě yǐ bāng wǒ jiào chū zū chē ma?",
+      "french": "Pouvez-vous appeler un taxi ?",
+      "english": "Could you call a taxi?",
+      "spanish": "¿Puede llamar a un taxi?",
+      "italian": "Può chiamare un taxi?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0055",
+      "chinese": "在哪里可以打车？",
+      "pinyin": "Zài nǎ lǐ kě yǐ dǎ chē?",
+      "french": "Où peut-on prendre un taxi ?",
+      "english": "Where can I get a taxi?",
+      "spanish": "¿Dónde puedo tomar un taxi?",
+      "italian": "Dove posso prendere un taxi?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0056",
+      "chinese": "这是我叫的车吗？",
+      "pinyin": "Zhè shì wǒ jiào de chē ma?",
+      "french": "Est-ce la voiture que j'ai réservée ?",
+      "english": "Is this the car I booked?",
+      "spanish": "¿Es este el coche que he reservado?",
+      "italian": "È questa l'auto che ho prenotato?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0057",
+      "chinese": "您的车牌号是多少？",
+      "pinyin": "Nín de chē pái hào shì duō shao?",
+      "french": "Quel est votre numéro de plaque ?",
+      "english": "What is your license plate number?",
+      "spanish": "¿Cuál es su matrícula?",
+      "italian": "Qual è il numero della sua targa?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0058",
+      "chinese": "我在入口等您。",
+      "pinyin": "Wǒ zài rù kǒu děng nín.",
+      "french": "Je vous attends à l'entrée.",
+      "english": "I'm waiting at the entrance.",
+      "spanish": "Le espero en la entrada.",
+      "italian": "La aspetto all'ingresso.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0059",
+      "chinese": "您在哪里？",
+      "pinyin": "Nín zài nǎ lǐ?",
+      "french": "Où êtes-vous ?",
+      "english": "Where are you?",
+      "spanish": "¿Dónde está usted?",
+      "italian": "Dove si trova?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0060",
+      "chinese": "我找不到您。",
+      "pinyin": "Wǒ zhǎo bu dào nín.",
+      "french": "Je ne vous trouve pas.",
+      "english": "I can't find you.",
+      "spanish": "No le encuentro.",
+      "italian": "Non riesco a trovarla.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0061",
+      "chinese": "我到了。",
+      "pinyin": "Wǒ dào le.",
+      "french": "Je suis arrivé.",
+      "english": "I've arrived.",
+      "spanish": "Ya he llegado.",
+      "italian": "Sono arrivato.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0062",
+      "chinese": "路上要多久？",
+      "pinyin": "Lù shàng yào duō jiǔ?",
+      "french": "Combien de temps dure le trajet ?",
+      "english": "How long is the journey?",
+      "spanish": "¿Cuánto dura el trayecto?",
+      "italian": "Quanto dura il viaggio?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0063",
+      "chinese": "车费大概多少钱？",
+      "pinyin": "Chē fèi dà gài duō shao qián?",
+      "french": "Combien coûte le trajet environ ?",
+      "english": "About how much is the fare?",
+      "spanish": "¿Cuánto cuesta el trayecto aproximadamente?",
+      "italian": "Quanto costa circa la corsa?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0064",
+      "chinese": "请打表。",
+      "pinyin": "Qǐng dǎ biǎo.",
+      "french": "Mettez le compteur, s'il vous plaît.",
+      "english": "Please use the meter.",
+      "spanish": "Ponga el taxímetro, por favor.",
+      "italian": "Accenda il tassametro, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0065",
+      "chinese": "请在这里停车。",
+      "pinyin": "Qǐng zài zhè lǐ tíng chē.",
+      "french": "Arrêtez-vous ici, s'il vous plaît.",
+      "english": "Please stop here.",
+      "spanish": "Pare aquí, por favor.",
+      "italian": "Si fermi qui, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0066",
+      "chinese": "请开慢一点。",
+      "pinyin": "Qǐng kāi màn yī diǎn.",
+      "french": "Roulez plus doucement, s'il vous plaît.",
+      "english": "Please drive more slowly.",
+      "spanish": "Conduzca más despacio, por favor.",
+      "italian": "Guidi più piano, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0067",
+      "chinese": "请打开后备箱。",
+      "pinyin": "Qǐng dǎ kāi hòu bèi xiāng.",
+      "french": "Ouvrez le coffre, s'il vous plaît.",
+      "english": "Please open the trunk.",
+      "spanish": "Abra el maletero, por favor.",
+      "italian": "Apra il bagagliaio, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0068",
+      "chinese": "我的包落在车上了。",
+      "pinyin": "Wǒ de bāo là zài chē shàng le.",
+      "french": "J'ai oublié mon sac dans la voiture.",
+      "english": "I left my bag in the car.",
+      "spanish": "Me he dejado el bolso en el coche.",
+      "italian": "Ho dimenticato la borsa in macchina.",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0069",
+      "chinese": "可以等我五分钟吗？",
+      "pinyin": "Kě yǐ děng wǒ wǔ fēn zhōng ma?",
+      "french": "Pouvez-vous m'attendre cinq minutes ?",
+      "english": "Could you wait five minutes?",
+      "spanish": "¿Puede esperarme cinco minutos?",
+      "italian": "Può aspettarmi cinque minuti?",
+      "categoryId": "transport",
+      "keywords": [
+        "Taxis et VTC"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0070",
+      "chinese": "在哪里可以买票？",
+      "pinyin": "Zài nǎ lǐ kě yǐ mǎi piào?",
+      "french": "Où achète-t-on les billets ?",
+      "english": "Where can I buy tickets?",
+      "spanish": "¿Dónde se compran los billetes?",
+      "italian": "Dove si comprano i biglietti?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0071",
+      "chinese": "我想买一张去这里的票。",
+      "pinyin": "Wǒ xiǎng mǎi yī zhāng qù zhè lǐ de piào.",
+      "french": "Je voudrais un billet pour cet endroit.",
+      "english": "I'd like a ticket to this place.",
+      "spanish": "Quisiera un billete para este lugar.",
+      "italian": "Vorrei un biglietto per questo posto.",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0072",
+      "chinese": "我想今天出发。",
+      "pinyin": "Wǒ xiǎng jīn tiān chū fā.",
+      "french": "Je voudrais partir aujourd'hui.",
+      "english": "I'd like to leave today.",
+      "spanish": "Quisiera salir hoy.",
+      "italian": "Vorrei partire oggi.",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0073",
+      "chinese": "我想明天出发。",
+      "pinyin": "Wǒ xiǎng míng tiān chū fā.",
+      "french": "Je voudrais partir demain.",
+      "english": "I'd like to leave tomorrow.",
+      "spanish": "Quisiera salir mañana.",
+      "italian": "Vorrei partire domani.",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0074",
+      "chinese": "下一班火车几点开？",
+      "pinyin": "Xià yī bān huǒ chē jǐ diǎn kāi?",
+      "french": "À quelle heure part le prochain train ?",
+      "english": "What time does the next train leave?",
+      "spanish": "¿A qué hora sale el próximo tren?",
+      "italian": "A che ora parte il prossimo treno?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0075",
+      "chinese": "这班火车几点到？",
+      "pinyin": "Zhè bān huǒ chē jǐ diǎn dào?",
+      "french": "À quelle heure arrive ce train ?",
+      "english": "What time does this train arrive?",
+      "spanish": "¿A qué hora llega este tren?",
+      "italian": "A che ora arriva questo treno?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0076",
+      "chinese": "火车在几号站台？",
+      "pinyin": "Huǒ chē zài jǐ hào zhàn tái?",
+      "french": "De quel quai part le train ?",
+      "english": "Which platform does the train leave from?",
+      "spanish": "¿De qué andén sale el tren?",
+      "italian": "Da quale binario parte il treno?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0077",
+      "chinese": "检票口在哪里？",
+      "pinyin": "Jiǎn piào kǒu zài nǎ lǐ?",
+      "french": "Où est le contrôle des billets ?",
+      "english": "Where is the ticket checkpoint?",
+      "spanish": "¿Dónde está el control de billetes?",
+      "italian": "Dov'è il controllo dei biglietti?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0078",
+      "chinese": "候车室在哪里？",
+      "pinyin": "Hòu chē shì zài nǎ lǐ?",
+      "french": "Où est la salle d'attente ?",
+      "english": "Where is the waiting room?",
+      "spanish": "¿Dónde está la sala de espera?",
+      "italian": "Dov'è la sala d'attesa?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0079",
+      "chinese": "人工售票窗口在哪里？",
+      "pinyin": "Rén gōng shòu piào chuāng kǒu zài nǎ lǐ?",
+      "french": "Où est le guichet avec un agent ?",
+      "english": "Where is the staffed ticket counter?",
+      "spanish": "¿Dónde hay una taquilla con personal?",
+      "italian": "Dov'è la biglietteria con un addetto?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0080",
+      "chinese": "可以用护照吗？",
+      "pinyin": "Kě yǐ yòng hù zhào ma?",
+      "french": "Puis-je utiliser mon passeport ?",
+      "english": "Can I use my passport?",
+      "spanish": "¿Puedo usar mi pasaporte?",
+      "italian": "Posso usare il passaporto?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0081",
+      "chinese": "我的座位在哪里？",
+      "pinyin": "Wǒ de zuò wèi zài nǎ lǐ?",
+      "french": "Où est ma place ?",
+      "english": "Where is my seat?",
+      "spanish": "¿Dónde está mi asiento?",
+      "italian": "Dov'è il mio posto?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0082",
+      "chinese": "我在几号车厢？",
+      "pinyin": "Wǒ zài jǐ hào chē xiāng?",
+      "french": "Quel est mon wagon ?",
+      "english": "Which carriage am I in?",
+      "spanish": "¿En qué vagón estoy?",
+      "italian": "In quale carrozza sono?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0083",
+      "chinese": "这趟火车到这个地方吗？",
+      "pinyin": "Zhè tàng huǒ chē dào zhè ge dì fāng ma?",
+      "french": "Ce train va-t-il à cette destination ?",
+      "english": "Does this train go to this destination?",
+      "spanish": "¿Este tren va a este destino?",
+      "italian": "Questo treno va a questa destinazione?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0084",
+      "chinese": "需要换车吗？",
+      "pinyin": "Xū yào huàn chē ma?",
+      "french": "Faut-il changer de train ?",
+      "english": "Do I need to change trains?",
+      "spanish": "¿Tengo que cambiar de tren?",
+      "italian": "Devo cambiare treno?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0085",
+      "chinese": "在哪里换乘？",
+      "pinyin": "Zài nǎ lǐ huàn chéng?",
+      "french": "Où faut-il changer de ligne ?",
+      "english": "Where do I change lines?",
+      "spanish": "¿Dónde tengo que hacer transbordo?",
+      "italian": "Dove devo cambiare linea?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0086",
+      "chinese": "应该坐几号线？",
+      "pinyin": "Yīng gāi zuò jǐ hào xiàn?",
+      "french": "Quelle ligne de métro faut-il prendre ?",
+      "english": "Which metro line should I take?",
+      "spanish": "¿Qué línea de metro debo tomar?",
+      "italian": "Quale linea della metropolitana devo prendere?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0087",
+      "chinese": "应该从哪个出口出去？",
+      "pinyin": "Yīng gāi cóng nǎ ge chū kǒu chū qu?",
+      "french": "Quelle sortie faut-il prendre ?",
+      "english": "Which exit should I take?",
+      "spanish": "¿Qué salida debo tomar?",
+      "italian": "Quale uscita devo prendere?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0088",
+      "chinese": "这辆公交车在这里停吗？",
+      "pinyin": "Zhè liàng gōng jiāo chē zài zhè lǐ tíng ma?",
+      "french": "Ce bus s'arrête-t-il ici ?",
+      "english": "Does this bus stop here?",
+      "spanish": "¿Este autobús para aquí?",
+      "italian": "Questo autobus si ferma qui?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0089",
+      "chinese": "到站时请提醒我。",
+      "pinyin": "Dào zhàn shí qǐng tí xǐng wǒ.",
+      "french": "Prévenez-moi à mon arrêt, s'il vous plaît.",
+      "english": "Please let me know at my stop.",
+      "spanish": "Avíseme cuando lleguemos a mi parada, por favor.",
+      "italian": "Mi avvisi alla mia fermata, per favore.",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0090",
+      "chinese": "我没赶上火车。",
+      "pinyin": "Wǒ méi gǎn shàng huǒ chē.",
+      "french": "J'ai raté mon train.",
+      "english": "I missed my train.",
+      "spanish": "He perdido el tren.",
+      "italian": "Ho perso il treno.",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0091",
+      "chinese": "可以改签吗？",
+      "pinyin": "Kě yǐ gǎi qiān ma?",
+      "french": "Puis-je changer mon billet ?",
+      "english": "Can I change my ticket?",
+      "spanish": "¿Puedo cambiar mi billete?",
+      "italian": "Posso cambiare il biglietto?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0092",
+      "chinese": "可以退票吗？",
+      "pinyin": "Kě yǐ tuì piào ma?",
+      "french": "Puis-je me faire rembourser mon billet ?",
+      "english": "Can I get a refund for my ticket?",
+      "spanish": "¿Puedo obtener el reembolso de mi billete?",
+      "italian": "Posso avere il rimborso del biglietto?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0093",
+      "chinese": "我想要二等座。",
+      "pinyin": "Wǒ xiǎng yào èr děng zuò.",
+      "french": "Je voudrais une place en seconde classe.",
+      "english": "I'd like a second-class seat.",
+      "spanish": "Quisiera un asiento en segunda clase.",
+      "italian": "Vorrei un posto in seconda classe.",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0094",
+      "chinese": "最后一班地铁是几点？",
+      "pinyin": "Zuì hòu yī bān dì tiě shì jǐ diǎn?",
+      "french": "À quelle heure est le dernier métro ?",
+      "english": "What time is the last metro?",
+      "spanish": "¿A qué hora pasa el último metro?",
+      "italian": "A che ora passa l'ultima metropolitana?",
+      "categoryId": "transport",
+      "keywords": [
+        "Trains, métro et bus"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0095",
+      "chinese": "值机柜台在哪里？",
+      "pinyin": "Zhí jī guì tái zài nǎ lǐ?",
+      "french": "Où est le comptoir d'enregistrement ?",
+      "english": "Where is the check-in counter?",
+      "spanish": "¿Dónde está el mostrador de facturación?",
+      "italian": "Dov'è il banco del check-in?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0096",
+      "chinese": "这个登机口在哪里？",
+      "pinyin": "Zhè ge dēng jī kǒu zài nǎ lǐ?",
+      "french": "Où se trouve cette porte d'embarquement ?",
+      "english": "Where is this boarding gate?",
+      "spanish": "¿Dónde está esta puerta de embarque?",
+      "italian": "Dov'è questa porta d'imbarco?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0097",
+      "chinese": "几点开始登机？",
+      "pinyin": "Jǐ diǎn kāi shǐ dēng jī?",
+      "french": "À quelle heure commence l'embarquement ?",
+      "english": "What time does boarding start?",
+      "spanish": "¿A qué hora empieza el embarque?",
+      "italian": "A che ora inizia l'imbarco?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0098",
+      "chinese": "我的航班延误了吗？",
+      "pinyin": "Wǒ de háng bān yán wù le ma?",
+      "french": "Mon vol est-il retardé ?",
+      "english": "Is my flight delayed?",
+      "spanish": "¿Mi vuelo tiene retraso?",
+      "italian": "Il mio volo è in ritardo?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0099",
+      "chinese": "在哪里取行李？",
+      "pinyin": "Zài nǎ lǐ qǔ xíng lǐ?",
+      "french": "Où récupère-t-on les bagages ?",
+      "english": "Where do I collect my luggage?",
+      "spanish": "¿Dónde se recoge el equipaje?",
+      "italian": "Dove si ritirano i bagagli?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0100",
+      "chinese": "我的行李箱还没到。",
+      "pinyin": "Wǒ de xíng lǐ xiāng hái méi dào.",
+      "french": "Ma valise n'est pas arrivée.",
+      "english": "My suitcase hasn't arrived.",
+      "spanish": "Mi maleta no ha llegado.",
+      "italian": "La mia valigia non è arrivata.",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0101",
+      "chinese": "我的行李箱损坏了。",
+      "pinyin": "Wǒ de xíng lǐ xiāng sǔn huài le.",
+      "french": "Ma valise est abîmée.",
+      "english": "My suitcase is damaged.",
+      "spanish": "Mi maleta está dañada.",
+      "italian": "La mia valigia è danneggiata.",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0102",
+      "chinese": "我想托运这件行李。",
+      "pinyin": "Wǒ xiǎng tuō yùn zhè jiàn xíng lǐ.",
+      "french": "Je voudrais enregistrer ce bagage.",
+      "english": "I'd like to check in this bag.",
+      "spanish": "Quisiera facturar este equipaje.",
+      "italian": "Vorrei imbarcare questo bagaglio.",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0103",
+      "chinese": "这个可以带上飞机吗？",
+      "pinyin": "Zhè ge kě yǐ dài shàng fēi jī ma?",
+      "french": "Puis-je emporter ceci en cabine ?",
+      "english": "Can I take this into the cabin?",
+      "spanish": "¿Puedo llevar esto en cabina?",
+      "italian": "Posso portare questo in cabina?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0104",
+      "chinese": "安检在哪里？",
+      "pinyin": "Ān jiǎn zài nǎ lǐ?",
+      "french": "Où est le contrôle de sécurité ?",
+      "english": "Where is security?",
+      "spanish": "¿Dónde está el control de seguridad?",
+      "italian": "Dov'è il controllo di sicurezza?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0105",
+      "chinese": "航站楼之间的摆渡车在哪里？",
+      "pinyin": "Háng zhàn lóu zhī jiān de bǎi dù chē zài nǎ lǐ?",
+      "french": "Où est la navette entre les terminaux ?",
+      "english": "Where is the shuttle between terminals?",
+      "spanish": "¿Dónde está el autobús entre terminales?",
+      "italian": "Dov'è la navetta tra i terminal?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0106",
+      "chinese": "我要转机。",
+      "pinyin": "Wǒ yào zhuǎn jī.",
+      "french": "Je suis en correspondance.",
+      "english": "I have a connecting flight.",
+      "spanish": "Tengo un vuelo de conexión.",
+      "italian": "Ho un volo in coincidenza.",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0107",
+      "chinese": "我需要取行李吗？",
+      "pinyin": "Wǒ xū yào qǔ xíng lǐ ma?",
+      "french": "Dois-je récupérer mes bagages ?",
+      "english": "Do I need to collect my luggage?",
+      "spanish": "¿Tengo que recoger mi equipaje?",
+      "italian": "Devo ritirare i bagagli?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0108",
+      "chinese": "失物招领处在哪里？",
+      "pinyin": "Shī wù zhāo lǐng chù zài nǎ lǐ?",
+      "french": "Où est le service des objets trouvés ?",
+      "english": "Where is lost and found?",
+      "spanish": "¿Dónde está la oficina de objetos perdidos?",
+      "italian": "Dov'è l'ufficio oggetti smarriti?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0109",
+      "chinese": "去市区的机场大巴在哪里坐？",
+      "pinyin": "Qù shì qū de jī chǎng dà bā zài nǎ lǐ zuò?",
+      "french": "Où est l'arrêt de la navette pour le centre-ville ?",
+      "english": "Where is the airport bus to the city center?",
+      "spanish": "¿Dónde se toma el autobús del aeropuerto al centro?",
+      "italian": "Dove si prende l'autobus dell'aeroporto per il centro?",
+      "categoryId": "transport",
+      "keywords": [
+        "Aéroport"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "reservation",
+      "chinese": "我预订了房间。",
+      "pinyin": "Wǒ yù dìng le fáng jiān.",
+      "french": "J'ai réservé une chambre.",
+      "english": "I've booked a room.",
+      "spanish": "He reservado una habitación.",
+      "italian": "Ho prenotato una camera.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0111",
+      "chinese": "这是我的预订信息。",
+      "pinyin": "Zhè shì wǒ de yù dìng xìn xī.",
+      "french": "Voici ma réservation.",
+      "english": "Here is my reservation.",
+      "spanish": "Aquí está mi reserva.",
+      "italian": "Ecco la mia prenotazione.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0112",
+      "chinese": "这是我的护照。",
+      "pinyin": "Zhè shì wǒ de hù zhào.",
+      "french": "Voici mon passeport.",
+      "english": "Here is my passport.",
+      "spanish": "Aquí está mi pasaporte.",
+      "italian": "Ecco il mio passaporto.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0113",
+      "chinese": "我想办理入住。",
+      "pinyin": "Wǒ xiǎng bàn lǐ rù zhù.",
+      "french": "Je voudrais faire l'enregistrement.",
+      "english": "I'd like to check in.",
+      "spanish": "Quisiera hacer el registro de entrada.",
+      "italian": "Vorrei fare il check-in.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0114",
+      "chinese": "现在可以入住吗？",
+      "pinyin": "Xiàn zài kě yǐ rù zhù ma?",
+      "french": "Puis-je déjà accéder à ma chambre ?",
+      "english": "Can I access my room now?",
+      "spanish": "¿Puedo entrar ya en mi habitación?",
+      "italian": "Posso già entrare in camera?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0115",
+      "chinese": "最晚几点退房？",
+      "pinyin": "Zuì wǎn jǐ diǎn tuì fáng?",
+      "french": "À quelle heure dois-je rendre la chambre ?",
+      "english": "What time must I check out?",
+      "spanish": "¿A qué hora tengo que dejar la habitación?",
+      "italian": "A che ora devo lasciare la camera?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0116",
+      "chinese": "我想办理退房。",
+      "pinyin": "Wǒ xiǎng bàn lǐ tuì fáng.",
+      "french": "Je voudrais rendre ma chambre.",
+      "english": "I'd like to check out.",
+      "spanish": "Quisiera hacer el registro de salida.",
+      "italian": "Vorrei fare il check-out.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0117",
+      "chinese": "可以延迟退房吗？",
+      "pinyin": "Kě yǐ yán chí tuì fáng ma?",
+      "french": "Puis-je rendre la chambre plus tard ?",
+      "english": "Can I check out later?",
+      "spanish": "¿Puedo dejar la habitación más tarde?",
+      "italian": "Posso lasciare la camera più tardi?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0118",
+      "chinese": "今晚还有空房吗？",
+      "pinyin": "Jīn wǎn hái yǒu kōng fáng ma?",
+      "french": "Y a-t-il une chambre disponible ce soir ?",
+      "english": "Is there a room available tonight?",
+      "spanish": "¿Hay una habitación disponible para esta noche?",
+      "italian": "C'è una camera libera per stanotte?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0119",
+      "chinese": "住一晚多少钱？",
+      "pinyin": "Zhù yī wǎn duō shao qián?",
+      "french": "Combien coûte une nuit ?",
+      "english": "How much is one night?",
+      "spanish": "¿Cuánto cuesta una noche?",
+      "italian": "Quanto costa una notte?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0120",
+      "chinese": "我想多住一晚。",
+      "pinyin": "Wǒ xiǎng duō zhù yī wǎn.",
+      "french": "Je voudrais rester une nuit de plus.",
+      "english": "I'd like to stay one more night.",
+      "spanish": "Quisiera quedarme una noche más.",
+      "italian": "Vorrei restare un'altra notte.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0121",
+      "chinese": "我想要无烟房。",
+      "pinyin": "Wǒ xiǎng yào wú yān fáng.",
+      "french": "Je voudrais une chambre non-fumeur.",
+      "english": "I'd like a non-smoking room.",
+      "spanish": "Quisiera una habitación para no fumadores.",
+      "italian": "Vorrei una camera non fumatori.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0122",
+      "chinese": "我想要安静一点的房间。",
+      "pinyin": "Wǒ xiǎng yào ān jìng yī diǎn de fáng jiān.",
+      "french": "Je voudrais une chambre calme.",
+      "english": "I'd like a quiet room.",
+      "spanish": "Quisiera una habitación tranquila.",
+      "italian": "Vorrei una camera tranquilla.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0123",
+      "chinese": "我想要两张单人床的房间。",
+      "pinyin": "Wǒ xiǎng yào liǎng zhāng dān rén chuáng de fáng jiān.",
+      "french": "Je voudrais une chambre avec deux lits séparés.",
+      "english": "I'd like a room with two separate beds.",
+      "spanish": "Quisiera una habitación con dos camas separadas.",
+      "italian": "Vorrei una camera con due letti singoli.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0124",
+      "chinese": "我想要一张大床的房间。",
+      "pinyin": "Wǒ xiǎng yào yī zhāng dà chuáng de fáng jiān.",
+      "french": "Je voudrais une chambre avec un grand lit.",
+      "english": "I'd like a room with one large bed.",
+      "spanish": "Quisiera una habitación con una cama grande.",
+      "italian": "Vorrei una camera con un letto matrimoniale.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0125",
+      "chinese": "房费包含早餐吗？",
+      "pinyin": "Fáng fèi bāo hán zǎo cān ma?",
+      "french": "Le petit-déjeuner est-il inclus ?",
+      "english": "Is breakfast included?",
+      "spanish": "¿Está incluido el desayuno?",
+      "italian": "La colazione è inclusa?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0126",
+      "chinese": "早餐几点开始？",
+      "pinyin": "Zǎo cān jǐ diǎn kāi shǐ?",
+      "french": "À quelle heure commence le petit-déjeuner ?",
+      "english": "What time does breakfast start?",
+      "spanish": "¿A qué hora empieza el desayuno?",
+      "italian": "A che ora inizia la colazione?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0127",
+      "chinese": "在哪里吃早餐？",
+      "pinyin": "Zài nǎ lǐ chī zǎo cān?",
+      "french": "Où prend-on le petit-déjeuner ?",
+      "english": "Where is breakfast served?",
+      "spanish": "¿Dónde se desayuna?",
+      "italian": "Dove si fa colazione?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0128",
+      "chinese": "可以帮我寄存行李吗？",
+      "pinyin": "Kě yǐ bāng wǒ jì cún xíng lǐ ma?",
+      "french": "Pouvez-vous garder mes bagages ?",
+      "english": "Could you store my luggage?",
+      "spanish": "¿Pueden guardarme el equipaje?",
+      "italian": "Potete custodire i miei bagagli?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0129",
+      "chinese": "需要交押金吗？",
+      "pinyin": "Xū yào jiāo yā jīn ma?",
+      "french": "Y a-t-il un dépôt de garantie ?",
+      "english": "Is a security deposit required?",
+      "spanish": "¿Hay que dejar una fianza?",
+      "italian": "È richiesta una cauzione?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0130",
+      "chinese": "押金什么时候退？",
+      "pinyin": "Yā jīn shén me shí hou tuì?",
+      "french": "Quand le dépôt sera-t-il remboursé ?",
+      "english": "When will the deposit be refunded?",
+      "spanish": "¿Cuándo se devuelve la fianza?",
+      "italian": "Quando verrà rimborsata la cauzione?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0131",
+      "chinese": "我的房卡不能用。",
+      "pinyin": "Wǒ de fáng kǎ bù néng yòng.",
+      "french": "Ma carte de chambre ne fonctionne pas.",
+      "english": "My room key card doesn't work.",
+      "spanish": "La tarjeta de mi habitación no funciona.",
+      "italian": "La tessera della mia camera non funziona.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0132",
+      "chinese": "没有热水。",
+      "pinyin": "Méi yǒu rè shuǐ.",
+      "french": "Il n'y a pas d'eau chaude.",
+      "english": "There is no hot water.",
+      "spanish": "No hay agua caliente.",
+      "italian": "Non c'è acqua calda.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0133",
+      "chinese": "空调坏了。",
+      "pinyin": "Kōng tiáo huài le.",
+      "french": "La climatisation ne fonctionne pas.",
+      "english": "The air conditioning doesn't work.",
+      "spanish": "El aire acondicionado no funciona.",
+      "italian": "L'aria condizionata non funziona.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0134",
+      "chinese": "房间里有烟味。",
+      "pinyin": "Fáng jiān lǐ yǒu yān wèi.",
+      "french": "La chambre sent la cigarette.",
+      "english": "The room smells of cigarette smoke.",
+      "spanish": "La habitación huele a tabaco.",
+      "italian": "La camera puzza di fumo.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0135",
+      "chinese": "可以换房间吗？",
+      "pinyin": "Kě yǐ huàn fáng jiān ma?",
+      "french": "Puis-je changer de chambre ?",
+      "english": "Can I change rooms?",
+      "spanish": "¿Puedo cambiar de habitación?",
+      "italian": "Posso cambiare camera?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0136",
+      "chinese": "可以打扫一下房间吗？",
+      "pinyin": "Kě yǐ dǎ sǎo yī xià fáng jiān ma?",
+      "french": "Pouvez-vous nettoyer la chambre ?",
+      "english": "Could you clean the room?",
+      "spanish": "¿Pueden limpiar la habitación?",
+      "italian": "Potete pulire la camera?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0137",
+      "chinese": "我需要一条干净的毛巾。",
+      "pinyin": "Wǒ xū yào yī tiáo gān jìng de máo jīn.",
+      "french": "J'ai besoin d'une serviette propre.",
+      "english": "I need a clean towel.",
+      "spanish": "Necesito una toalla limpia.",
+      "italian": "Ho bisogno di un asciugamano pulito.",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0138",
+      "chinese": "有洗衣机吗？",
+      "pinyin": "Yǒu xǐ yī jī ma?",
+      "french": "Y a-t-il un lave-linge ?",
+      "english": "Is there a washing machine?",
+      "spanish": "¿Hay una lavadora?",
+      "italian": "C'è una lavatrice?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0139",
+      "chinese": "在哪里可以洗衣服？",
+      "pinyin": "Zài nǎ lǐ kě yǐ xǐ yī fu?",
+      "french": "Où puis-je faire laver mes vêtements ?",
+      "english": "Where can I have my clothes washed?",
+      "spanish": "¿Dónde puedo lavar mi ropa?",
+      "italian": "Dove posso far lavare i vestiti?",
+      "categoryId": "hotel",
+      "keywords": [
+        "Hôtel"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0140",
+      "chinese": "麻烦安排两个人的座位。",
+      "pinyin": "Má fan ān pái liǎng ge rén de zuò wèi.",
+      "french": "Une table pour deux, s'il vous plaît.",
+      "english": "A table for two, please.",
+      "spanish": "Una mesa para dos, por favor.",
+      "italian": "Un tavolo per due, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0141",
+      "chinese": "现在有空桌吗？",
+      "pinyin": "Xiàn zài yǒu kōng zhuō ma?",
+      "french": "Y a-t-il une table libre ?",
+      "english": "Is there a free table?",
+      "spanish": "¿Hay una mesa libre?",
+      "italian": "C'è un tavolo libero?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0142",
+      "chinese": "要等多久？",
+      "pinyin": "Yào děng duō jiǔ?",
+      "french": "Combien de temps faut-il attendre ?",
+      "english": "How long is the wait?",
+      "spanish": "¿Cuánto hay que esperar?",
+      "italian": "Quanto bisogna aspettare?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "menu",
+      "chinese": "可以给我看一下菜单吗？",
+      "pinyin": "Kě yǐ gěi wǒ kàn yī xià cài dān ma?",
+      "french": "Puis-je voir le menu ?",
+      "english": "Can I see the menu?",
+      "spanish": "¿Puedo ver la carta?",
+      "italian": "Posso vedere il menu?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0144",
+      "chinese": "有英文菜单吗？",
+      "pinyin": "Yǒu yīng wén cài dān ma?",
+      "french": "Avez-vous un menu en anglais ?",
+      "english": "Do you have an English menu?",
+      "spanish": "¿Tienen una carta en inglés?",
+      "italian": "Avete un menu in inglese?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0145",
+      "chinese": "有纸质菜单吗？",
+      "pinyin": "Yǒu zhǐ zhì cài dān ma?",
+      "french": "Avez-vous un menu papier ?",
+      "english": "Do you have a paper menu?",
+      "spanish": "¿Tienen una carta en papel?",
+      "italian": "Avete un menu cartaceo?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0146",
+      "chinese": "我没法扫码点餐。",
+      "pinyin": "Wǒ méi fǎ sǎo mǎ diǎn cān.",
+      "french": "Je n'arrive pas à commander avec le QR code.",
+      "english": "I can't order using the QR code.",
+      "spanish": "No consigo pedir con el código QR.",
+      "italian": "Non riesco a ordinare con il codice QR.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0147",
+      "chinese": "可以帮我点餐吗？",
+      "pinyin": "Kě yǐ bāng wǒ diǎn cān ma?",
+      "french": "Pouvez-vous m'aider à commander ?",
+      "english": "Could you help me order?",
+      "spanish": "¿Puede ayudarme a pedir?",
+      "italian": "Può aiutarmi a ordinare?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0148",
+      "chinese": "我想要这道菜。",
+      "pinyin": "Wǒ xiǎng yào zhè dào cài.",
+      "french": "Je voudrais ce plat.",
+      "english": "I'd like this dish.",
+      "spanish": "Quisiera este plato.",
+      "italian": "Vorrei questo piatto.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0149",
+      "chinese": "请给我一份这个。",
+      "pinyin": "Qǐng gěi wǒ yī fèn zhè ge.",
+      "french": "Une portion de ceci, s'il vous plaît.",
+      "english": "One portion of this, please.",
+      "spanish": "Una ración de esto, por favor.",
+      "italian": "Una porzione di questo, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0150",
+      "chinese": "您推荐什么菜？",
+      "pinyin": "Nín tuī jiàn shén me cài?",
+      "french": "Que me conseillez-vous ?",
+      "english": "Which dish do you recommend?",
+      "spanish": "¿Qué plato me recomienda?",
+      "italian": "Quale piatto mi consiglia?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0151",
+      "chinese": "你们有什么特色菜？",
+      "pinyin": "Nǐ men yǒu shén me tè sè cài?",
+      "french": "Quelle est votre spécialité ?",
+      "english": "What is your specialty?",
+      "spanish": "¿Cuál es su especialidad?",
+      "italian": "Qual è la vostra specialità?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0152",
+      "chinese": "这道菜里面有什么？",
+      "pinyin": "Zhè dào cài lǐ miàn yǒu shén me?",
+      "french": "Qu'y a-t-il dans ce plat ?",
+      "english": "What is in this dish?",
+      "spanish": "¿Qué lleva este plato?",
+      "italian": "Cosa c'è in questo piatto?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0153",
+      "chinese": "这道菜辣吗？",
+      "pinyin": "Zhè dào cài là ma?",
+      "french": "Ce plat est-il pimenté ?",
+      "english": "Is this dish spicy?",
+      "spanish": "¿Este plato pica?",
+      "italian": "Questo piatto è piccante?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "no-spice",
+      "chinese": "请不要放辣椒。",
+      "pinyin": "Qǐng bù yào fàng là jiāo.",
+      "french": "Sans piment, s'il vous plaît.",
+      "english": "No chili, please.",
+      "spanish": "Sin chile, por favor.",
+      "italian": "Senza peperoncino, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons",
+        "épicé",
+        "spicy",
+        "picante",
+        "piccante"
+      ],
+      "favorite": true,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0155",
+      "chinese": "微辣就好。",
+      "pinyin": "Wēi là jiù hǎo.",
+      "french": "Un peu pimenté seulement.",
+      "english": "Only mildly spicy.",
+      "spanish": "Solo un poco picante.",
+      "italian": "Solo leggermente piccante.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0156",
+      "chinese": "请不要放香菜。",
+      "pinyin": "Qǐng bù yào fàng xiāng cài.",
+      "french": "Sans coriandre, s'il vous plaît.",
+      "english": "No cilantro, please.",
+      "spanish": "Sin cilantro, por favor.",
+      "italian": "Senza coriandolo, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0157",
+      "chinese": "请少放盐。",
+      "pinyin": "Qǐng shǎo fàng yán.",
+      "french": "Moins de sel, s'il vous plaît.",
+      "english": "Less salt, please.",
+      "spanish": "Menos sal, por favor.",
+      "italian": "Meno sale, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0158",
+      "chinese": "请少放油。",
+      "pinyin": "Qǐng shǎo fàng yóu.",
+      "french": "Moins d'huile, s'il vous plaît.",
+      "english": "Less oil, please.",
+      "spanish": "Menos aceite, por favor.",
+      "italian": "Meno olio, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0159",
+      "chinese": "请把酱汁单独放。",
+      "pinyin": "Qǐng bǎ jiàng zhī dān dú fàng.",
+      "french": "La sauce à part, s'il vous plaît.",
+      "english": "The sauce on the side, please.",
+      "spanish": "La salsa aparte, por favor.",
+      "italian": "La salsa a parte, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0160",
+      "chinese": "请给我一碗米饭。",
+      "pinyin": "Qǐng gěi wǒ yī wǎn mǐ fàn.",
+      "french": "Un bol de riz, s'il vous plaît.",
+      "english": "A bowl of rice, please.",
+      "spanish": "Un cuenco de arroz, por favor.",
+      "italian": "Una ciotola di riso, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0161",
+      "chinese": "请给我一份面条。",
+      "pinyin": "Qǐng gěi wǒ yī fèn miàn tiáo.",
+      "french": "Une portion de nouilles, s'il vous plaît.",
+      "english": "A portion of noodles, please.",
+      "spanish": "Una ración de fideos, por favor.",
+      "italian": "Una porzione di noodles, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0162",
+      "chinese": "请给我一瓶水。",
+      "pinyin": "Qǐng gěi wǒ yī píng shuǐ.",
+      "french": "Une bouteille d'eau, s'il vous plaît.",
+      "english": "A bottle of water, please.",
+      "spanish": "Una botella de agua, por favor.",
+      "italian": "Una bottiglia d'acqua, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0163",
+      "chinese": "请给我常温的水。",
+      "pinyin": "Qǐng gěi wǒ cháng wēn de shuǐ.",
+      "french": "De l'eau à température ambiante, s'il vous plaît.",
+      "english": "Room-temperature water, please.",
+      "spanish": "Agua a temperatura ambiente, por favor.",
+      "italian": "Acqua a temperatura ambiente, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0164",
+      "chinese": "请给我热水。",
+      "pinyin": "Qǐng gěi wǒ rè shuǐ.",
+      "french": "De l'eau chaude, s'il vous plaît.",
+      "english": "Hot water, please.",
+      "spanish": "Agua caliente, por favor.",
+      "italian": "Acqua calda, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0165",
+      "chinese": "请不要加冰。",
+      "pinyin": "Qǐng bù yào jiā bīng.",
+      "french": "Sans glaçons, s'il vous plaît.",
+      "english": "No ice, please.",
+      "spanish": "Sin hielo, por favor.",
+      "italian": "Senza ghiaccio, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0166",
+      "chinese": "请不要加糖。",
+      "pinyin": "Qǐng bù yào jiā táng.",
+      "french": "Sans sucre ajouté, s'il vous plaît.",
+      "english": "No added sugar, please.",
+      "spanish": "Sin azúcar añadido, por favor.",
+      "italian": "Senza zucchero aggiunto, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0167",
+      "chinese": "请给我一杯不加奶的咖啡。",
+      "pinyin": "Qǐng gěi wǒ yī bēi bù jiā nǎi de kā fēi.",
+      "french": "Un café sans lait, s'il vous plaît.",
+      "english": "A coffee without milk, please.",
+      "spanish": "Un café sin leche, por favor.",
+      "italian": "Un caffè senza latte, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0168",
+      "chinese": "请给我一杯茶。",
+      "pinyin": "Qǐng gěi wǒ yī bēi chá.",
+      "french": "Un thé, s'il vous plaît.",
+      "english": "A tea, please.",
+      "spanish": "Un té, por favor.",
+      "italian": "Un tè, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0169",
+      "chinese": "请给我一瓶啤酒。",
+      "pinyin": "Qǐng gěi wǒ yī píng pí jiǔ.",
+      "french": "Une bière, s'il vous plaît.",
+      "english": "A beer, please.",
+      "spanish": "Una cerveza, por favor.",
+      "italian": "Una birra, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0170",
+      "chinese": "请给我一把叉子。",
+      "pinyin": "Qǐng gěi wǒ yī bǎ chā zi.",
+      "french": "Une fourchette, s'il vous plaît.",
+      "english": "A fork, please.",
+      "spanish": "Un tenedor, por favor.",
+      "italian": "Una forchetta, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0171",
+      "chinese": "请给我一把勺子。",
+      "pinyin": "Qǐng gěi wǒ yī bǎ sháo zi.",
+      "french": "Une cuillère, s'il vous plaît.",
+      "english": "A spoon, please.",
+      "spanish": "Una cuchara, por favor.",
+      "italian": "Un cucchiaio, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0172",
+      "chinese": "请给我一些纸巾。",
+      "pinyin": "Qǐng gěi wǒ yī xiē zhǐ jīn.",
+      "french": "Des serviettes en papier, s'il vous plaît.",
+      "english": "Paper napkins, please.",
+      "spanish": "Servilletas de papel, por favor.",
+      "italian": "Tovaglioli di carta, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0173",
+      "chinese": "在这里吃。",
+      "pinyin": "Zài zhè lǐ chī.",
+      "french": "Sur place.",
+      "english": "To eat here.",
+      "spanish": "Para comer aquí.",
+      "italian": "Da mangiare qui.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0174",
+      "chinese": "打包带走。",
+      "pinyin": "Dǎ bāo dài zǒu.",
+      "french": "À emporter.",
+      "english": "To take away.",
+      "spanish": "Para llevar.",
+      "italian": "Da asporto.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0175",
+      "chinese": "我已经点过餐了。",
+      "pinyin": "Wǒ yǐ jīng diǎn guò cān le.",
+      "french": "J'ai déjà commandé.",
+      "english": "I've already ordered.",
+      "spanish": "Ya he pedido.",
+      "italian": "Ho già ordinato.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0176",
+      "chinese": "这不是我点的菜。",
+      "pinyin": "Zhè bù shì wǒ diǎn de cài.",
+      "french": "Ce n'est pas le plat que j'ai commandé.",
+      "english": "This isn't the dish I ordered.",
+      "spanish": "Este no es el plato que he pedido.",
+      "italian": "Non è il piatto che ho ordinato.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0177",
+      "chinese": "还少一道菜。",
+      "pinyin": "Hái shǎo yī dào cài.",
+      "french": "Il manque un plat.",
+      "english": "A dish is missing.",
+      "spanish": "Falta un plato.",
+      "italian": "Manca un piatto.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0178",
+      "chinese": "麻烦结一下账。",
+      "pinyin": "Má fan jié yī xià zhàng.",
+      "french": "L'addition, s'il vous plaît.",
+      "english": "The bill, please.",
+      "spanish": "La cuenta, por favor.",
+      "italian": "Il conto, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0179",
+      "chinese": "很好吃。",
+      "pinyin": "Hěn hǎo chī.",
+      "french": "C'est délicieux.",
+      "english": "It's delicious.",
+      "spanish": "Está delicioso.",
+      "italian": "È delizioso.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Restaurant et boissons"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0180",
+      "chinese": "我不吃肉。",
+      "pinyin": "Wǒ bù chī ròu.",
+      "french": "Je ne mange pas de viande.",
+      "english": "I don't eat meat.",
+      "spanish": "No como carne.",
+      "italian": "Non mangio carne.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0181",
+      "chinese": "我不吃鱼和海鲜。",
+      "pinyin": "Wǒ bù chī yú hé hǎi xiān.",
+      "french": "Je ne mange ni poisson ni fruits de mer.",
+      "english": "I don't eat fish or seafood.",
+      "spanish": "No como pescado ni marisco.",
+      "italian": "Non mangio pesce né frutti di mare.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0182",
+      "chinese": "我不吃猪肉。",
+      "pinyin": "Wǒ bù chī zhū ròu.",
+      "french": "Je ne mange pas de porc.",
+      "english": "I don't eat pork.",
+      "spanish": "No como cerdo.",
+      "italian": "Non mangio carne di maiale.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0183",
+      "chinese": "我不吃牛肉。",
+      "pinyin": "Wǒ bù chī niú ròu.",
+      "french": "Je ne mange pas de bœuf.",
+      "english": "I don't eat beef.",
+      "spanish": "No como ternera ni carne de vacuno.",
+      "italian": "Non mangio carne bovina.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0184",
+      "chinese": "我不吃任何动物制品。",
+      "pinyin": "Wǒ bù chī rèn hé dòng wù zhì pǐn.",
+      "french": "Je ne consomme aucun produit d'origine animale.",
+      "english": "I don't eat any animal products.",
+      "spanish": "No consumo ningún producto de origen animal.",
+      "italian": "Non consumo prodotti di origine animale.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0185",
+      "chinese": "里面有肉汤吗？",
+      "pinyin": "Lǐ miàn yǒu ròu tāng ma?",
+      "french": "Y a-t-il du bouillon de viande ?",
+      "english": "Does it contain meat broth?",
+      "spanish": "¿Lleva caldo de carne?",
+      "italian": "Contiene brodo di carne?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0186",
+      "chinese": "这道菜里有猪油吗？",
+      "pinyin": "Zhè dào cài lǐ yǒu zhū yóu ma?",
+      "french": "Y a-t-il du saindoux dans ce plat ?",
+      "english": "Does this dish contain lard?",
+      "spanish": "¿Este plato lleva manteca de cerdo?",
+      "italian": "Questo piatto contiene strutto?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0187",
+      "chinese": "我不喝酒。",
+      "pinyin": "Wǒ bù hē jiǔ.",
+      "french": "Je ne bois pas d'alcool.",
+      "english": "I don't drink alcohol.",
+      "spanish": "No bebo alcohol.",
+      "italian": "Non bevo alcolici.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0188",
+      "chinese": "这道菜里有酒吗？",
+      "pinyin": "Zhè dào cài lǐ yǒu jiǔ ma?",
+      "french": "Y a-t-il de l'alcool dans ce plat ?",
+      "english": "Does this dish contain alcohol?",
+      "spanish": "¿Este plato lleva alcohol?",
+      "italian": "Questo piatto contiene alcol?",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
       ],
       "favorite": false,
       "builtIn": true
     },
     {
       "id": "allergy",
-      "chinese": "我对花生过敏",
-      "pinyin": "Wǒ duì huāshēng guòmǐn",
-      "french": "Je suis allergique aux cacahuètes.",
-      "english": "I am allergic to peanuts.",
+      "chinese": "我对花生过敏。",
+      "pinyin": "Wǒ duì huā shēng guò mǐn.",
+      "french": "Je suis allergique aux arachides.",
+      "english": "I'm allergic to peanuts.",
+      "spanish": "Tengo alergia a los cacahuetes.",
+      "italian": "Sono allergico alle arachidi.",
       "categoryId": "restaurant",
       "keywords": [
-        "allergie",
+        "Alimentation et allergies",
         "cacahuètes",
-        "arachide",
-        "restaurant"
+        "arachide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0190",
+      "chinese": "我对虾过敏。",
+      "pinyin": "Wǒ duì xiā guò mǐn.",
+      "french": "Je suis allergique aux crevettes.",
+      "english": "I'm allergic to shrimp.",
+      "spanish": "Tengo alergia a las gambas.",
+      "italian": "Sono allergico ai gamberi.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0191",
+      "chinese": "我对牛奶过敏。",
+      "pinyin": "Wǒ duì niú nǎi guò mǐn.",
+      "french": "Je suis allergique au lait.",
+      "english": "I'm allergic to milk.",
+      "spanish": "Tengo alergia a la leche.",
+      "italian": "Sono allergico al latte.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0192",
+      "chinese": "我对鸡蛋过敏。",
+      "pinyin": "Wǒ duì jī dàn guò mǐn.",
+      "french": "Je suis allergique aux œufs.",
+      "english": "I'm allergic to eggs.",
+      "spanish": "Tengo alergia a los huevos.",
+      "italian": "Sono allergico alle uova.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0193",
+      "chinese": "我对芝麻过敏。",
+      "pinyin": "Wǒ duì zhī má guò mǐn.",
+      "french": "Je suis allergique au sésame.",
+      "english": "I'm allergic to sesame.",
+      "spanish": "Tengo alergia al sésamo.",
+      "italian": "Sono allergico al sesamo.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0194",
+      "chinese": "我对大豆过敏。",
+      "pinyin": "Wǒ duì dà dòu guò mǐn.",
+      "french": "Je suis allergique au soja.",
+      "english": "I'm allergic to soy.",
+      "spanish": "Tengo alergia a la soja.",
+      "italian": "Sono allergico alla soia.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0195",
+      "chinese": "我对小麦过敏。",
+      "pinyin": "Wǒ duì xiǎo mài guò mǐn.",
+      "french": "Je suis allergique au blé.",
+      "english": "I'm allergic to wheat.",
+      "spanish": "Tengo alergia al trigo.",
+      "italian": "Sono allergico al grano.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0196",
+      "chinese": "我不能吃含麸质的食物。",
+      "pinyin": "Wǒ bù néng chī hán fū zhì de shí wù.",
+      "french": "Je ne peux pas manger de gluten.",
+      "english": "I can't eat gluten.",
+      "spanish": "No puedo comer gluten.",
+      "italian": "Non posso mangiare glutine.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0197",
+      "chinese": "即使少量也会引起过敏。",
+      "pinyin": "Jí shǐ shǎo liàng yě huì yǐn qǐ guò mǐn.",
+      "french": "Même une petite quantité peut provoquer une allergie.",
+      "english": "Even a small amount can cause an allergic reaction.",
+      "spanish": "Incluso una pequeña cantidad puede causar una reacción alérgica.",
+      "italian": "Anche una piccola quantità può causare una reazione allergica.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0198",
+      "chinese": "请跟厨师确认一下食材。",
+      "pinyin": "Qǐng gēn chú shī què rèn yī xià shí cái.",
+      "french": "Merci de vérifier les ingrédients avec le cuisinier.",
+      "english": "Please check the ingredients with the cook.",
+      "spanish": "Confirme los ingredientes con el cocinero, por favor.",
+      "italian": "Verifichi gli ingredienti con il cuoco, per favore.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0199",
+      "chinese": "请用单独的干净厨具做菜。",
+      "pinyin": "Qǐng yòng dān dú de gān jìng chú jù zuò cài.",
+      "french": "Préparez mon plat avec des ustensiles propres séparés.",
+      "english": "Please use separate, clean utensils to prepare my dish.",
+      "spanish": "Prepare mi plato con utensilios limpios y separados.",
+      "italian": "Prepari il mio piatto con utensili puliti e separati.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "Alimentation et allergies"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "price",
+      "chinese": "这个多少钱？",
+      "pinyin": "Zhè ge duō shao qián?",
+      "french": "Combien coûte ceci ?",
+      "english": "How much is this?",
+      "spanish": "¿Cuánto cuesta esto?",
+      "italian": "Quanto costa questo?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": true,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0201",
+      "chinese": "一共多少钱？",
+      "pinyin": "Yī gòng duō shao qián?",
+      "french": "Combien cela fait-il au total ?",
+      "english": "How much is it in total?",
+      "spanish": "¿Cuánto es en total?",
+      "italian": "Quanto fa in totale?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "card-payment",
+      "chinese": "可以用银行卡付款吗？",
+      "pinyin": "Kě yǐ yòng yín háng kǎ fù kuǎn ma?",
+      "french": "Puis-je payer par carte bancaire ?",
+      "english": "Can I pay by bank card?",
+      "spanish": "¿Puedo pagar con tarjeta bancaria?",
+      "italian": "Posso pagare con carta?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0203",
+      "chinese": "可以用境外银行卡吗？",
+      "pinyin": "Kě yǐ yòng jìng wài yín háng kǎ ma?",
+      "french": "Acceptez-vous les cartes étrangères ?",
+      "english": "Do you accept foreign bank cards?",
+      "spanish": "¿Aceptan tarjetas extranjeras?",
+      "italian": "Accettate carte straniere?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0204",
+      "chinese": "可以付现金吗？",
+      "pinyin": "Kě yǐ fù xiàn jīn ma?",
+      "french": "Puis-je payer en espèces ?",
+      "english": "Can I pay in cash?",
+      "spanish": "¿Puedo pagar en efectivo?",
+      "italian": "Posso pagare in contanti?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0205",
+      "chinese": "可以用支付宝付款吗？",
+      "pinyin": "Kě yǐ yòng zhī fù bǎo fù kuǎn ma?",
+      "french": "Puis-je payer avec Alipay ?",
+      "english": "Can I pay with Alipay?",
+      "spanish": "¿Puedo pagar con Alipay?",
+      "italian": "Posso pagare con Alipay?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0206",
+      "chinese": "可以用微信支付吗？",
+      "pinyin": "Kě yǐ yòng wēi xìn zhī fù ma?",
+      "french": "Puis-je payer avec WeChat Pay ?",
+      "english": "Can I pay with WeChat Pay?",
+      "spanish": "¿Puedo pagar con WeChat Pay?",
+      "italian": "Posso pagare con WeChat Pay?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0207",
+      "chinese": "我应该扫哪个二维码？",
+      "pinyin": "Wǒ yīng gāi sǎo nǎ ge èr wéi mǎ?",
+      "french": "Quel QR code dois-je scanner ?",
+      "english": "Which QR code should I scan?",
+      "spanish": "¿Qué código QR debo escanear?",
+      "italian": "Quale codice QR devo scansionare?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0208",
+      "chinese": "需要出示我的付款码吗？",
+      "pinyin": "Xū yào chū shì wǒ de fù kuǎn mǎ ma?",
+      "french": "Dois-je vous montrer mon code de paiement ?",
+      "english": "Should I show you my payment code?",
+      "spanish": "¿Debo mostrarle mi código de pago?",
+      "italian": "Devo mostrarle il mio codice di pagamento?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0209",
+      "chinese": "支付失败了。",
+      "pinyin": "Zhī fù shī bài le.",
+      "french": "Le paiement n'a pas fonctionné.",
+      "english": "The payment failed.",
+      "spanish": "El pago ha fallado.",
+      "italian": "Il pagamento non è riuscito.",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0210",
+      "chinese": "我已经付款了。",
+      "pinyin": "Wǒ yǐ jīng fù kuǎn le.",
+      "french": "J'ai déjà payé.",
+      "english": "I've already paid.",
+      "spanish": "Ya he pagado.",
+      "italian": "Ho già pagato.",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0211",
+      "chinese": "可以查一下付款记录吗？",
+      "pinyin": "Kě yǐ chá yī xià fù kuǎn jì lù ma?",
+      "french": "Pouvez-vous vérifier le paiement ?",
+      "english": "Could you check the payment?",
+      "spanish": "¿Puede comprobar el pago?",
+      "italian": "Può verificare il pagamento?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0212",
+      "chinese": "可以换一种付款方式吗？",
+      "pinyin": "Kě yǐ huàn yī zhǒng fù kuǎn fāng shì ma?",
+      "french": "Puis-je payer autrement ?",
+      "english": "Can I pay another way?",
+      "spanish": "¿Puedo pagar de otra forma?",
+      "italian": "Posso pagare in un altro modo?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0213",
+      "chinese": "可以找零吗？",
+      "pinyin": "Kě yǐ zhǎo líng ma?",
+      "french": "Pouvez-vous me rendre la monnaie ?",
+      "english": "Could you give me my change?",
+      "spanish": "¿Puede darme el cambio?",
+      "italian": "Può darmi il resto?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0214",
+      "chinese": "请给我一张收据。",
+      "pinyin": "Qǐng gěi wǒ yī zhāng shōu jù.",
+      "french": "Un reçu, s'il vous plaît.",
+      "english": "A receipt, please.",
+      "spanish": "Un recibo, por favor.",
+      "italian": "Una ricevuta, per favore.",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0215",
+      "chinese": "可以开发票吗？",
+      "pinyin": "Kě yǐ kāi fā piào ma?",
+      "french": "Pouvez-vous établir une facture fiscale ?",
+      "english": "Could you issue a tax invoice?",
+      "spanish": "¿Puede emitir una factura fiscal?",
+      "italian": "Può emettere una fattura fiscale?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0216",
+      "chinese": "金额不对。",
+      "pinyin": "Jīn é bù duì.",
+      "french": "Le montant n'est pas correct.",
+      "english": "The amount is incorrect.",
+      "spanish": "El importe no es correcto.",
+      "italian": "L'importo non è corretto.",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0217",
+      "chinese": "可以退款吗？",
+      "pinyin": "Kě yǐ tuì kuǎn ma?",
+      "french": "Pouvez-vous me rembourser ?",
+      "english": "Could you give me a refund?",
+      "spanish": "¿Puede devolverme el dinero?",
+      "italian": "Posso avere un rimborso?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0218",
+      "chinese": "退款什么时候到账？",
+      "pinyin": "Tuì kuǎn shén me shí hou dào zhàng?",
+      "french": "Quand le remboursement arrivera-t-il ?",
+      "english": "When will the refund arrive?",
+      "spanish": "¿Cuándo llegará el reembolso?",
+      "italian": "Quando arriverà il rimborso?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0219",
+      "chinese": "有额外费用吗？",
+      "pinyin": "Yǒu é wài fèi yòng ma?",
+      "french": "Y a-t-il des frais supplémentaires ?",
+      "english": "Are there any extra charges?",
+      "spanish": "¿Hay algún cargo adicional?",
+      "italian": "Ci sono costi aggiuntivi?",
+      "categoryId": "payment",
+      "keywords": [
+        "Paiements"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0220",
+      "chinese": "我先看看，谢谢。",
+      "pinyin": "Wǒ xiān kàn kan, xiè xie.",
+      "french": "Je regarde seulement, merci.",
+      "english": "I'm just looking, thank you.",
+      "spanish": "Solo estoy mirando, gracias.",
+      "italian": "Sto solo guardando, grazie.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0221",
+      "chinese": "我想买这个。",
+      "pinyin": "Wǒ xiǎng mǎi zhè ge.",
+      "french": "Je voudrais acheter ceci.",
+      "english": "I'd like to buy this.",
+      "spanish": "Quisiera comprar esto.",
+      "italian": "Vorrei comprare questo.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0222",
+      "chinese": "有小一点的吗？",
+      "pinyin": "Yǒu xiǎo yī diǎn de ma?",
+      "french": "En avez-vous un plus petit ?",
+      "english": "Do you have a smaller one?",
+      "spanish": "¿Tiene uno más pequeño?",
+      "italian": "Ne ha uno più piccolo?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0223",
+      "chinese": "有大一点的吗？",
+      "pinyin": "Yǒu dà yī diǎn de ma?",
+      "french": "En avez-vous un plus grand ?",
+      "english": "Do you have a larger one?",
+      "spanish": "¿Tiene uno más grande?",
+      "italian": "Ne ha uno più grande?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0224",
+      "chinese": "有别的颜色吗？",
+      "pinyin": "Yǒu bié de yán sè ma?",
+      "french": "Avez-vous une autre couleur ?",
+      "english": "Do you have another color?",
+      "spanish": "¿Tiene otro color?",
+      "italian": "Ha un altro colore?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0225",
+      "chinese": "可以试一下吗？",
+      "pinyin": "Kě yǐ shì yī xià ma?",
+      "french": "Puis-je l'essayer ?",
+      "english": "Can I try it on?",
+      "spanish": "¿Puedo probármelo?",
+      "italian": "Posso provarlo?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0226",
+      "chinese": "试衣间在哪里？",
+      "pinyin": "Shì yī jiān zài nǎ lǐ?",
+      "french": "Où est la cabine d'essayage ?",
+      "english": "Where is the fitting room?",
+      "spanish": "¿Dónde está el probador?",
+      "italian": "Dov'è il camerino?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0227",
+      "chinese": "这个尺码不合适。",
+      "pinyin": "Zhè ge chǐ mǎ bù hé shì.",
+      "french": "Cette taille ne me va pas.",
+      "english": "This size doesn't fit me.",
+      "spanish": "Esta talla no me queda bien.",
+      "italian": "Questa taglia non mi va bene.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0228",
+      "chinese": "可以看看别的款式吗？",
+      "pinyin": "Kě yǐ kàn kan bié de kuǎn shì ma?",
+      "french": "Puis-je voir un autre modèle ?",
+      "english": "Can I see another model?",
+      "spanish": "¿Puedo ver otro modelo?",
+      "italian": "Posso vedere un altro modello?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0229",
+      "chinese": "可以便宜一点吗？",
+      "pinyin": "Kě yǐ pián yi yī diǎn ma?",
+      "french": "Pouvez-vous baisser un peu le prix ?",
+      "english": "Could you lower the price a little?",
+      "spanish": "¿Puede bajar un poco el precio?",
+      "italian": "Può abbassare un po' il prezzo?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0230",
+      "chinese": "这个对我来说太贵了。",
+      "pinyin": "Zhè ge duì wǒ lái shuō tài guì le.",
+      "french": "C'est trop cher pour moi.",
+      "english": "It's too expensive for me.",
+      "spanish": "Es demasiado caro para mí.",
+      "italian": "È troppo caro per me.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0231",
+      "chinese": "我只要一个。",
+      "pinyin": "Wǒ zhǐ yào yī ge.",
+      "french": "Je n'en veux qu'un.",
+      "english": "I only want one.",
+      "spanish": "Solo quiero uno.",
+      "italian": "Ne voglio solo uno.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0232",
+      "chinese": "不用袋子，谢谢。",
+      "pinyin": "Bù yòng dài zi, xiè xie.",
+      "french": "Pas de sac, merci.",
+      "english": "No bag, thank you.",
+      "spanish": "Sin bolsa, gracias.",
+      "italian": "Niente sacchetto, grazie.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0233",
+      "chinese": "我需要一个袋子。",
+      "pinyin": "Wǒ xū yào yī ge dài zi.",
+      "french": "J'ai besoin d'un sac.",
+      "english": "I need a bag.",
+      "spanish": "Necesito una bolsa.",
+      "italian": "Ho bisogno di un sacchetto.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0234",
+      "chinese": "这个东西坏了。",
+      "pinyin": "Zhè ge dōng xi huài le.",
+      "french": "Cet article est abîmé.",
+      "english": "This item is damaged.",
+      "spanish": "Este artículo está dañado.",
+      "italian": "Questo articolo è danneggiato.",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0235",
+      "chinese": "可以换货吗？",
+      "pinyin": "Kě yǐ huàn huò ma?",
+      "french": "Puis-je l'échanger ?",
+      "english": "Can I exchange it?",
+      "spanish": "¿Puedo cambiarlo?",
+      "italian": "Posso cambiarlo?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0236",
+      "chinese": "这个可以退货吗？",
+      "pinyin": "Zhè ge kě yǐ tuì huò ma?",
+      "french": "Puis-je rendre cet article ?",
+      "english": "Can I return this item?",
+      "spanish": "¿Puedo devolver este artículo?",
+      "italian": "Posso restituire questo articolo?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0237",
+      "chinese": "保质期到什么时候？",
+      "pinyin": "Bǎo zhì qī dào shén me shí hou?",
+      "french": "Quelle est la date de péremption ?",
+      "english": "What is the expiration date?",
+      "spanish": "¿Cuál es la fecha de caducidad?",
+      "italian": "Qual è la data di scadenza?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0238",
+      "chinese": "可以看一下配料表吗？",
+      "pinyin": "Kě yǐ kàn yī xià pèi liào biǎo ma?",
+      "french": "Puis-je voir la liste des ingrédients ?",
+      "english": "Can I see the ingredients list?",
+      "spanish": "¿Puedo ver la lista de ingredientes?",
+      "italian": "Posso vedere l'elenco degli ingredienti?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0239",
+      "chinese": "哪里可以买插头转换器？",
+      "pinyin": "Nǎ lǐ kě yǐ mǎi chā tóu zhuǎn huàn qì?",
+      "french": "Où puis-je acheter un adaptateur de prise ?",
+      "english": "Where can I buy a plug adapter?",
+      "spanish": "¿Dónde puedo comprar un adaptador de enchufe?",
+      "italian": "Dove posso comprare un adattatore per la presa?",
+      "categoryId": "shopping",
+      "keywords": [
+        "Achats"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0240",
+      "chinese": "无线网络的密码是什么？",
+      "pinyin": "Wú xiàn wǎng luò de mì mǎ shì shén me?",
+      "french": "Quel est le mot de passe du Wi-Fi ?",
+      "english": "What is the Wi-Fi password?",
+      "spanish": "¿Cuál es la contraseña del wifi?",
+      "italian": "Qual è la password del Wi-Fi?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0241",
+      "chinese": "我连不上无线网络。",
+      "pinyin": "Wǒ lián bu shàng wú xiàn wǎng luò.",
+      "french": "Je n'arrive pas à me connecter au Wi-Fi.",
+      "english": "I can't connect to the Wi-Fi.",
+      "spanish": "No consigo conectarme al wifi.",
+      "italian": "Non riesco a connettermi al Wi-Fi.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0242",
+      "chinese": "我的手机没电了。",
+      "pinyin": "Wǒ de shǒu jī méi diàn le.",
+      "french": "Mon téléphone n'a plus de batterie.",
+      "english": "My phone battery is dead.",
+      "spanish": "Mi teléfono se ha quedado sin batería.",
+      "italian": "Il mio telefono è scarico.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0243",
+      "chinese": "我可以在这里给手机充电吗？",
+      "pinyin": "Wǒ kě yǐ zài zhè lǐ gěi shǒu jī chōng diàn ma?",
+      "french": "Puis-je charger mon téléphone ici ?",
+      "english": "Can I charge my phone here?",
+      "spanish": "¿Puedo cargar mi teléfono aquí?",
+      "italian": "Posso caricare il telefono qui?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0244",
+      "chinese": "有充电器吗？",
+      "pinyin": "Yǒu chōng diàn qì ma?",
+      "french": "Avez-vous un chargeur ?",
+      "english": "Do you have a charger?",
+      "spanish": "¿Tiene un cargador?",
+      "italian": "Ha un caricabatterie?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0245",
+      "chinese": "有电源插座吗？",
+      "pinyin": "Yǒu diàn yuán chā zuò ma?",
+      "french": "Y a-t-il une prise électrique ?",
+      "english": "Is there a power outlet?",
+      "spanish": "¿Hay un enchufe?",
+      "italian": "C'è una presa di corrente?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0246",
+      "chinese": "我想买手机卡。",
+      "pinyin": "Wǒ xiǎng mǎi shǒu jī kǎ.",
+      "french": "Je voudrais acheter une carte SIM.",
+      "english": "I'd like to buy a SIM card.",
+      "spanish": "Quisiera comprar una tarjeta SIM.",
+      "italian": "Vorrei comprare una scheda SIM.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0247",
+      "chinese": "这张卡有流量吗？",
+      "pinyin": "Zhè zhāng kǎ yǒu liú liàng ma?",
+      "french": "Cette carte inclut-elle de l'Internet mobile ?",
+      "english": "Does this card include mobile data?",
+      "spanish": "¿Esta tarjeta incluye datos móviles?",
+      "italian": "Questa scheda include dati mobili?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0248",
+      "chinese": "这个套餐可以用几天？",
+      "pinyin": "Zhè ge tào cān kě yǐ yòng jǐ tiān?",
+      "french": "Combien de jours cette offre est-elle valable ?",
+      "english": "How many days is this plan valid for?",
+      "spanish": "¿Cuántos días dura esta tarifa?",
+      "italian": "Per quanti giorni è valido questo piano?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0249",
+      "chinese": "我收不到验证码。",
+      "pinyin": "Wǒ shōu bu dào yàn zhèng mǎ.",
+      "french": "Je ne reçois pas le code de vérification.",
+      "english": "I'm not receiving the verification code.",
+      "spanish": "No recibo el código de verificación.",
+      "italian": "Non ricevo il codice di verifica.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0250",
+      "chinese": "我没有中国手机号。",
+      "pinyin": "Wǒ méi yǒu zhōng guó shǒu jī hào.",
+      "french": "Je n'ai pas de numéro de téléphone chinois.",
+      "english": "I don't have a Chinese phone number.",
+      "spanish": "No tengo un número de teléfono chino.",
+      "italian": "Non ho un numero di telefono cinese.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0251",
+      "chinese": "可以用境外手机号吗？",
+      "pinyin": "Kě yǐ yòng jìng wài shǒu jī hào ma?",
+      "french": "Puis-je utiliser mon numéro étranger ?",
+      "english": "Can I use my foreign phone number?",
+      "spanish": "¿Puedo usar mi número extranjero?",
+      "italian": "Posso usare il mio numero straniero?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0252",
+      "chinese": "这个应用打不开。",
+      "pinyin": "Zhè ge yìng yòng dǎ bu kāi.",
+      "french": "Cette application ne s'ouvre pas.",
+      "english": "This app won't open.",
+      "spanish": "Esta aplicación no se abre.",
+      "italian": "Questa app non si apre.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0253",
+      "chinese": "可以把地址发给我吗？",
+      "pinyin": "Kě yǐ bǎ dì zhǐ fā gěi wǒ ma?",
+      "french": "Pouvez-vous m'envoyer l'adresse ?",
+      "english": "Could you send me the address?",
+      "spanish": "¿Puede enviarme la dirección?",
+      "italian": "Può mandarmi l'indirizzo?",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0254",
+      "chinese": "我现在上不了网。",
+      "pinyin": "Wǒ xiàn zài shàng bu liǎo wǎng.",
+      "french": "Je n'ai pas de connexion Internet.",
+      "english": "I have no Internet connection.",
+      "spanish": "No tengo conexión a Internet.",
+      "italian": "Non ho connessione a Internet.",
+      "categoryId": "other",
+      "keywords": [
+        "Téléphone et connexion"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0255",
+      "chinese": "售票处在哪里？",
+      "pinyin": "Shòu piào chù zài nǎ lǐ?",
+      "french": "Où est la billetterie ?",
+      "english": "Where is the ticket office?",
+      "spanish": "¿Dónde está la taquilla?",
+      "italian": "Dov'è la biglietteria?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0256",
+      "chinese": "门票多少钱？",
+      "pinyin": "Mén piào duō shao qián?",
+      "french": "Combien coûte l'entrée ?",
+      "english": "How much is admission?",
+      "spanish": "¿Cuánto cuesta la entrada?",
+      "italian": "Quanto costa l'ingresso?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0257",
+      "chinese": "需要提前预约吗？",
+      "pinyin": "Xū yào tí qián yù yuē ma?",
+      "french": "Faut-il réserver à l'avance ?",
+      "english": "Do I need to book in advance?",
+      "spanish": "¿Hay que reservar con antelación?",
+      "italian": "Bisogna prenotare in anticipo?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0258",
+      "chinese": "可以现场买票吗？",
+      "pinyin": "Kě yǐ xiàn chǎng mǎi piào ma?",
+      "french": "Puis-je acheter un billet sur place ?",
+      "english": "Can I buy a ticket here?",
+      "spanish": "¿Puedo comprar una entrada aquí?",
+      "italian": "Posso comprare un biglietto sul posto?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0259",
+      "chinese": "你们几点开门？",
+      "pinyin": "Nǐ men jǐ diǎn kāi mén?",
+      "french": "À quelle heure ouvrez-vous ?",
+      "english": "What time do you open?",
+      "spanish": "¿A qué hora abren?",
+      "italian": "A che ora aprite?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0260",
+      "chinese": "你们几点关门？",
+      "pinyin": "Nǐ men jǐ diǎn guān mén?",
+      "french": "À quelle heure fermez-vous ?",
+      "english": "What time do you close?",
+      "spanish": "¿A qué hora cierran?",
+      "italian": "A che ora chiudete?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0261",
+      "chinese": "参观大概要多久？",
+      "pinyin": "Cān guān dà gài yào duō jiǔ?",
+      "french": "Combien de temps dure la visite ?",
+      "english": "How long does the visit take?",
+      "spanish": "¿Cuánto dura la visita?",
+      "italian": "Quanto dura la visita?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0262",
+      "chinese": "可以拍照吗？",
+      "pinyin": "Kě yǐ pāi zhào ma?",
+      "french": "Puis-je prendre des photos ?",
+      "english": "Can I take photos?",
+      "spanish": "¿Puedo hacer fotos?",
+      "italian": "Posso fare foto?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0263",
+      "chinese": "可以帮我们拍张照吗？",
+      "pinyin": "Kě yǐ bāng wǒ men pāi zhāng zhào ma?",
+      "french": "Pouvez-vous nous prendre en photo ?",
+      "english": "Could you take a photo of us?",
+      "spanish": "¿Puede hacernos una foto?",
+      "italian": "Può farci una foto?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0264",
+      "chinese": "有法语语音导览吗？",
+      "pinyin": "Yǒu fǎ yǔ yǔ yīn dǎo lǎn ma?",
+      "french": "Y a-t-il un audioguide en français ?",
+      "english": "Is there an audio guide in French?",
+      "spanish": "¿Hay una audioguía en francés?",
+      "italian": "C'è un'audioguida in francese?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0265",
+      "chinese": "有英语导游讲解吗？",
+      "pinyin": "Yǒu yīng yǔ dǎo yóu jiǎng jiě ma?",
+      "french": "Y a-t-il une visite guidée en anglais ?",
+      "english": "Is there a guided tour in English?",
+      "spanish": "¿Hay una visita guiada en inglés?",
+      "italian": "C'è una visita guidata in inglese?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0266",
+      "chinese": "儿童有优惠票吗？",
+      "pinyin": "Ér tóng yǒu yōu huì piào ma?",
+      "french": "Les enfants ont-ils un tarif réduit ?",
+      "english": "Is there a reduced price for children?",
+      "spanish": "¿Hay una tarifa reducida para niños?",
+      "italian": "C'è una tariffa ridotta per i bambini?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0267",
+      "chinese": "可以凭护照入场吗？",
+      "pinyin": "Kě yǐ píng hù zhào rù chǎng ma?",
+      "french": "Puis-je entrer avec mon passeport ?",
+      "english": "Can I enter with my passport?",
+      "spanish": "¿Puedo entrar con mi pasaporte?",
+      "italian": "Posso entrare con il passaporto?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0268",
+      "chinese": "这张票可以再次入场吗？",
+      "pinyin": "Zhè zhāng piào kě yǐ zài cì rù chǎng ma?",
+      "french": "Le billet permet-il de rentrer une seconde fois ?",
+      "english": "Does the ticket allow re-entry?",
+      "spanish": "¿La entrada permite volver a entrar?",
+      "italian": "Il biglietto permette di rientrare?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0269",
+      "chinese": "参观从哪里开始？",
+      "pinyin": "Cān guān cóng nǎ lǐ kāi shǐ?",
+      "french": "Où commence la visite ?",
+      "english": "Where does the visit start?",
+      "spanish": "¿Dónde empieza la visita?",
+      "italian": "Dove inizia la visita?",
+      "categoryId": "tourism",
+      "keywords": [
+        "Visites et loisirs"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0270",
+      "chinese": "哪里可以坐一会儿？",
+      "pinyin": "Nǎ lǐ kě yǐ zuò yī huìr?",
+      "french": "Où puis-je m'asseoir un moment ?",
+      "english": "Where can I sit for a moment?",
+      "spanish": "¿Dónde puedo sentarme un momento?",
+      "italian": "Dove posso sedermi un momento?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0271",
+      "chinese": "可以给我的水瓶装水吗？",
+      "pinyin": "Kě yǐ gěi wǒ de shuǐ píng zhuāng shuǐ ma?",
+      "french": "Puis-je remplir ma gourde ?",
+      "english": "Can I refill my water bottle?",
+      "spanish": "¿Puedo rellenar mi botella de agua?",
+      "italian": "Posso riempire la borraccia?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0272",
+      "chinese": "这水可以直接喝吗？",
+      "pinyin": "Zhè shuǐ kě yǐ zhí jiē hē ma?",
+      "french": "Cette eau est-elle potable ?",
+      "english": "Is this water safe to drink?",
+      "spanish": "¿Esta agua es potable?",
+      "italian": "Quest'acqua è potabile?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0273",
+      "chinese": "哪里可以买卫生纸？",
+      "pinyin": "Nǎ lǐ kě yǐ mǎi wèi shēng zhǐ?",
+      "french": "Où puis-je acheter du papier toilette ?",
+      "english": "Where can I buy toilet paper?",
+      "spanish": "¿Dónde puedo comprar papel higiénico?",
+      "italian": "Dove posso comprare la carta igienica?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0274",
+      "chinese": "有坐便式厕所吗？",
+      "pinyin": "Yǒu zuò biàn shì cè suǒ ma?",
+      "french": "Y a-t-il des toilettes avec une cuvette ?",
+      "english": "Is there a sit-down toilet?",
+      "spanish": "¿Hay un baño con inodoro de asiento?",
+      "italian": "C'è un bagno con il water?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0275",
+      "chinese": "哪里可以给婴儿换尿布？",
+      "pinyin": "Nǎ lǐ kě yǐ gěi yīng ér huàn niào bù?",
+      "french": "Où peut-on changer un bébé ?",
+      "english": "Where can I change a baby?",
+      "spanish": "¿Dónde puedo cambiar a un bebé?",
+      "italian": "Dove posso cambiare un bambino?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0276",
+      "chinese": "有不用走台阶的通道吗？",
+      "pinyin": "Yǒu bù yòng zǒu tái jiē de tōng dào ma?",
+      "french": "Y a-t-il un accès sans marches ?",
+      "english": "Is there step-free access?",
+      "spanish": "¿Hay un acceso sin escalones?",
+      "italian": "C'è un accesso senza gradini?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0277",
+      "chinese": "可以帮我拿一下行李箱吗？",
+      "pinyin": "Kě yǐ bāng wǒ ná yī xià xíng lǐ xiāng ma?",
+      "french": "Pouvez-vous m'aider avec ma valise ?",
+      "english": "Could you help me with my suitcase?",
+      "spanish": "¿Puede ayudarme con la maleta?",
+      "italian": "Può aiutarmi con la valigia?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0278",
+      "chinese": "我需要休息一下。",
+      "pinyin": "Wǒ xū yào xiū xi yī xià.",
+      "french": "J'ai besoin de me reposer.",
+      "english": "I need to rest.",
+      "spanish": "Necesito descansar.",
+      "italian": "Ho bisogno di riposare.",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0279",
+      "chinese": "哪里可以买雨伞？",
+      "pinyin": "Nǎ lǐ kě yǐ mǎi yǔ sǎn?",
+      "french": "Où puis-je acheter un parapluie ?",
+      "english": "Where can I buy an umbrella?",
+      "spanish": "¿Dónde puedo comprar un paraguas?",
+      "italian": "Dove posso comprare un ombrello?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0280",
+      "chinese": "哪里可以打印这份文件？",
+      "pinyin": "Nǎ lǐ kě yǐ dǎ yìn zhè fèn wén jiàn?",
+      "french": "Où puis-je imprimer ce document ?",
+      "english": "Where can I print this document?",
+      "spanish": "¿Dónde puedo imprimir este documento?",
+      "italian": "Dove posso stampare questo documento?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0281",
+      "chinese": "这个可以在这里放一会儿吗？",
+      "pinyin": "Zhè ge kě yǐ zài zhè lǐ fàng yī huìr ma?",
+      "french": "Puis-je laisser ceci ici un moment ?",
+      "english": "Can I leave this here for a moment?",
+      "spanish": "¿Puedo dejar esto aquí un momento?",
+      "italian": "Posso lasciare questo qui un momento?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0282",
+      "chinese": "请不要在这里吸烟。",
+      "pinyin": "Qǐng bù yào zài zhè lǐ xī yān.",
+      "french": "Veuillez ne pas fumer ici.",
+      "english": "Please don't smoke here.",
+      "spanish": "No fume aquí, por favor.",
+      "italian": "Non fumi qui, per favore.",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0283",
+      "chinese": "我在找洗衣店。",
+      "pinyin": "Wǒ zài zhǎo xǐ yī diàn.",
+      "french": "Je cherche une blanchisserie.",
+      "english": "I'm looking for a laundry.",
+      "spanish": "Busco una lavandería.",
+      "italian": "Cerco una lavanderia.",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0284",
+      "chinese": "什么时候可以取衣服？",
+      "pinyin": "Shén me shí hou kě yǐ qǔ yī fu?",
+      "french": "Quand pourrai-je récupérer mon linge ?",
+      "english": "When can I collect my laundry?",
+      "spanish": "¿Cuándo puedo recoger mi ropa?",
+      "italian": "Quando posso ritirare il bucato?",
+      "categoryId": "other",
+      "keywords": [
+        "Besoins quotidiens"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "help",
+      "chinese": "我需要帮助。",
+      "pinyin": "Wǒ xū yào bāng zhù.",
+      "french": "J'ai besoin d'aide.",
+      "english": "I need help.",
+      "spanish": "Necesito ayuda.",
+      "italian": "Ho bisogno di aiuto.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0286",
+      "chinese": "情况紧急。",
+      "pinyin": "Qíng kuàng jǐn jí.",
+      "french": "C'est urgent.",
+      "english": "It's urgent.",
+      "spanish": "Es urgente.",
+      "italian": "È urgente.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0287",
+      "chinese": "请叫救护车。",
+      "pinyin": "Qǐng jiào jiù hù chē.",
+      "french": "Appelez une ambulance, s'il vous plaît.",
+      "english": "Please call an ambulance.",
+      "spanish": "Llame a una ambulancia, por favor.",
+      "italian": "Chiami un'ambulanza, per favore.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0288",
+      "chinese": "请报警。",
+      "pinyin": "Qǐng bào jǐng.",
+      "french": "Appelez la police, s'il vous plaît.",
+      "english": "Please call the police.",
+      "spanish": "Llame a la policía, por favor.",
+      "italian": "Chiami la polizia, per favore.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0289",
+      "chinese": "请送我去医院。",
+      "pinyin": "Qǐng sòng wǒ qù yī yuàn.",
+      "french": "Emmenez-moi à l'hôpital, s'il vous plaît.",
+      "english": "Please take me to the hospital.",
+      "spanish": "Lléveme al hospital, por favor.",
+      "italian": "Mi porti in ospedale, per favore.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0290",
+      "chinese": "最近的药店在哪里？",
+      "pinyin": "Zuì jìn de yào diàn zài nǎ lǐ?",
+      "french": "Où est la pharmacie la plus proche ?",
+      "english": "Where is the nearest pharmacy?",
+      "spanish": "¿Dónde está la farmacia más cercana?",
+      "italian": "Dov'è la farmacia più vicina?",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0291",
+      "chinese": "我不舒服。",
+      "pinyin": "Wǒ bù shū fu.",
+      "french": "Je ne me sens pas bien.",
+      "english": "I don't feel well.",
+      "spanish": "No me encuentro bien.",
+      "italian": "Non mi sento bene.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0292",
+      "chinese": "我这里疼。",
+      "pinyin": "Wǒ zhè lǐ téng.",
+      "french": "J'ai mal ici.",
+      "english": "It hurts here.",
+      "spanish": "Me duele aquí.",
+      "italian": "Mi fa male qui.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0293",
+      "chinese": "我发烧了。",
+      "pinyin": "Wǒ fā shāo le.",
+      "french": "J'ai de la fièvre.",
+      "english": "I have a fever.",
+      "spanish": "Tengo fiebre.",
+      "italian": "Ho la febbre.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0294",
+      "chinese": "我肚子疼。",
+      "pinyin": "Wǒ dù zi téng.",
+      "french": "J'ai mal au ventre.",
+      "english": "I have a stomachache.",
+      "spanish": "Me duele la barriga.",
+      "italian": "Ho mal di pancia.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0295",
+      "chinese": "我拉肚子。",
+      "pinyin": "Wǒ lā dù zi.",
+      "french": "J'ai la diarrhée.",
+      "english": "I have diarrhea.",
+      "spanish": "Tengo diarrea.",
+      "italian": "Ho la diarrea.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0296",
+      "chinese": "我呼吸困难。",
+      "pinyin": "Wǒ hū xī kùn nán.",
+      "french": "J'ai du mal à respirer.",
+      "english": "I'm having trouble breathing.",
+      "spanish": "Me cuesta respirar.",
+      "italian": "Faccio fatica a respirare.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0297",
+      "chinese": "我对这种药过敏。",
+      "pinyin": "Wǒ duì zhè zhǒng yào guò mǐn.",
+      "french": "Je suis allergique à ce médicament.",
+      "english": "I'm allergic to this medication.",
+      "spanish": "Tengo alergia a este medicamento.",
+      "italian": "Sono allergico a questo farmaco.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0298",
+      "chinese": "我有糖尿病。",
+      "pinyin": "Wǒ yǒu táng niào bìng.",
+      "french": "Je suis diabétique.",
+      "english": "I have diabetes.",
+      "spanish": "Tengo diabetes.",
+      "italian": "Ho il diabete.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0299",
+      "chinese": "我怀孕了。",
+      "pinyin": "Wǒ huái yùn le.",
+      "french": "Je suis enceinte.",
+      "english": "I'm pregnant.",
+      "spanish": "Estoy embarazada.",
+      "italian": "Sono incinta.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0300",
+      "chinese": "我的护照丢了。",
+      "pinyin": "Wǒ de hù zhào diū le.",
+      "french": "J'ai perdu mon passeport.",
+      "english": "I've lost my passport.",
+      "spanish": "He perdido mi pasaporte.",
+      "italian": "Ho perso il passaporto.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0301",
+      "chinese": "我的手机被偷了。",
+      "pinyin": "Wǒ de shǒu jī bèi tōu le.",
+      "french": "On m'a volé mon téléphone.",
+      "english": "My phone was stolen.",
+      "spanish": "Me han robado el teléfono.",
+      "italian": "Mi hanno rubato il telefono.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0302",
+      "chinese": "我的孩子走丢了。",
+      "pinyin": "Wǒ de hái zi zǒu diū le.",
+      "french": "Je ne retrouve plus mon enfant.",
+      "english": "I can't find my child.",
+      "spanish": "No encuentro a mi hijo.",
+      "italian": "Non trovo più mio figlio.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0303",
+      "chinese": "可以帮我联系酒店吗？",
+      "pinyin": "Kě yǐ bāng wǒ lián xì jiǔ diàn ma?",
+      "french": "Pouvez-vous contacter mon hôtel ?",
+      "english": "Could you contact my hotel?",
+      "spanish": "¿Puede contactar con mi hotel?",
+      "italian": "Può contattare il mio hotel?",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0304",
+      "chinese": "我想联系法国领事馆。",
+      "pinyin": "Wǒ xiǎng lián xì fǎ guó lǐng shì guǎn.",
+      "french": "Je voudrais contacter le consulat de France.",
+      "english": "I'd like to contact the French consulate.",
+      "spanish": "Quisiera contactar con el consulado de Francia.",
+      "italian": "Vorrei contattare il consolato francese.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0305",
+      "chinese": "我头晕。",
+      "pinyin": "Wǒ tóu yūn.",
+      "french": "J'ai des vertiges.",
+      "english": "I feel dizzy.",
+      "spanish": "Estoy mareado.",
+      "italian": "Mi gira la testa.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0306",
+      "chinese": "我头疼。",
+      "pinyin": "Wǒ tóu téng.",
+      "french": "J'ai mal à la tête.",
+      "english": "I have a headache.",
+      "spanish": "Me duele la cabeza.",
+      "italian": "Ho mal di testa.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0307",
+      "chinese": "我想吐。",
+      "pinyin": "Wǒ xiǎng tù.",
+      "french": "J'ai envie de vomir.",
+      "english": "I feel like vomiting.",
+      "spanish": "Tengo ganas de vomitar.",
+      "italian": "Mi viene da vomitare.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0308",
+      "chinese": "我需要看医生。",
+      "pinyin": "Wǒ xū yào kàn yī shēng.",
+      "french": "J'ai besoin de voir un médecin.",
+      "english": "I need to see a doctor.",
+      "spanish": "Necesito ver a un médico.",
+      "italian": "Ho bisogno di vedere un medico.",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0309",
+      "chinese": "这个药怎么用？",
+      "pinyin": "Zhè ge yào zěn me yòng?",
+      "french": "Comment utiliser ce médicament ?",
+      "english": "How do I use this medication?",
+      "spanish": "¿Cómo se usa este medicamento?",
+      "italian": "Come si usa questo farmaco?",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "SHUO-0310",
+      "chinese": "可以把用药方法写下来吗？",
+      "pinyin": "Kě yǐ bǎ yòng yào fāng fǎ xiě xià lai ma?",
+      "french": "Pouvez-vous écrire comment utiliser ce médicament ?",
+      "english": "Could you write down how to use this medication?",
+      "spanish": "¿Puede escribir cómo usar este medicamento?",
+      "italian": "Può scrivere come usare questo farmaco?",
+      "categoryId": "emergency",
+      "keywords": [
+        "Santé et aide"
       ],
       "favorite": false,
       "builtIn": true

@@ -1,0 +1,8 @@
+Android 15 ARM64 emulator, 1080 x 2400 at density 420.
+Installed original signed 0.1.0 APK offline; opened metro card and removed favorite.
+Installed final signed 0.2.0 APK with adb install -r: success.
+First frame: 260 ms; fully drawn: 353 ms (ActivityTaskManager log).
+Library count: 313. Favorites: 2. Metro remains in history; Chinese refreshed.
+Manual update check offline: French network error, no crash or blocked library.
+Enabled Wi-Fi and retried: successful public GitHub API response.
+Certificate matches 0.1.0; release APK package/version/permissions inspected.

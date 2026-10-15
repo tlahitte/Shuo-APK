@@ -13,7 +13,7 @@ object LibraryCodec {
         return json.decodeFromString<Library>(text).also(::validate)
     }
     fun validate(library: Library) {
-        require(library.version == 1) { "Version de bibliothèque non prise en charge." }
+        require(library.version in 1..2) { "Version de bibliothèque non prise en charge." }
         require(library.categories.size <= 200 && library.phrases.size <= 10_000) { "Bibliothèque trop volumineuse." }
         require(library.categories.map { it.id }.distinct().size == library.categories.size) { "Identifiants de catégorie en double." }
         require(library.phrases.map { it.id }.distinct().size == library.phrases.size) { "Identifiants de carte en double." }
@@ -34,7 +34,7 @@ object LibraryCodec {
     fun validatePhrase(phrase: Phrase) {
         require(validId(phrase.id) && validId(phrase.categoryId)) { "Identifiant de carte invalide." }
         require(listOf(phrase.chinese, phrase.pinyin, phrase.french).all { it.isNotBlank() && it.length <= 2000 }) { "Renseignez le français, le chinois et le pinyin (2 000 caractères maximum)." }
-        require((phrase.english?.length ?: 0) <= 2000 && phrase.keywords.size <= 100 && phrase.keywords.all { it.length <= 100 }) { "Traduction ou mots-clés trop longs." }
+        require(listOf(phrase.english, phrase.spanish, phrase.italian).all { (it?.length ?: 0) <= 2000 } && phrase.keywords.size <= 100 && phrase.keywords.all { it.length <= 100 }) { "Traduction ou mots-clés trop longs." }
         require(phrase.createdAt >= 0 && phrase.modifiedAt >= phrase.createdAt && (phrase.lastUsedAt ?: 0) >= 0) { "Dates invalides." }
     }
 }

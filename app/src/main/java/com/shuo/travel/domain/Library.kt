@@ -26,9 +26,11 @@ data class Phrase(
     val modifiedAt: Long = 0,
     val lastUsedAt: Long? = null,
     val builtIn: Boolean = false,
+    val spanish: String? = null,
+    val italian: String? = null,
 )
 
 @Serializable
-data class Library(val version: Int = 1, val categories: List<Category>, val phrases: List<Phrase>)
+data class Library(val version: Int = 2, val categories: List<Category>, val phrases: List<Phrase>)
 
 val CategoryIcons = listOf("train-front", "utensils", "bed-double", "shopping-bag", "signpost", "cross", "messages-square", "wallet", "landmark", "ellipsis")

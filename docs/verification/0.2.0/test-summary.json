@@ -1,0 +1,44 @@
+[
+  {
+    "name": "com.shuo.travel.SearchEngineTest",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "time": "0.013"
+  },
+  {
+    "name": "com.shuo.travel.LibraryCodecTest",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "time": "0.107"
+  },
+  {
+    "name": "com.shuo.travel.ReleaseUpgradeTest",
+    "tests": "5",
+    "failures": "0",
+    "errors": "0",
+    "time": "5.732"
+  },
+  {
+    "name": "com.shuo.travel.RepositoryTest",
+    "tests": "8",
+    "failures": "0",
+    "errors": "0",
+    "time": "1.719"
+  },
+  {
+    "name": "com.shuo.travel.UpdateTest",
+    "tests": "10",
+    "failures": "0",
+    "errors": "0",
+    "time": "1.949"
+  },
+  {
+    "name": "com.shuo.travel.AppFlowTest",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "time": "31.626"
+  }
+]

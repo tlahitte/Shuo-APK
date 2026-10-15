@@ -1,5 +1,12 @@
 package com.shuo.travel.ui.components
 
+import com.shuo.travel.R
+import androidx.compose.ui.res.stringResource
+import com.shuo.travel.ui.countText
+import com.shuo.travel.ui.LocalLanguage
+import com.shuo.travel.domain.localizedName
+import com.shuo.travel.domain.translation
+
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.*
@@ -13,7 +20,6 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.*
-import com.shuo.travel.R
 import com.shuo.travel.domain.Category
 import com.shuo.travel.ui.theme.*
 import androidx.core.graphics.toColorInt
@@ -64,7 +70,7 @@ fun iconResource(name: String): Int = when (name) {
 @Composable fun Header(title: String, subtitle: String? = null, back: (() -> Unit)? = null,
     action: (@Composable () -> Unit)? = null) {
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-        if (back != null) Action("arrow-left", "Retour", onClick = back)
+        if (back != null) Action("arrow-left", stringResource(R.string.back), onClick = back)
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
             Label(title, 27, weight = FontWeight.Bold)
             if (subtitle != null) Label(subtitle, 12, MaterialTheme.colorScheme.onSurfaceVariant)
@@ -80,8 +86,10 @@ fun iconResource(name: String): Int = when (name) {
     }
 }
 @Composable fun CategoryGrid(categories: List<Category>, selection: String? = null, form: Boolean = false, onClick: (Category) -> Unit) {
+    BoxWithConstraints {
+    val columns = if (maxWidth < 340.dp) 3 else 4
     Column(verticalArrangement = Arrangement.spacedBy(if (form) 8.dp else 10.dp)) {
-        categories.chunked(5).forEach { row ->
+        categories.chunked(columns).forEach { row ->
             Row(horizontalArrangement = Arrangement.spacedBy(7.dp)) {
                 row.forEach { category ->
                     val color = categoryColor(category)
@@ -96,12 +104,13 @@ fun iconResource(name: String): Int = when (name) {
                             .background(if (form) Color.Transparent else color.copy(alpha = .11f)), contentAlignment = Alignment.Center) {
                             Symbol(if (selected && form) "circle-check" else category.icon, size = 23, tint = color)
                         }
-                        Label(category.name, if (form) 9 else 10, align = TextAlign.Center)
+                        Label(category.localizedName(LocalLanguage.current), if (form) 9 else 10, align = TextAlign.Center)
                     }
                 }
-                repeat(5-row.size) { Spacer(Modifier.weight(1f)) }
+                repeat(columns-row.size) { Spacer(Modifier.weight(1f)) }
             }
         }
+    }
     }
 }
 @Composable fun EmptyState(text: String) {
@@ -111,11 +120,11 @@ fun iconResource(name: String): Int = when (name) {
 }
 @Composable fun OfflineFooter(count: Int? = null) {
     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-        if (count != null) Label("$count cartes prêtes à montrer", 11, MaterialTheme.colorScheme.onSurfaceVariant)
+        if (count != null) Label(countText(R.plurals.ready_count, count), 11, MaterialTheme.colorScheme.onSurfaceVariant)
         else Spacer(Modifier.weight(1f))
         Row(horizontalArrangement = Arrangement.spacedBy(5.dp), verticalAlignment = Alignment.CenterVertically) {
             Symbol("wifi-off", size = 12, tint = MaterialTheme.colorScheme.onSurfaceVariant)
-            Label("100 % hors ligne", 11, MaterialTheme.colorScheme.onSurfaceVariant)
+            Label(stringResource(R.string.offline), 11, MaterialTheme.colorScheme.onSurfaceVariant)
         }
     }
 }

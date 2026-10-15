@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "transport",
+      "name": "Transports",
+      "icon": "train-front",
+      "color": "#3269D8",
+      "darkColor": "#85AFFF",
+      "order": 0
+    },
+    {
+      "id": "restaurant",
+      "name": "Restaurants",
+      "icon": "utensils",
+      "color": "#D56A24",
+      "darkColor": "#FFAF73",
+      "order": 1
+    },
+    {
+      "id": "hotel",
+      "name": "Hôtels",
+      "icon": "bed-double",
+      "color": "#8257CD",
+      "darkColor": "#BE9AFF",
+      "order": 2
+    },
+    {
+      "id": "shopping",
+      "name": "Achats",
+      "icon": "shopping-bag",
+      "color": "#C24788",
+      "darkColor": "#F58BC3",
+      "order": 3
+    },
+    {
+      "id": "directions",
+      "name": "Itinéraires",
+      "icon": "signpost",
+      "color": "#168474",
+      "darkColor": "#6AD3BF",
+      "order": 4
+    },
+    {
+      "id": "emergency",
+      "name": "Urgences",
+      "icon": "cross",
+      "color": "#D74550",
+      "darkColor": "#FF8F96",
+      "order": 5
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "icon": "messages-square",
+      "color": "#4877A8",
+      "darkColor": "#8BB9EA",
+      "order": 6
+    },
+    {
+      "id": "payment",
+      "name": "Paiements",
+      "icon": "wallet",
+      "color": "#298252",
+      "darkColor": "#7AD7A2",
+      "order": 7
+    },
+    {
+      "id": "tourism",
+      "name": "Tourisme",
+      "icon": "landmark",
+      "color": "#B58016",
+      "darkColor": "#E8C264",
+      "order": 8
+    },
+    {
+      "id": "other",
+      "name": "Divers",
+      "icon": "ellipsis",
+      "color": "#6A7088",
+      "darkColor": "#B5B9D6",
+      "order": 9
+    }
+  ],
+  "phrases": [
+    {
+      "id": "no-spice",
+      "chinese": "不要辣",
+      "pinyin": "Bú yào là",
+      "french": "Pas de piment, s’il vous plaît.",
+      "english": "Not spicy, please.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "piment",
+        "épicé",
+        "restaurant",
+        "nourriture"
+      ],
+      "favorite": true,
+      "builtIn": true
+    },
+    {
+      "id": "menu",
+      "chinese": "请给我菜单",
+      "pinyin": "Qǐng gěi wǒ càidān",
+      "french": "La carte, s’il vous plaît.",
+      "english": "The menu, please.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "menu",
+        "restaurant"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "vegetarian",
+      "chinese": "我吃素",
+      "pinyin": "Wǒ chī sù",
+      "french": "Je suis végétarien / végétarienne.",
+      "english": "I am vegetarian.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "végétarien",
+        "restaurant",
+        "viande"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "metro",
+      "chinese": "地铁站在哪里？",
+      "pinyin": "Dìtiězhàn zài nǎlǐ?",
+      "french": "Où est la station de métro ?",
+      "english": "Where is the subway station?",
+      "categoryId": "transport",
+      "keywords": [
+        "métro",
+        "gare",
+        "train",
+        "transport"
+      ],
+      "favorite": true,
+      "builtIn": true
+    },
+    {
+      "id": "price",
+      "chinese": "多少钱？",
+      "pinyin": "Duōshao qián?",
+      "french": "Combien ça coûte ?",
+      "english": "How much does it cost?",
+      "categoryId": "shopping",
+      "keywords": [
+        "prix",
+        "argent",
+        "achats"
+      ],
+      "favorite": true,
+      "builtIn": true
+    },
+    {
+      "id": "reservation",
+      "chinese": "我有预订",
+      "pinyin": "Wǒ yǒu yùdìng",
+      "french": "J’ai une réservation.",
+      "english": "I have a reservation.",
+      "categoryId": "hotel",
+      "keywords": [
+        "hôtel",
+        "chambre",
+        "réservation"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "toilets",
+      "chinese": "洗手间在哪里？",
+      "pinyin": "Xǐshǒujiān zài nǎlǐ?",
+      "french": "Où sont les toilettes ?",
+      "english": "Where is the restroom?",
+      "categoryId": "directions",
+      "keywords": [
+        "toilettes",
+        "wc",
+        "où"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "help",
+      "chinese": "请帮帮我",
+      "pinyin": "Qǐng bāngbang wǒ",
+      "french": "Aidez-moi, s’il vous plaît.",
+      "english": "Please help me.",
+      "categoryId": "emergency",
+      "keywords": [
+        "aide",
+        "urgence",
+        "secours"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "hello",
+      "chinese": "你好",
+      "pinyin": "Nǐ hǎo",
+      "french": "Bonjour.",
+      "english": "Hello.",
+      "categoryId": "communication",
+      "keywords": [
+        "salut",
+        "bonjour",
+        "politesse"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "thanks",
+      "chinese": "谢谢",
+      "pinyin": "Xièxie",
+      "french": "Merci.",
+      "english": "Thank you.",
+      "categoryId": "communication",
+      "keywords": [
+        "merci",
+        "politesse"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "understand",
+      "chinese": "我听不懂中文",
+      "pinyin": "Wǒ tīng bù dǒng Zhōngwén",
+      "french": "Je ne comprends pas le chinois.",
+      "english": "I do not understand Chinese.",
+      "categoryId": "communication",
+      "keywords": [
+        "comprendre",
+        "langue",
+        "chinois"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "card-payment",
+      "chinese": "可以刷卡吗？",
+      "pinyin": "Kěyǐ shuākǎ ma?",
+      "french": "Puis-je payer par carte ?",
+      "english": "Can I pay by card?",
+      "categoryId": "payment",
+      "keywords": [
+        "payer",
+        "carte bancaire",
+        "paiement"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "ticket",
+      "chinese": "请给我一张票",
+      "pinyin": "Qǐng gěi wǒ yì zhāng piào",
+      "french": "Un billet, s’il vous plaît.",
+      "english": "One ticket, please.",
+      "categoryId": "tourism",
+      "keywords": [
+        "billet",
+        "ticket",
+        "visite"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "water",
+      "chinese": "请给我一杯水",
+      "pinyin": "Qǐng gěi wǒ yì bēi shuǐ",
+      "french": "Un verre d’eau, s’il vous plaît.",
+      "english": "A glass of water, please.",
+      "categoryId": "other",
+      "keywords": [
+        "eau",
+        "boire",
+        "soif"
+      ],
+      "favorite": false,
+      "builtIn": true
+    },
+    {
+      "id": "allergy",
+      "chinese": "我对花生过敏",
+      "pinyin": "Wǒ duì huāshēng guòmǐn",
+      "french": "Je suis allergique aux cacahuètes.",
+      "english": "I am allergic to peanuts.",
+      "categoryId": "restaurant",
+      "keywords": [
+        "allergie",
+        "cacahuètes",
+        "arachide",
+        "restaurant"
+      ],
+      "favorite": false,
+      "builtIn": true
+    }
+  ]
+}

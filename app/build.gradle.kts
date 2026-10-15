@@ -13,8 +13,11 @@ android {
         applicationId = "com.shuo.travel"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.2.0"
+        val updateRepository = providers.gradleProperty("shuoUpdateRepository").orElse("tlahitte/Shuo-APK").get()
+        require(updateRepository.isEmpty() || updateRepository.matches(Regex("[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+")))
+        buildConfigField("String", "UPDATE_REPOSITORY", "\"$updateRepository\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
@@ -48,6 +51,8 @@ android {
     }
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { compose = true; buildConfig = true }
+    // Every supported language must remain available when the device is offline.
+    bundle { language { enableSplit = false } }
     testOptions { unitTests.isIncludeAndroidResources = true }
     packaging { resources.excludes += "/META-INF/{AL2.0,LGPL2.1}" }
 }

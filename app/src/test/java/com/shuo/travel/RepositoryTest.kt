@@ -28,10 +28,10 @@ class RepositoryTest {
     @After fun close() { db.close() }
     @Test fun starterLibrarySeedsOnlyOnceIncludingAfterDeletion() = runBlocking {
         repository.seedOnce(seed)
-        assertEquals(15, db.libraryDao().phrases().size)
+        assertEquals(310, db.libraryDao().phrases().size)
         repository.deletePhrase("no-spice")
         repository.seedOnce(seed)
-        assertEquals(14, db.libraryDao().phrases().size)
+        assertEquals(309, db.libraryDao().phrases().size)
         assertNull(db.libraryDao().phrase("no-spice"))
     }
     @Test fun seedAndImportNeverOverwriteUserEdits() = runBlocking {
@@ -76,7 +76,7 @@ class RepositoryTest {
     @Test fun invalidImportIsAtomicAndValidImportIsIdempotent() = runBlocking {
         repository.seedOnce(seed)
         val before = repository.exportJson()
-        try { repository.importJson(seed.replace("\"chinese\": \"你好\"", "\"chinese\": \"\"")); fail("Invalid import accepted") } catch (_: IllegalArgumentException) { }
+        try { repository.importJson(seed.replace("\"chinese\": \"你好。\"", "\"chinese\": \"\"")); fail("Invalid import accepted") } catch (_: IllegalArgumentException) { }
         assertEquals(before, repository.exportJson())
         val exported = LibraryCodec.decode(before)
         val new = exported.copy(phrases = listOf(exported.phrases.first().copy(id = "imported")))
@@ -95,15 +95,16 @@ class RepositoryTest {
             val actual = reopened.libraryDao().phrase("hello")!!.content
             assertTrue(actual.favorite)
             assertNotNull(actual.lastUsedAt)
-            assertEquals(15, reopened.libraryDao().phrases().size)
+            assertEquals(310, reopened.libraryDao().phrases().size)
         } finally { reopened.close(); context.deleteDatabase(name) }
     }
     @Test fun everyExampleIsSearchableAcrossLanguages() = runBlocking {
         repository.seedOnce(seed)
         val library = LibraryCodec.decode(repository.exportJson())
+        val index = SearchEngine.index(library.phrases, library.categories)
         library.phrases.forEach { p ->
-            listOf(p.chinese, p.french, SearchEngine.normalize(p.pinyin)).forEach { query ->
-                assertTrue("${p.id}: $query", SearchEngine.search(library.phrases, library.categories, query).any { it.id == p.id })
+            listOf(p.chinese, p.french, p.english!!, p.spanish!!, p.italian!!, SearchEngine.normalize(p.pinyin)).forEach { query ->
+                assertTrue("${p.id}: $query", index.search(query).any { it.id == p.id })
             }
         }
     }
@@ -113,13 +114,13 @@ class RepositoryTest {
         val first = Room.databaseBuilder(context, ShuoDatabase::class.java, name).build()
         LibraryRepository(first).seedOnce(seed)
         first.close()
-        android.database.sqlite.SQLiteDatabase.openDatabase(context.getDatabasePath(name).path, null, 0).use { it.version = 2 }
+        android.database.sqlite.SQLiteDatabase.openDatabase(context.getDatabasePath(name).path, null, 0).use { it.version = 3 }
         val incompatible = Room.databaseBuilder(context, ShuoDatabase::class.java, name).build()
         try {
             try { incompatible.libraryDao().phrases(); fail("Missing migration accepted") } catch (_: IllegalStateException) { }
         } finally { incompatible.close() }
         android.database.sqlite.SQLiteDatabase.openDatabase(context.getDatabasePath(name).path, null, 0).use { raw ->
-            raw.rawQuery("SELECT COUNT(*) FROM phrases", null).use { rows -> rows.moveToFirst(); assertEquals(15, rows.getInt(0)) }
+            raw.rawQuery("SELECT COUNT(*) FROM phrases", null).use { rows -> rows.moveToFirst(); assertEquals(310, rows.getInt(0)) }
         }
         context.deleteDatabase(name)
         Unit

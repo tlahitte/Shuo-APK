@@ -5,6 +5,9 @@ import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.shuo.travel.ShuoApplication
+import com.shuo.travel.BuildConfig
+import com.shuo.travel.update.*
+import com.shuo.travel.R
 import com.shuo.travel.data.*
 import com.shuo.travel.domain.*
 import kotlinx.coroutines.*
@@ -13,33 +16,52 @@ import kotlinx.coroutines.flow.*
 import kotlinx.serialization.SerializationException
 
 data class UiState(val phrases: List<Phrase> = emptyList(), val categories: List<Category> = emptyList(),
-    val preferences: Preferences = Preferences(), val ready: Boolean = false, val startupError: String? = null)
+    val preferences: Preferences = Preferences(), val searchIndex: SearchEngine.Index = SearchEngine.index(emptyList(), emptyList()), val ready: Boolean = false, val startupError: String? = null)
 
 class LibraryViewModel(application: Application) : AndroidViewModel(application) {
     private val app = application as ShuoApplication
     private val repository = app.library
+    val updates = UpdateController(app, viewModelScope, GitHubUpdateClient(app, BuildConfig.UPDATE_REPOSITORY, BuildConfig.VERSION_NAME))
     private val loading = MutableStateFlow<Pair<Boolean, String?>>(false to null)
     private val messageChannel = Channel<String>(Channel.BUFFERED)
     val messages = messageChannel.receiveAsFlow()
-    val state = combine(repository.phrases, repository.categories, app.preferences.preferences, loading) { p, c, pref, load ->
-        UiState(p, c, pref, load.first, load.second)
+    private data class IndexedLibrary(val phrases: List<Phrase>, val categories: List<Category>, val index: SearchEngine.Index, val ready: Boolean)
+    @OptIn(ExperimentalCoroutinesApi::class)
+    private val indexed = loading.map { it.first }.distinctUntilChanged().flatMapLatest { seeded ->
+        if (!seeded) flowOf(IndexedLibrary(emptyList(), emptyList(), SearchEngine.index(emptyList(), emptyList()), false))
+        else combine(repository.phrases, repository.categories,
+        app.preferences.preferences.map { it.language }.distinctUntilChanged()) { phrases, categories, language ->
+            IndexedLibrary(phrases, categories, SearchEngine.index(phrases, categories, language), true)
+        }
+    }.flowOn(Dispatchers.Default)
+    val state = combine(indexed, app.preferences.preferences, loading) { library, pref, load ->
+        UiState(library.phrases, library.categories, pref, library.index, load.first && library.ready, load.second)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), UiState())
+    private fun text(id: Int, vararg args: Any) = app.inLanguage(state.value.preferences.language).getString(id, *args)
 
     init { initialize() }
     fun initialize() { viewModelScope.launch {
         loading.value = false to null
         try {
-            withContext(Dispatchers.IO) { repository.seedOnce(app.assets.open("starter-library.json").bufferedReader().use { it.readText() }) }
+            withContext(Dispatchers.IO) { repository.seedBundled(
+                { app.assets.open("starter-library.json").bufferedReader().use { it.readText() } },
+                { app.assets.open("starter-library-v1.json").bufferedReader().use { it.readText() } }) }
             loading.value = true to null
-        } catch (error: Exception) { if (error is CancellationException) throw error; loading.value = false to "Impossible d’ouvrir la bibliothèque locale." }
+        } catch (error: Exception) { if (error is CancellationException) throw error; loading.value = false to text(R.string.startup_error) }
     } }
     private fun operation(finished: () -> Unit = {}, block: suspend () -> Unit) { viewModelScope.launch {
         try { block() } catch (error: Exception) {
             if (error is CancellationException) throw error
             messageChannel.send(when (error) {
-                is SerializationException -> "Fichier JSON invalide ou incomplet. Aucune carte importée."
-                is IllegalArgumentException -> error.message ?: "Données invalides."
-                else -> "Opération impossible. Vérifiez le fichier ou l’espace disponible."
+                is SerializationException -> text(R.string.json_error)
+                is IllegalArgumentException -> text(when (error.message) {
+                    "Déplacez ou supprimez les cartes de cette catégorie avant de la supprimer." -> R.string.category_not_empty
+                    "Conservez au moins une catégorie." -> R.string.last_category
+                    "Fichier trop volumineux (5 Mo maximum)." -> R.string.file_too_large
+                    "Renseignez le français, le chinois et le pinyin (2 000 caractères maximum)." -> R.string.required_fields
+                    else -> R.string.invalid_data
+                })
+                else -> text(R.string.operation_error)
             })
         } finally { finished() }
     } }
@@ -50,6 +72,7 @@ class LibraryViewModel(application: Application) : AndroidViewModel(application)
     fun saveCategory(category: Category, done: () -> Unit) = operation { repository.saveCategory(category); done() }
     fun deleteCategory(id: String, done: () -> Unit) = operation { repository.deleteCategory(id); done() }
     fun reorder(categories: List<Category>) = operation { repository.reorder(categories) }
+    fun language(value: Language) = operation { app.preferences.language(value) }
     fun appearance(value: Appearance) = operation { app.preferences.appearance(value) }
     fun scale(value: Float) = operation { app.preferences.scale(value) }
     fun export(uri: Uri) = operation {
@@ -58,7 +81,7 @@ class LibraryViewModel(application: Application) : AndroidViewModel(application)
             val stream = app.contentResolver.openOutputStream(uri, "wt") ?: error("Document inaccessible")
             stream.bufferedWriter(Charsets.UTF_8).use { it.write(json) }
         }
-        messageChannel.send("Bibliothèque exportée.")
+        messageChannel.send(text(R.string.exported))
     }
     fun import(uri: Uri) = operation {
         val result = withContext(Dispatchers.IO) {
@@ -76,6 +99,6 @@ class LibraryViewModel(application: Application) : AndroidViewModel(application)
             require(bytes.size <= LibraryCodec.MAX_BYTES) { "Fichier trop volumineux (5 Mo maximum)." }
             repository.importJson(bytes.toString(Charsets.UTF_8))
         }
-        messageChannel.send("${result.added} cartes importées · ${result.skipped} cartes existantes conservées.")
+        messageChannel.send(text(R.string.imported, result.added, result.skipped))
     }
 }

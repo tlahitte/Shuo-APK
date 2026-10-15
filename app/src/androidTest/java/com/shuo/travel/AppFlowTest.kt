@@ -2,10 +2,13 @@ package com.shuo.travel
 
 import android.graphics.Bitmap
 import androidx.compose.ui.test.*
+import androidx.compose.ui.semantics.SemanticsProperties
+import androidx.compose.ui.semantics.getOrNull
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.platform.app.InstrumentationRegistry
 import com.shuo.travel.data.Appearance
 import com.shuo.travel.domain.Phrase
+import com.shuo.travel.domain.Language
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.flow.first
 import org.junit.*
@@ -21,8 +24,10 @@ class AppFlowTest {
             app.library.seedOnce(app.assets.open("starter-library.json").bufferedReader().use { it.readText() })
             app.preferences.appearance(Appearance.LIGHT)
             app.preferences.scale(1f)
+            app.preferences.language(Language.FRENCH)
         }
         compose.waitUntil(15_000) { compose.onAllNodesWithText("Bonjour, la Chine !").fetchSemanticsNodes().isNotEmpty() }
+        compose.waitUntil(10_000) { compose.onAllNodesWithTag("phrase-metro").fetchSemanticsNodes().isNotEmpty() }
     }
     private fun search(query: String) {
         compose.onNodeWithText("Chercher une phrase en français").performClick()
@@ -31,6 +36,9 @@ class AppFlowTest {
             androidx.core.view.WindowCompat.getInsetsController(activity.window, activity.window.decorView)
                 .hide(androidx.core.view.WindowInsetsCompat.Type.ime())
         }
+        compose.waitUntil(5000) { compose.onAllNodes(SemanticsMatcher("phrase result") {
+            it.config.getOrNull(SemanticsProperties.TestTag)?.startsWith("phrase-") == true
+        }).fetchSemanticsNodes().isNotEmpty() }
         compose.waitForIdle()
     }
     private fun screenshot(name: String) {
@@ -53,20 +61,22 @@ class AppFlowTest {
 
     @Test fun searchPresentationFavoritesRotationAndHistory() {
         search("bu yao")
+        compose.onNodeWithTag("search-list").performScrollToNode(hasTestTag("phrase-no-spice"))
         compose.onNodeWithTag("phrase-no-spice").assertIsDisplayed().performClick()
-        compose.onNodeWithText("Pas de piment, s’il vous plaît.").assertDoesNotExist()
-        compose.onNodeWithText("不要辣").assertIsDisplayed()
+        compose.onNodeWithText("Sans piment, s'il vous plaît.").assertDoesNotExist()
+        compose.onNodeWithText("请不要放辣椒。").assertIsDisplayed()
         compose.onNodeWithContentDescription("Tourner la carte à 180 degrés").performClick()
         assertTrue(compose.activity.window.decorView.findViewById<android.view.View>(android.R.id.content).keepScreenOn ||
             compose.activity.window.decorView.keepScreenOn || run { var found = false
                 fun walk(v: android.view.View) { if (v.keepScreenOn) found = true; if (v is android.view.ViewGroup) for (i in 0 until v.childCount) walk(v.getChildAt(i)) }
                 walk(compose.activity.window.decorView); found })
         compose.onNodeWithContentDescription("Retirer des favoris").performClick()
+        compose.waitUntil(5000) { compose.onAllNodesWithContentDescription("Ajouter aux favoris").fetchSemanticsNodes().isNotEmpty() }
         compose.onNodeWithContentDescription("Ajouter aux favoris").assertExists()
         compose.onNodeWithText("Afficher la traduction").performClick()
-        compose.onNodeWithText("Pas de piment, s’il vous plaît.").assertIsDisplayed()
+        compose.onNodeWithText("Sans piment, s'il vous plaît.").assertIsDisplayed()
         compose.onNodeWithContentDescription("Masquer la traduction").performClick()
-        compose.onNodeWithText("Pas de piment, s’il vous plaît.").assertDoesNotExist()
+        compose.onNodeWithText("Sans piment, s'il vous plaît.").assertDoesNotExist()
         compose.onNodeWithContentDescription("Retour").performClick()
         compose.onNodeWithContentDescription("Retour").performClick()
         compose.onNodeWithText("Historique").performClick()
@@ -138,11 +148,12 @@ class AppFlowTest {
         compose.onNodeWithContentDescription("Créer une catégorie").performClick()
         compose.onNodeWithText("Nom").performTextInput("Personnel")
         compose.onNodeWithText("Enregistrer", useUnmergedTree = true).performClick()
-        compose.waitForIdle()
+        compose.waitUntil(5000) { compose.onAllNodesWithText("Personnel").fetchSemanticsNodes().isNotEmpty() }
         val id = runBlocking { app.database.libraryDao().categories().first { it.content.name == "Personnel" }.content.id }
         compose.onNodeWithText("Personnel").performScrollTo().performClick()
         compose.onNodeWithText("Nom").performTextReplacement("Mes cartes")
         compose.onNodeWithText("Enregistrer", useUnmergedTree = true).performClick()
+        compose.waitUntil(5000) { compose.onAllNodesWithText("Mes cartes").fetchSemanticsNodes().isNotEmpty() }
         compose.onNodeWithText("Sombre").performScrollTo().performClick()
         compose.activityRule.scenario.recreate()
         compose.waitUntil(10_000) { compose.onAllNodesWithText("Votre bibliothèque").fetchSemanticsNodes().isNotEmpty() }
@@ -163,4 +174,41 @@ class AppFlowTest {
         compose.onNodeWithText("Quitter", useUnmergedTree = true).performClick()
         compose.onNodeWithText("Vos favoris").assertIsDisplayed()
     }
+    @Test fun languageSelectionPersistsAndTranslatesCardsAndSearch() {
+        for ((language, greeting, query) in listOf(
+            Triple(Language.ENGLISH, "Hello, China!", "No chili"),
+            Triple(Language.SPANISH, "¡Hola, China!", "Sin chile"),
+            Triple(Language.ITALIAN, "Ciao, Cina!", "Senza peperoncino"),
+            Triple(Language.FRENCH, "Bonjour, la Chine !", "Sans piment"))) {
+            compose.onNodeWithTag("nav-settings").performClick()
+            compose.onNodeWithTag("language-${language.tag}").performScrollTo().performClick()
+            compose.waitUntil(5000) { runBlocking { app.preferences.preferences.first().language == language } }
+            val libraryTitle = listOf("Votre bibliothèque", "Your library", "Tu biblioteca", "La tua raccolta")[language.ordinal]
+            compose.waitUntil(10000) { compose.onAllNodesWithText(libraryTitle).fetchSemanticsNodes().isNotEmpty() }
+            compose.onNodeWithText(listOf("Mises à jour", "Updates", "Actualizaciones", "Aggiornamenti")[language.ordinal]).performScrollTo().assertIsDisplayed()
+            screenshot("language-${language.tag}")
+            compose.activityRule.scenario.recreate()
+            compose.waitUntil(10000) { compose.onAllNodesWithText(libraryTitle).fetchSemanticsNodes().isNotEmpty() }
+            compose.onNodeWithContentDescription(listOf("Créer une catégorie", "Create a category", "Crear categoría", "Crea categoria")[language.ordinal]).performScrollTo().performClick()
+            compose.onNodeWithText(listOf("Nom", "Name", "Nombre", "Nome")[language.ordinal]).assertExists()
+            screenshot("dialog-${language.tag}")
+            compose.onNodeWithText(listOf("Annuler", "Cancel", "Cancelar", "Annulla")[language.ordinal]).performClick()
+            compose.onNodeWithTag("nav-home").performClick()
+            compose.onNodeWithText(greeting).assertIsDisplayed()
+            val hint = when(language) {
+                Language.ENGLISH -> "Search for a phrase in English"
+                Language.SPANISH -> "Buscar una frase en español"
+                Language.ITALIAN -> "Cerca una frase in italiano"
+                Language.FRENCH -> "Chercher une phrase en français"
+            }
+            compose.onNodeWithText(hint).performClick()
+            compose.onNodeWithTag("search-input").performTextReplacement(query)
+            compose.waitUntil(5000) { compose.onAllNodesWithTag("phrase-no-spice").fetchSemanticsNodes().isNotEmpty() }
+            compose.onNodeWithTag("phrase-no-spice").assertExists()
+            compose.onNodeWithTag("phrase-no-spice").assert(hasText(query, substring = true))
+            screenshot("search-${language.tag}")
+            compose.onNodeWithTag("nav-home").performClick()
+        }
+    }
+
 }

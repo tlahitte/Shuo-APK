@@ -1,5 +1,11 @@
 package com.shuo.travel.ui.components
 
+import com.shuo.travel.R
+import androidx.compose.ui.res.stringResource
+import com.shuo.travel.ui.LocalLanguage
+import com.shuo.travel.domain.localizedName
+import com.shuo.travel.domain.translation
+
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -22,16 +28,18 @@ import com.shuo.travel.ui.theme.*
 @Composable fun PhraseCard(phrase: Phrase, category: Category, modifier: Modifier = Modifier,
     presentation: Boolean = false, scale: Float = 1f, minHeight: Dp = 148.dp, onClick: (() -> Unit)? = null) {
     val color = categoryColor(category)
+    val categoryName = category.localizedName(LocalLanguage.current)
+    val categoryDescription = stringResource(R.string.category_description, categoryName)
     val tabText = if (LocalDark.current) Color(0xFF10151D) else Color.White
     val shape = RoundedCornerShape(20.dp)
     Box(modifier.fillMaxWidth().heightIn(min = minHeight).clip(shape)
         .background(MaterialTheme.colorScheme.surface).border(1.dp, color.copy(alpha = .4f), shape)
-        .then(if (onClick != null) Modifier.clickable(role = Role.Button, onClickLabel = "Montrer la carte", onClick = onClick) else Modifier)) {
+        .then(if (onClick != null) Modifier.clickable(role = Role.Button, onClickLabel = stringResource(R.string.show_card), onClick = onClick) else Modifier)) {
         val textMeasurer = rememberTextMeasurer()
         val density = LocalDensity.current
-        Canvas(Modifier.matchParentSize().semantics { contentDescription = "Catégorie : ${category.name}" }) {
+        Canvas(Modifier.matchParentSize().semantics { contentDescription = categoryDescription }) {
             drawRect(color, size = androidx.compose.ui.geometry.Size(30.dp.toPx(), size.height))
-            val layout = textMeasurer.measure(category.name, TextStyle(fontFamily = Inter, fontSize = 11.sp, color = tabText),
+            val layout = textMeasurer.measure(categoryName, TextStyle(fontFamily = Inter, fontSize = 11.sp, color = tabText),
                 maxLines = 1, overflow = TextOverflow.Ellipsis, constraints = Constraints(maxWidth = (size.height - 24.dp.toPx()).toInt().coerceAtLeast(1)))
             val pivot = Offset(15.dp.toPx(), size.height / 2)
             rotate(90f, pivot) { drawText(layout, topLeft = Offset(pivot.x - layout.size.width / 2, pivot.y - layout.size.height / 2)) }
@@ -68,7 +76,7 @@ import com.shuo.travel.ui.theme.*
                 androidx.compose.material3.Text(phrase.chinese, Modifier.fillMaxWidth(), fontFamily = ChineseFont, fontWeight = FontWeight.Medium,
                     fontSize = (30 * scale).sp, lineHeight = (43.5f * scale).sp, textAlign = TextAlign.Center)
                 Label(phrase.pinyin, 14, MaterialTheme.colorScheme.onSurfaceVariant, align = TextAlign.Center)
-                Label(phrase.french, 12, align = TextAlign.Center)
+                Label(phrase.translation(LocalLanguage.current), 12, align = TextAlign.Center)
             }
         }
         Symbol(category.icon, size = if (presentation) 52 else 26, tint = color,

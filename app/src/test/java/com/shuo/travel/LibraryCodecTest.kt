@@ -7,14 +7,14 @@ import org.junit.Test
 
 class LibraryCodecTest {
     private val category = Category("one", "Restaurants", "#D56A24", icon = "utensils", order = 0)
-    private val phrase = Phrase("phrase", "你好", "Nǐ hǎo", "Bonjour", categoryId = "one", lastUsedAt = 1234, favorite = true)
+    private val phrase = Phrase("phrase", "你好", "Nǐ hǎo", "Bonjour", categoryId = "one", spanish = "Hola", italian = "Ciao", lastUsedAt = 1234, favorite = true)
     private val library = Library(categories = listOf(category), phrases = listOf(phrase))
     private fun rejects(block: () -> Unit) { assertThrows(Exception::class.java) { block() } }
     @Test fun roundTripPreservesAllFieldsAndUnicode() { assertEquals(library, LibraryCodec.decode(LibraryCodec.encode(library))) }
     @Test fun malformedJsonAndMissingFieldsAreRejected() {
         listOf("{", "null", "[]", "{}", "{\"version\":1,\"categories\":[],\"phrases\":[{}]}").forEach { text -> rejects { LibraryCodec.decode(text) } }
     }
-    @Test fun unknownVersionIsRejected() { rejects { LibraryCodec.encode(library.copy(version = 2)) } }
+    @Test fun unknownVersionIsRejected() { rejects { LibraryCodec.encode(library.copy(version = 3)) } }
     @Test fun duplicateIdsAreRejected() {
         rejects { LibraryCodec.encode(library.copy(phrases = listOf(phrase, phrase))) }
         rejects { LibraryCodec.encode(library.copy(categories = listOf(category, category))) }

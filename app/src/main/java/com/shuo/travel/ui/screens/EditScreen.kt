@@ -1,5 +1,11 @@
 package com.shuo.travel.ui.screens
 
+import com.shuo.travel.R
+import androidx.compose.ui.res.stringResource
+import com.shuo.travel.ui.LocalLanguage
+import com.shuo.travel.domain.localizedName
+import com.shuo.travel.domain.translation
+
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
@@ -23,6 +29,8 @@ import java.util.UUID
     var chinese by rememberSaveable { mutableStateOf(existing?.chinese.orEmpty()) }
     var pinyin by rememberSaveable { mutableStateOf(existing?.pinyin.orEmpty()) }
     var english by rememberSaveable { mutableStateOf(existing?.english.orEmpty()) }
+    var spanish by rememberSaveable { mutableStateOf(existing?.spanish.orEmpty()) }
+    var italian by rememberSaveable { mutableStateOf(existing?.italian.orEmpty()) }
     var keywords by rememberSaveable { mutableStateOf(existing?.keywords?.joinToString(", ").orEmpty()) }
     var category by rememberSaveable { mutableStateOf(existing?.categoryId ?: state.categories.firstOrNull()?.id) }
     var extras by rememberSaveable { mutableStateOf(false) }
@@ -30,7 +38,7 @@ import java.util.UUID
     var confirmDiscard by rememberSaveable { mutableStateOf(false) }
     var submitting by remember { mutableStateOf(false) }
     val dirty = french != existing?.french.orEmpty() || chinese != existing?.chinese.orEmpty() || pinyin != existing?.pinyin.orEmpty() ||
-        english != existing?.english.orEmpty() || keywords != existing?.keywords?.joinToString(", ").orEmpty() ||
+        english != existing?.english.orEmpty() || spanish != existing?.spanish.orEmpty() || italian != existing?.italian.orEmpty() || keywords != existing?.keywords?.joinToString(", ").orEmpty() ||
         category != (existing?.categoryId ?: state.categories.firstOrNull()?.id)
     val close = { if (dirty) confirmDiscard = true else back() }
     DisposableEffect(dirty) {
@@ -40,44 +48,52 @@ import java.util.UUID
     BackHandler { close() }
     Column(Modifier.fillMaxSize().imePadding()) {
         Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(20.dp, 14.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-            Header(if (existing == null) "Nouvelle carte" else "Modifier la carte", back = close,
-                action = { Action("x", "Fermer", true, onClick = close) })
-            PhraseInput("Français · pour retrouver votre carte", french, "french-input") { french = it }
-            PhraseInput("Chinois simplifié · à montrer", chinese, "chinese-input", true) { chinese = it }
-            PhraseInput("Pinyin · avec les tons", pinyin, "pinyin-input") { pinyin = it }
+            Header(if (existing == null) stringResource(R.string.new_card) else stringResource(R.string.edit_card), back = close,
+                action = { Action("x", stringResource(R.string.close), true, onClick = close) })
+            PhraseInput(stringResource(R.string.french_input), french, "french-input") { french = it }
+            when (state.preferences.language) {
+                Language.ENGLISH -> PhraseInput(stringResource(R.string.english), english, "english-input") { english = it }
+                Language.SPANISH -> PhraseInput(stringResource(R.string.spanish), spanish, "spanish-input") { spanish = it }
+                Language.ITALIAN -> PhraseInput(stringResource(R.string.italian), italian, "italian-input") { italian = it }
+                Language.FRENCH -> Unit
+            }
+            PhraseInput(stringResource(R.string.chinese_input), chinese, "chinese-input", true) { chinese = it }
+            PhraseInput(stringResource(R.string.pinyin_input), pinyin, "pinyin-input") { pinyin = it }
             Row(Modifier.fillMaxWidth().background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(16.dp)).padding(12.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 Symbol("info", size = 18, tint = MaterialTheme.colorScheme.primary)
-                Label("Saisissez le chinois et le pinyin vous-même. Aucune traduction automatique.", 12, MaterialTheme.colorScheme.onSurfaceVariant)
+                Label(stringResource(R.string.manual_translation), 12, MaterialTheme.colorScheme.onSurfaceVariant)
             }
-            Section("Choisir une catégorie")
+            Section(stringResource(R.string.choose_category))
             CategoryGrid(state.categories, category, true) { category = it.id }
-            TextButton({ extras = true }) { Label("Traduction anglaise et mots-clés", 12, MaterialTheme.colorScheme.primary) }
-            if (existing != null) TextButton({ confirmDelete = true }) { Label("Supprimer cette carte", 12, MaterialTheme.colorScheme.error) }
+            TextButton({ extras = true }) { Label(stringResource(R.string.extra_translations), 12, MaterialTheme.colorScheme.primary) }
+            if (existing != null) TextButton({ confirmDelete = true }) { Label(stringResource(R.string.delete_card), 12, MaterialTheme.colorScheme.error) }
         }
         Button(onClick = {
             submitting = true
             model.save(Phrase(id, chinese, pinyin, french, english.ifBlank { null },
-                keywords.split(',').map { it.trim() }.filter { it.isNotEmpty() }, category!!), done = back, finished = { submitting = false })
+                keywords.split(',').map { it.trim() }.filter { it.isNotEmpty() }, category!!, spanish = spanish.ifBlank { null }, italian = italian.ifBlank { null }), done = back, finished = { submitting = false })
         }, enabled = !submitting && french.isNotBlank() && chinese.isNotBlank() && pinyin.isNotBlank() && category != null,
             modifier = Modifier.fillMaxWidth().padding(20.dp, 16.dp).heightIn(min = 52.dp).testTag("save-phrase"), shape = RoundedCornerShape(16.dp)) {
             Symbol("check", tint = MaterialTheme.colorScheme.onPrimary)
             Spacer(Modifier.width(8.dp))
-            Text("Enregistrer la carte")
+            Text(stringResource(R.string.save_card))
         }
     }
-    if (extras) AlertDialog(onDismissRequest = { extras = false }, title = { Text("Champs facultatifs") }, text = {
-        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            OutlinedTextField(english, { if (it.length <= 2000) english = it }, label = { Text("Anglais") })
-            OutlinedTextField(keywords, { if (it.length <= 5000) keywords = it }, label = { Text("Mots-clés séparés par des virgules") })
+    if (extras) AlertDialog(onDismissRequest = { extras = false }, title = { Text(stringResource(R.string.optional_fields)) }, text = {
+        Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            OutlinedTextField(english, { if (it.length <= 2000) english = it }, label = { Text(stringResource(R.string.english)) })
+            OutlinedTextField(spanish, { if (it.length <= 2000) spanish = it }, label = { Text(stringResource(R.string.spanish)) })
+            OutlinedTextField(italian, { if (it.length <= 2000) italian = it }, label = { Text(stringResource(R.string.italian)) })
+            OutlinedTextField(keywords, { if (it.length <= 5000) keywords = it }, label = { Text(stringResource(R.string.keywords)) })
         }
-    }, confirmButton = { TextButton({ extras = false }) { Text("Terminé") } })
-    if (confirmDelete) AlertDialog(onDismissRequest = { confirmDelete = false }, title = { Text("Supprimer cette carte ?") },
-        text = { Text("Cette carte sera retirée de votre bibliothèque et de vos favoris.") },
-        confirmButton = { TextButton({ model.delete(id, back); confirmDelete = false }) { Text("Supprimer") } },
-        dismissButton = { TextButton({ confirmDelete = false }) { Text("Annuler") } })
-    if (confirmDiscard) AlertDialog(onDismissRequest = { confirmDiscard = false }, title = { Text("Quitter sans enregistrer ?") },
-        text = { Text("Vos modifications ne seront pas conservées.") },
-        confirmButton = { TextButton(back) { Text("Quitter") } }, dismissButton = { TextButton({ confirmDiscard = false }) { Text("Continuer") } })
+    }, confirmButton = { TextButton({ extras = false }) { Text(stringResource(R.string.done)) } })
+    if (confirmDelete) AlertDialog(onDismissRequest = { confirmDelete = false }, title = { Text(stringResource(R.string.delete_card_title)) },
+        text = { Text(stringResource(R.string.delete_card_body)) },
+        confirmButton = { TextButton({ model.delete(id, back); confirmDelete = false }) { Text(stringResource(R.string.delete)) } },
+        dismissButton = { TextButton({ confirmDelete = false }) { Text(stringResource(R.string.cancel)) } })
+    if (confirmDiscard) AlertDialog(onDismissRequest = { confirmDiscard = false }, title = { Text(stringResource(R.string.discard_title)) },
+        text = { Text(stringResource(R.string.discard_body)) },
+        confirmButton = { TextButton(back) { Text(stringResource(R.string.leave)) } }, dismissButton = { TextButton({ confirmDiscard = false }) { Text(stringResource(R.string.continue_edit)) } })
 }
 
 @Composable private fun PhraseInput(label: String, value: String, tag: String, chinese: Boolean = false, change: (String) -> Unit) {
