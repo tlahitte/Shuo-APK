@@ -6,3 +6,11 @@ Library count: 313. Favorites: 2. Metro remains in history; Chinese refreshed.
 Manual update check offline: French network error, no crash or blocked library.
 Enabled Wi-Fi and retried: successful public GitHub API response.
 Certificate matches 0.1.0; release APK package/version/permissions inspected.
+Italian selection persisted after force-stop and relaunch of signed 0.2.0.
+End-to-end GitHub update test used an isolated, unpublished 0.1.99/code 1 build
+with current updater code and the same release key. Production source was unchanged.
+Detected the actual public v0.2.0 release, downloaded its 14,060,897-byte APK,
+verified digest/package/version/signature, and reached the ready-to-install UI.
+Android requested unknown-source permission for Shuo, then displayed Update confirmation.
+After confirmation: App installed; package versionCode=2, versionName=0.2.0.
+310 cards, two favorites and metro history entry preserved after installation.
