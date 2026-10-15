@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shuo.travel.SearchEngineTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-15T17:09:37" hostname="KXGKV6G6JM" time="0.004">
+  <properties/>
+  <testcase name="matchesFrenchChinesePinyinKeywordsAndCategory" classname="com.shuo.travel.SearchEngineTest" time="0.003"/>
+  <testcase name="categoryAndFavoriteFiltersComposeWithSearch" classname="com.shuo.travel.SearchEngineTest" time="0.0"/>
+  <testcase name="ranksExactThenPrefixThenSubstring" classname="com.shuo.travel.SearchEngineTest" time="0.0"/>
+  <testcase name="allPartialTokensMustMatch" classname="com.shuo.travel.SearchEngineTest" time="0.0"/>
+  <testcase name="casingIsIndependentOfDeviceLocale" classname="com.shuo.travel.SearchEngineTest" time="0.001"/>
+  <testcase name="accentsAndTonesAreNormalized" classname="com.shuo.travel.SearchEngineTest" time="0.0"/>
+  <testcase name="emptyQueryAndUserCreatedPhraseWork" classname="com.shuo.travel.SearchEngineTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

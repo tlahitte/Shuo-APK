@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Shuo Release, O=Shuo
+Signer #1 certificate SHA-256 digest: d77d68c5286e4e112737bb943d3296c6f1097db0fe078a7ad34ace6e065ed2fd
+Signer #1 certificate SHA-1 digest: a6f0229c607dfcc540f44d98df57dbe8290c3985
+Signer #1 certificate MD5 digest: 06f91461fa1b411868676f67bbb16d4b
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 4096
+Signer #1 public key SHA-256 digest: 0d6773d32c3671ea7f5d84a553947bf30371ad6f9e28f1dcc5faac6e81e184d6
+Signer #1 public key SHA-1 digest: 928d4f87624a69236fa8e5c541a5e12a509a009b
+Signer #1 public key MD5 digest: 58a002a839a440c5305ecc139902790e

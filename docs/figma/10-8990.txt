@@ -1,0 +1,199 @@
+const imgSignal = "https://www.figma.com/api/mcp/asset/621cf990-6ad1-4e8b-a247-c11939b3ecb8.svg";
+const imgBatteryFull = "https://www.figma.com/api/mcp/asset/678d99cc-4c94-4149-a7ce-2f9afb7a38be.svg";
+const imgPlus = "https://www.figma.com/api/mcp/asset/00ec9948-ce14-4ad5-85b2-43fe11d4efbb.svg";
+const imgUtensils = "https://www.figma.com/api/mcp/asset/a67e070e-4262-43ea-bbf5-d55a5a194672.svg";
+const imgSignpost = "https://www.figma.com/api/mcp/asset/2a03140f-bf98-49af-a4df-ec21a9a6283b.svg";
+const imgShoppingBag = "https://www.figma.com/api/mcp/asset/ba81e48e-3157-45ef-91aa-b7ca5d01f066.svg";
+const imgHouse = "https://www.figma.com/api/mcp/asset/076d2c37-8a80-48d9-aa78-dac27b97408f.svg";
+const imgStar = "https://www.figma.com/api/mcp/asset/4d8a33fc-f4e1-4eda-9af7-22ad0e3fdc40.svg";
+const imgLayoutGrid = "https://www.figma.com/api/mcp/asset/d7d47d9a-ada0-4790-af77-31c9c5f532a4.svg";
+
+export default function FavorisClair() {
+  return (
+    <div className="bg-[#f5f6f8] content-stretch flex flex-col items-start relative size-full" data-node-id="10:8990" data-name="Favoris · Clair">
+      <div className="content-stretch flex h-[38px] items-center justify-between overflow-clip px-[24px] relative shrink-0 w-full" data-node-id="10:8991" data-name="Barre d’état Android">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[13px] whitespace-nowrap" data-node-id="10:8992">
+          9:41
+        </p>
+        <div className="content-stretch flex gap-[6px] items-center overflow-clip relative shrink-0" data-node-id="10:8993" data-name="État de l’appareil">
+          <div className="relative shrink-0 size-[16px]" data-node-id="10:9914" data-name="signal">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSignal} />
+          </div>
+          <div className="relative shrink-0 size-[20px]" data-node-id="10:9917" data-name="battery-full">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBatteryFull} />
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[11px] whitespace-nowrap" data-node-id="10:8996">
+            100 %
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full" data-node-id="10:8997" data-name="Contenu">
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[14px] items-start min-h-px overflow-clip pb-[18px] pt-[14px] px-[20px] relative w-full" data-node-id="10:8998" data-name="Cartes enregistrées">
+          <div className="content-stretch flex gap-[10px] items-center overflow-clip relative shrink-0 w-full" data-node-id="10:8999" data-name="En-tête">
+            <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[3px] items-start leading-[1.35] min-w-px not-italic overflow-clip relative whitespace-nowrap" data-node-id="10:9000" data-name="Titre et contexte">
+              <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[#18212f] text-[27px]" data-node-id="10:9001">
+                Vos favoris
+              </p>
+              <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#667184] text-[12px]" data-node-id="10:9002">
+                6 cartes à retrouver en un geste.
+              </p>
+            </div>
+            <div className="bg-[#edeff3] content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:9003" data-name="Action">
+              <div className="relative shrink-0 size-[24px]" data-node-id="10:9920" data-name="plus">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPlus} />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:9005" data-name="Filtres de favoris">
+            <div className="bg-[#365fdc] content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[100px] shrink-0" data-node-id="10:9006" data-name="Filtre">
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[12px] text-white whitespace-nowrap" data-node-id="10:9007">
+                Tous · 6
+              </p>
+            </div>
+            <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[100px] shrink-0" data-node-id="10:9008" data-name="Filtre">
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[12px] whitespace-nowrap" data-node-id="10:9009">
+                Restaurants
+              </p>
+            </div>
+            <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex items-start overflow-clip px-[14px] py-[8px] relative rounded-[100px] shrink-0" data-node-id="10:9010" data-name="Filtre">
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[12px] whitespace-nowrap" data-node-id="10:9011">
+                Transports
+              </p>
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[1.35] not-italic overflow-clip relative shrink-0 w-full whitespace-nowrap" data-node-id="10:9012" data-name="En-tête de section">
+            <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#18212f] text-[17px]" data-node-id="10:9013">
+              À garder sous la main
+            </p>
+            <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#365fdc] text-[12px]" data-node-id="10:9014">
+              Organiser
+            </p>
+          </div>
+          <div className="bg-white border border-[rgba(213,106,36,0.4)] border-solid content-stretch flex flex-col gap-[5px] h-[148px] items-start justify-center overflow-clip pl-[48px] pr-[16px] py-[16px] relative rounded-[20px] shrink-0 w-full" data-node-id="10:9015" data-name="Carte compacte">
+            <div className="absolute bg-[#d56a24] h-[148px] left-[-1px] overflow-clip top-[-1px] w-[30px]" data-node-id="10:9016" data-name="Onglet de catégorie">
+              <div className="-translate-x-1/2 absolute flex h-[100px] items-center justify-center left-[13px] top-[24px] w-[18px]" data-node-id="10:9017">
+                <div className="flex-none rotate-90">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal h-[18px] leading-[normal] not-italic relative text-[11px] text-center text-white w-[100px]">Restaurants</p>
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Noto_Sans_SC:Medium'] font-medium leading-[1.45] min-w-full relative shrink-0 text-[#18212f] text-[30px] text-center w-[min-content]" data-node-id="10:9018">
+              不要辣
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#667184] text-[14px] text-center w-[min-content]" data-node-id="10:9019">
+              Bú yào là
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#18212f] text-[12px] text-center w-[min-content]" data-node-id="10:9020">
+              Pas de piment, s’il vous plaît.
+            </p>
+            <div className="absolute bottom-[9px] right-[11px] size-[26px]" data-node-id="10:9923" data-name="utensils">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUtensils} />
+            </div>
+          </div>
+          <div className="bg-white border border-[rgba(22,132,116,0.4)] border-solid content-stretch flex flex-col gap-[5px] h-[148px] items-start justify-center overflow-clip pl-[48px] pr-[16px] py-[16px] relative rounded-[20px] shrink-0 w-full" data-node-id="10:9022" data-name="Carte compacte">
+            <div className="absolute bg-[#168474] h-[148px] left-[-1px] overflow-clip top-[-1px] w-[30px]" data-node-id="10:9023" data-name="Onglet de catégorie">
+              <div className="-translate-x-1/2 absolute flex h-[100px] items-center justify-center left-[13px] top-[24px] w-[18px]" data-node-id="10:9024">
+                <div className="flex-none rotate-90">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal h-[18px] leading-[normal] not-italic relative text-[11px] text-center text-white w-[100px]">Itinéraires</p>
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Noto_Sans_SC:Medium'] font-medium leading-[1.45] min-w-full relative shrink-0 text-[#18212f] text-[30px] text-center w-[min-content]" data-node-id="10:9025">
+              地铁站在哪里？
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#667184] text-[14px] text-center w-[min-content]" data-node-id="10:9026">
+              Dìtiězhàn zài nǎlǐ?
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#18212f] text-[12px] text-center w-[min-content]" data-node-id="10:9027">
+              Où est la station de métro ?
+            </p>
+            <div className="absolute bottom-[9px] right-[11px] size-[26px]" data-node-id="10:9926" data-name="signpost">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSignpost} />
+            </div>
+          </div>
+          <div className="content-stretch flex items-start justify-center overflow-clip relative shrink-0 w-full" data-node-id="10:9029" data-name="Compteur de favoris">
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[11px] whitespace-nowrap" data-node-id="10:9030">
+              2 favoris affichés sur 6
+            </p>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[1.35] not-italic overflow-clip relative shrink-0 w-full whitespace-nowrap" data-node-id="10:9031" data-name="En-tête de section">
+            <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#18212f] text-[17px]" data-node-id="10:9032">
+              Récemment utilisées
+            </p>
+            <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#365fdc] text-[12px]" data-node-id="10:9033">
+              Tout voir
+            </p>
+          </div>
+          <div className="bg-white border border-[rgba(194,71,136,0.4)] border-solid content-stretch flex flex-col gap-[5px] h-[132px] items-start justify-center overflow-clip pl-[48px] pr-[16px] py-[16px] relative rounded-[20px] shrink-0 w-full" data-node-id="10:9034" data-name="Carte compacte">
+            <div className="absolute bg-[#c24788] h-[132px] left-[-1px] overflow-clip top-[-1px] w-[30px]" data-node-id="10:9035" data-name="Onglet de catégorie">
+              <div className="-translate-x-1/2 absolute flex h-[100px] items-center justify-center left-[13px] top-[16px] w-[18px]" data-node-id="10:9036">
+                <div className="flex-none rotate-90">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal h-[18px] leading-[normal] not-italic relative text-[11px] text-center text-white w-[100px]">Achats</p>
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Noto_Sans_SC:Medium'] font-medium leading-[1.45] min-w-full relative shrink-0 text-[#18212f] text-[30px] text-center w-[min-content]" data-node-id="10:9037">
+              多少钱？
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#667184] text-[14px] text-center w-[min-content]" data-node-id="10:9038">
+              Duōshao qián?
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#18212f] text-[12px] text-center w-[min-content]" data-node-id="10:9039">
+              Combien ça coûte ?
+            </p>
+            <div className="absolute bottom-[9px] right-[11px] size-[26px]" data-node-id="10:9929" data-name="shopping-bag">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShoppingBag} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[11px] whitespace-nowrap" data-node-id="10:9041">
+            Aujourd’hui · 12:24 · Enregistré sur cet appareil
+          </p>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex h-[80px] items-start justify-between overflow-clip pb-[4px] pt-[8px] px-[20px] relative shrink-0 w-full" data-node-id="10:9042" data-name="Navigation principale">
+        <div className="content-stretch flex flex-col gap-[4px] items-center overflow-clip relative shrink-0 w-[108px]" data-node-id="10:9043" data-name="Destination">
+          <div className="content-stretch flex h-[32px] items-center justify-center overflow-clip relative rounded-[100px] shrink-0 w-[64px]" data-node-id="10:9044" data-name="Indicateur de destination">
+            <div className="relative shrink-0 size-[23px]" data-node-id="10:9932" data-name="house">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHouse} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[12px] whitespace-nowrap" data-node-id="10:9046">
+            Accueil
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[4px] items-center overflow-clip relative shrink-0 w-[108px]" data-node-id="10:9047" data-name="Destination">
+          <div className="bg-[#edeff3] content-stretch flex h-[32px] items-center justify-center overflow-clip relative rounded-[100px] shrink-0 w-[64px]" data-node-id="10:9048" data-name="Indicateur de destination">
+            <div className="relative shrink-0 size-[23px]" data-node-id="10:9935" data-name="star">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStar} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#365fdc] text-[12px] whitespace-nowrap" data-node-id="10:9050">
+            Favoris
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[4px] items-center overflow-clip relative shrink-0 w-[108px]" data-node-id="10:9051" data-name="Destination">
+          <div className="content-stretch flex h-[32px] items-center justify-center overflow-clip relative rounded-[100px] shrink-0 w-[64px]" data-node-id="10:9052" data-name="Indicateur de destination">
+            <div className="relative shrink-0 size-[23px]" data-node-id="10:9938" data-name="layout-grid">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLayoutGrid} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[12px] whitespace-nowrap" data-node-id="10:9054">
+            Catégories
+          </p>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex h-[24px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="10:9055" data-name="Navigation système">
+        <div className="bg-[#18212f] h-[4px] relative rounded-[100px] shrink-0 w-[108px]" data-node-id="10:9056" data-name="Poignée Android" />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

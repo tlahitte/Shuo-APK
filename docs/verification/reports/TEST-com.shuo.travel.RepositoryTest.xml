@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shuo.travel.RepositoryTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-15T17:09:34" hostname="KXGKV6G6JM" time="3.407">
+  <properties/>
+  <testcase name="phraseCrudFavoriteAndHistoryPersist" classname="com.shuo.travel.RepositoryTest" time="2.662"/>
+  <testcase name="everyExampleIsSearchableAcrossLanguages" classname="com.shuo.travel.RepositoryTest" time="0.072"/>
+  <testcase name="fileDatabaseSurvivesCloseAndReopen" classname="com.shuo.travel.RepositoryTest" time="0.034"/>
+  <testcase name="starterLibrarySeedsOnlyOnceIncludingAfterDeletion" classname="com.shuo.travel.RepositoryTest" time="0.019"/>
+  <testcase name="seedAndImportNeverOverwriteUserEdits" classname="com.shuo.travel.RepositoryTest" time="0.022"/>
+  <testcase name="categoryCrudAndOrderingPreserveReferences" classname="com.shuo.travel.RepositoryTest" time="0.027"/>
+  <testcase name="invalidImportIsAtomicAndValidImportIsIdempotent" classname="com.shuo.travel.RepositoryTest" time="0.022"/>
+  <testcase name="unsupportedSchemaChangeFailsWithoutErasingData" classname="com.shuo.travel.RepositoryTest" time="0.548"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

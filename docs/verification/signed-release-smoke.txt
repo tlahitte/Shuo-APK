@@ -1,0 +1,24 @@
+Shuo signed release verification — 2026-10-15
+
+Artifact: Shuo-0.1.0-release.apk (13,651,525 bytes)
+Package: com.shuo.travel; version 0.1.0 (1); minimum SDK 26; target SDK 35.
+SHA-256: 24d63b64f0235006d37a189765717777d867d9fe86c7e2f4dae795cd6d59d7cf
+Certificate SHA-256: d77d68c5286e4e112737bb943d3296c6f1097db0fe078a7ad34ace6e065ed2fd
+
+PASS: Gradle assembleRelease and lintRelease; 0 errors, 13 dependency update warnings.
+PASS: APK v2 signature, dedicated 4096-bit RSA release key (CN=Shuo Release, O=Shuo).
+PASS: Main package/version/minimum SDK and no INTERNET permission verified from APK.
+PASS: Debugging disabled; Android run-as rejects access as not debuggable.
+PASS: Clean install and first launch on Android 15 ARM64 emulator seeds 15 cards.
+PASS: Airplane mode on, Wi-Fi and cellular data off throughout smoke check.
+PASS: Pinyin search for 'bu yao' finds 不要辣.
+PASS: Full-screen presentation initially hides French; reveal/hide controls work.
+PASS: Favorite removal and rotation control work.
+PASS: Favorite count and recent card survive process force-stop/relaunch.
+PASS: Installing the same signed APK again preserves changed favorites.
+PASS: No Shuo crash recorded in emulator crash log.
+
+Earlier development-variant verification: 22 local tests, 5 instrumentation tests,
+and additional small-screen/150% font scenarios passed. Preview import/export
+checks are recorded separately in release-smoke.txt.
+No physical-device test or store/GitHub publication performed.

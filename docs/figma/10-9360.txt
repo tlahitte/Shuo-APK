@@ -1,0 +1,104 @@
+const imgSignal = "https://www.figma.com/api/mcp/asset/eab1af8f-a516-4824-b441-6cd5275ff586.svg";
+const imgBatteryFull = "https://www.figma.com/api/mcp/asset/545e2316-c81d-4ab7-b726-3f29500a18ff.svg";
+const imgArrowLeft = "https://www.figma.com/api/mcp/asset/e0bf4c9a-fa3e-4671-910f-bef46c40b8df.svg";
+const imgStar = "https://www.figma.com/api/mcp/asset/686f8906-a5bf-42ba-ae6e-587b5c0ff8e2.svg";
+const imgUtensils = "https://www.figma.com/api/mcp/asset/ef30f85c-7a31-4e43-8cff-b1b948bf5781.svg";
+const imgPencil = "https://www.figma.com/api/mcp/asset/be05bdcb-2ad8-44d5-abad-c67c3e2fb08e.svg";
+const imgChevronRight = "https://www.figma.com/api/mcp/asset/5d207b2d-02d7-466c-8c3b-dc4ffafa3aca.svg";
+
+export default function CartePleinEcranSombre() {
+  return (
+    <div className="bg-[#10151d] content-stretch flex flex-col items-start relative size-full" data-node-id="10:9360" data-name="Carte plein écran · Sombre">
+      <div className="content-stretch flex h-[38px] items-center justify-between overflow-clip px-[24px] relative shrink-0 w-full" data-node-id="10:9361" data-name="Barre d’état Android">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#f0f3f9] text-[13px] whitespace-nowrap" data-node-id="10:9362">
+          9:41
+        </p>
+        <div className="content-stretch flex gap-[6px] items-center overflow-clip relative shrink-0" data-node-id="10:9363" data-name="État de l’appareil">
+          <div className="relative shrink-0 size-[16px]" data-node-id="10:10136" data-name="signal">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSignal} />
+          </div>
+          <div className="relative shrink-0 size-[20px]" data-node-id="10:10139" data-name="battery-full">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBatteryFull} />
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#f0f3f9] text-[11px] whitespace-nowrap" data-node-id="10:9366">
+            100 %
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full" data-node-id="10:9367" data-name="Contenu">
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[18px] items-start min-h-px overflow-clip pb-[16px] pt-[8px] px-[16px] relative w-full" data-node-id="10:9368" data-name="Mode présentation">
+          <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="10:9369" data-name="Contrôles de présentation">
+            <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:9370" data-name="Action">
+              <div className="relative shrink-0 size-[24px]" data-node-id="10:10142" data-name="arrow-left">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowLeft} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#a9b4c6] text-[12px] whitespace-nowrap" data-node-id="10:9372">
+              MONTRER LA CARTE
+            </p>
+            <div className="bg-[#262f3d] content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:9373" data-name="Action">
+              <div className="relative shrink-0 size-[24px]" data-node-id="10:10145" data-name="star">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStar} />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#1b222d] border border-[rgba(255,175,115,0.4)] border-solid content-stretch flex flex-col gap-[18px] h-[630px] items-start justify-center overflow-clip pl-[48px] pr-[16px] py-[16px] relative rounded-[20px] shrink-0 w-full" data-node-id="10:9375" data-name="Carte de présentation">
+            <div className="absolute bg-[#ffaf73] h-[630px] left-[-1px] overflow-clip top-[-1px] w-[30px]" data-node-id="10:9376" data-name="Onglet de catégorie">
+              <div className="-translate-x-1/2 absolute flex h-[100px] items-center justify-center left-[13px] top-[265px] w-[18px]" data-node-id="10:9377">
+                <div className="flex-none rotate-90">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal h-[18px] leading-[normal] not-italic relative text-[#10151d] text-[11px] text-center w-[100px]">Restaurants</p>
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Noto_Sans_SC:Medium'] font-medium leading-[1.45] min-w-full relative shrink-0 text-[#f0f3f9] text-[68px] text-center w-[min-content]" data-node-id="10:9378">
+              不要辣
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.4] min-w-full not-italic relative shrink-0 text-[#a9b4c6] text-[23px] text-center w-[min-content]" data-node-id="10:9379">
+              Bú yào là
+            </p>
+            <div className="absolute bottom-[25px] right-[23px] size-[52px]" data-node-id="10:10148" data-name="utensils">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUtensils} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col font-['Inter:Regular'] font-normal gap-[7px] items-start leading-[1.35] not-italic overflow-clip px-[16px] relative shrink-0 w-full whitespace-nowrap" data-node-id="10:9381" data-name="Traduction personnelle">
+            <p className="relative shrink-0 text-[#f0f3f9] text-[19px]" data-node-id="10:9382">
+              Pas de piment, s’il vous plaît.
+            </p>
+            <p className="relative shrink-0 text-[#a9b4c6] text-[12px]" data-node-id="10:9383">
+              Carte 1 sur 6 · Vos favoris
+            </p>
+          </div>
+          <div className="content-stretch flex items-center justify-between overflow-clip px-[12px] relative shrink-0 w-full" data-node-id="10:9384" data-name="Outils de carte">
+            <div className="content-stretch flex gap-[8px] items-center overflow-clip relative shrink-0" data-node-id="10:9385" data-name="Modifier la carte">
+              <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:9386" data-name="Action">
+                <div className="relative shrink-0 size-[24px]" data-node-id="10:10151" data-name="pencil">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPencil} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#a9b4c6] text-[13px] whitespace-nowrap" data-node-id="10:9388">
+                Modifier
+              </p>
+            </div>
+            <div className="bg-[#262f3d] content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:9389" data-name="Action">
+              <div className="relative shrink-0 size-[24px]" data-node-id="10:10154" data-name="chevron-right">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#10151d] content-stretch flex h-[24px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="10:9391" data-name="Navigation système">
+        <div className="bg-[#f0f3f9] h-[4px] relative rounded-[100px] shrink-0 w-[108px]" data-node-id="10:9392" data-name="Poignée Android" />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

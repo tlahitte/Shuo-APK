@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shuo.travel.LibraryCodecTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-15T17:09:37" hostname="KXGKV6G6JM" time="0.045">
+  <properties/>
+  <testcase name="malformedJsonAndMissingFieldsAreRejected" classname="com.shuo.travel.LibraryCodecTest" time="0.013"/>
+  <testcase name="oversizedFilesAreRejected" classname="com.shuo.travel.LibraryCodecTest" time="0.026"/>
+  <testcase name="unknownVersionIsRejected" classname="com.shuo.travel.LibraryCodecTest" time="0.0"/>
+  <testcase name="duplicateIdsAreRejected" classname="com.shuo.travel.LibraryCodecTest" time="0.001"/>
+  <testcase name="roundTripPreservesAllFieldsAndUnicode" classname="com.shuo.travel.LibraryCodecTest" time="0.003"/>
+  <testcase name="invalidColorsIconsIdsAndTimestampsAreRejected" classname="com.shuo.travel.LibraryCodecTest" time="0.001"/>
+  <testcase name="missingCategoryAndBlankTextAreRejected" classname="com.shuo.travel.LibraryCodecTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+Shuo preview smoke verification — 2026-10-15
+
+Artifact: app-preview.apk, optimized preview build signed with a development key.
+Package: com.shuo.travel.preview. Android 15 ARM64 emulator.
+SHA-256: 06bd7854f9490f9d3d2c60f0ed0c04def965407ea6114f4d53c4ecfe5a812fe6
+
+PASS: APK signature validation (v2).
+PASS: Clean preview install and first launch with 15 sample cards, 10 categories.
+PASS: No INTERNET permission. Only AndroidX's package-scoped signature permission
+      DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION is declared.
+PASS: Airplane mode enabled, Wi-Fi and mobile data disabled on the emulator.
+PASS: Native file-picker import from Downloads adds one new user card (total 16).
+PASS: Native file-picker export writes JSON with 16 cards; Chinese and builtIn=false
+      on the imported user card were verified in the exported file.
+PASS: Force-stop and restart retains the imported card and the 16-card library.
+PASS: Searching Merci finds the imported card after process restart.
+PASS: Presenting the imported card renders Chinese/pinyin with French hidden.
+PASS: No AndroidRuntime fatal exception during this smoke workflow.
+
+No physical Android device or production signing key was used.
+The delivered APK always seeds the 15 examples on a fresh installation; smoke-test
+imports reside only in the test emulator's app data, not in the packaged asset.

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.shuo.travel.AppFlowTest" tests="2" failures="0" errors="0" skipped="0" time="7.672" timestamp="2026-10-15T17:14:39" hostname="localhost">
+  <properties>
+    <property name="device" value="Shuo_Pixel(AVD) - 15" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="capturesScreensInBothThemes" classname="com.shuo.travel.AppFlowTest" time="5.844" />
+  <testcase name="longChinesePhraseAndIncreasedTextSize" classname="com.shuo.travel.AppFlowTest" time="1.168" />
+</testsuite>

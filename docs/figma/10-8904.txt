@@ -1,0 +1,245 @@
+const imgSignal = "https://www.figma.com/api/mcp/asset/8b74bb96-d3ce-4810-a117-e7277d71de31.svg";
+const imgBatteryFull = "https://www.figma.com/api/mcp/asset/71e80a58-cc5e-4d2a-9e2e-4d4c80f3c109.svg";
+const imgArrowLeft = "https://www.figma.com/api/mcp/asset/411adf79-e91d-4880-a15a-b24a255ed7d4.svg";
+const imgX = "https://www.figma.com/api/mcp/asset/e389a567-cc13-429a-822a-0511f2fa9c0a.svg";
+const imgInfo = "https://www.figma.com/api/mcp/asset/30e58ce1-eeb0-410a-ba48-2c3b65d45a1f.svg";
+const imgTrainFront = "https://www.figma.com/api/mcp/asset/f0ea5358-03ec-4457-8ed6-8fb9af5af288.svg";
+const imgCircleCheck = "https://www.figma.com/api/mcp/asset/202fcce2-7d84-4a41-91b1-f4fc81ee724c.svg";
+const imgBedDouble = "https://www.figma.com/api/mcp/asset/f96ea569-0fb3-42af-99f8-d97607113219.svg";
+const imgShoppingBag = "https://www.figma.com/api/mcp/asset/8a12fc07-efdf-4daf-87d9-45352598b3bb.svg";
+const imgSignpost = "https://www.figma.com/api/mcp/asset/5954bf7c-f858-4ded-b899-e20aac99d948.svg";
+const imgCross = "https://www.figma.com/api/mcp/asset/f6e48526-a663-4b9f-befc-68ad3d84f8b7.svg";
+const imgMessagesSquare = "https://www.figma.com/api/mcp/asset/24be3994-70be-430c-b1db-a0a32088abd1.svg";
+const imgWallet = "https://www.figma.com/api/mcp/asset/a2b07596-9f5c-42a5-9f35-95db6978e14c.svg";
+const imgLandmark = "https://www.figma.com/api/mcp/asset/46d76638-d9ce-41d3-8f09-9abb1c905f49.svg";
+const imgEllipsis = "https://www.figma.com/api/mcp/asset/4c29b5d4-5391-41ba-94c1-32642847955c.svg";
+const imgCheck = "https://www.figma.com/api/mcp/asset/a1252540-34cb-47a9-9763-fe9b2bf7dfb1.svg";
+const imgHouse = "https://www.figma.com/api/mcp/asset/338ad0cc-a745-4ba3-a509-171f7351c92e.svg";
+const imgStar = "https://www.figma.com/api/mcp/asset/1d9888d4-6bc0-4f54-8b3d-72062ccb7ffa.svg";
+const imgLayoutGrid = "https://www.figma.com/api/mcp/asset/2c2a36dd-acdd-4541-9327-ad18f4f7cc3d.svg";
+
+export default function AjouterUneCarteClair() {
+  return (
+    <div className="bg-[#f5f6f8] content-stretch flex flex-col items-start relative size-full" data-node-id="10:8904" data-name="Ajouter une carte · Clair">
+      <div className="content-stretch flex h-[38px] items-center justify-between overflow-clip px-[24px] relative shrink-0 w-full" data-node-id="10:8905" data-name="Barre d’état Android">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[13px] whitespace-nowrap" data-node-id="10:8906">
+          9:41
+        </p>
+        <div className="content-stretch flex gap-[6px] items-center overflow-clip relative shrink-0" data-node-id="10:8907" data-name="État de l’appareil">
+          <div className="relative shrink-0 size-[16px]" data-node-id="10:9857" data-name="signal">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSignal} />
+          </div>
+          <div className="relative shrink-0 size-[20px]" data-node-id="10:9860" data-name="battery-full">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBatteryFull} />
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[11px] whitespace-nowrap" data-node-id="10:8910">
+            100 %
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-h-px relative w-full" data-node-id="10:8911" data-name="Contenu">
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[17px] items-start min-h-px overflow-clip pb-[18px] pt-[14px] px-[20px] relative w-full" data-node-id="10:8912" data-name="Création personnelle">
+          <div className="content-stretch flex gap-[10px] items-center overflow-clip relative shrink-0 w-full" data-node-id="10:8913" data-name="En-tête">
+            <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:8914" data-name="Action">
+              <div className="relative shrink-0 size-[24px]" data-node-id="10:9863" data-name="arrow-left">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowLeft} />
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] flex-col items-start min-w-px overflow-clip relative" data-node-id="10:8916" data-name="Titre et contexte">
+              <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[27px] whitespace-nowrap" data-node-id="10:8917">
+                Nouvelle carte
+              </p>
+            </div>
+            <div className="bg-[#edeff3] content-stretch flex items-center justify-center overflow-clip relative rounded-[100px] shrink-0 size-[44px]" data-node-id="10:8918" data-name="Action">
+              <div className="relative shrink-0 size-[24px]" data-node-id="10:9866" data-name="x">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgX} />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[7px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:8920" data-name="Champ de saisie">
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[13px] whitespace-nowrap" data-node-id="10:8921">
+              Français · pour retrouver votre carte
+            </p>
+            <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex h-[58px] items-center overflow-clip px-[16px] relative rounded-[16px] shrink-0 w-full" data-node-id="10:8922" data-name="Valeur saisie">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#18212f] text-[14px] whitespace-nowrap" data-node-id="10:8923">
+                Je suis allergique aux cacahuètes.
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[7px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:8924" data-name="Champ de saisie">
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[13px] whitespace-nowrap" data-node-id="10:8925">
+              Chinois simplifié · à montrer
+            </p>
+            <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex h-[58px] items-center overflow-clip px-[16px] relative rounded-[16px] shrink-0 w-full" data-node-id="10:8926" data-name="Valeur saisie">
+              <p className="[word-break:break-word] font-['Noto_Sans_SC:Regular'] font-normal leading-[normal] relative shrink-0 text-[#18212f] text-[25px] whitespace-nowrap" data-node-id="10:8927">
+                我对花生过敏
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[7px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:8928" data-name="Champ de saisie">
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[13px] whitespace-nowrap" data-node-id="10:8929">
+              Pinyin · avec les tons
+            </p>
+            <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex h-[58px] items-center overflow-clip px-[16px] relative rounded-[16px] shrink-0 w-full" data-node-id="10:8930" data-name="Valeur saisie">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#18212f] text-[14px] whitespace-nowrap" data-node-id="10:8931">
+                Wǒ duì huāshēng guòmǐn
+              </p>
+            </div>
+          </div>
+          <div className="bg-[#edeff3] content-stretch flex gap-[10px] items-start overflow-clip p-[12px] relative rounded-[16px] shrink-0 w-full" data-node-id="10:8932" data-name="Aide à la création">
+            <div className="relative shrink-0 size-[18px]" data-node-id="10:9869" data-name="info">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgInfo} />
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular'] font-normal leading-[1.35] min-w-px not-italic relative text-[#667184] text-[12px]" data-node-id="10:8934">
+              Saisissez le chinois et le pinyin vous-même. Aucune traduction automatique.
+            </p>
+          </div>
+          <div className="content-stretch flex items-center justify-between overflow-clip relative shrink-0 w-full" data-node-id="10:8935" data-name="En-tête de section">
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#18212f] text-[17px] whitespace-nowrap" data-node-id="10:8936">
+              Choisir une catégorie
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[8px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:8937" data-name="Sélecteur de catégorie">
+            <div className="content-stretch flex gap-[6px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:8938" data-name="Choix de catégories">
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8939" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9872" data-name="train-front">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgTrainFront} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8941">
+                  Transports
+                </p>
+              </div>
+              <div className="bg-[rgba(213,106,36,0.11)] border-2 border-[#d56a24] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8942" data-name="Catégorie sélectionnée">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9875" data-name="circle-check">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCircleCheck} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8944">
+                  Restaurants
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8945" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9878" data-name="bed-double">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBedDouble} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8947">
+                  Hôtels
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8948" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9881" data-name="shopping-bag">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShoppingBag} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8950">
+                  Achats
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8951" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9884" data-name="signpost">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSignpost} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8953">
+                  Itinéraires
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[6px] items-start overflow-clip relative shrink-0 w-full" data-node-id="10:8954" data-name="Choix de catégories">
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8955" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9887" data-name="cross">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCross} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8957">
+                  Urgences
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8958" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9890" data-name="messages-square">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMessagesSquare} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8960">
+                  Communication
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8961" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9893" data-name="wallet">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgWallet} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8963">
+                  Paiements
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8964" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9896" data-name="landmark">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLandmark} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8966">
+                  Tourisme
+                </p>
+              </div>
+              <div className="bg-white border border-[#dde2e9] border-solid content-stretch flex flex-[1_0_0] flex-col gap-[6px] h-[70px] items-center min-w-px overflow-clip pt-[10px] px-[2px] relative rounded-[12px]" data-node-id="10:8967" data-name="Catégorie disponible">
+                <div className="relative shrink-0 size-[23px]" data-node-id="10:9899" data-name="ellipsis">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipsis} />
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] min-w-full not-italic relative shrink-0 text-[#18212f] text-[9px] text-center w-[min-content]" data-node-id="10:8969">
+                  Divers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-[1_0_0] min-h-px relative w-full" data-node-id="10:8970" data-name="Espace flexible" />
+          <div className="bg-[#365fdc] content-stretch flex gap-[10px] h-[52px] items-center justify-center overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="10:8971" data-name="Action principale">
+            <div className="relative shrink-0 size-[20px]" data-node-id="10:9902" data-name="check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCheck} />
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[15px] text-white whitespace-nowrap" data-node-id="10:8973">
+              Enregistrer la carte
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex h-[80px] items-start justify-between overflow-clip pb-[4px] pt-[8px] px-[20px] relative shrink-0 w-full" data-node-id="10:8974" data-name="Navigation principale">
+        <div className="content-stretch flex flex-col gap-[4px] items-center overflow-clip relative shrink-0 w-[108px]" data-node-id="10:8975" data-name="Destination">
+          <div className="bg-[#edeff3] content-stretch flex h-[32px] items-center justify-center overflow-clip relative rounded-[100px] shrink-0 w-[64px]" data-node-id="10:8976" data-name="Indicateur de destination">
+            <div className="relative shrink-0 size-[23px]" data-node-id="10:9905" data-name="house">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHouse} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.35] not-italic relative shrink-0 text-[#365fdc] text-[12px] whitespace-nowrap" data-node-id="10:8978">
+            Accueil
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[4px] items-center overflow-clip relative shrink-0 w-[108px]" data-node-id="10:8979" data-name="Destination">
+          <div className="content-stretch flex h-[32px] items-center justify-center overflow-clip relative rounded-[100px] shrink-0 w-[64px]" data-node-id="10:8980" data-name="Indicateur de destination">
+            <div className="relative shrink-0 size-[23px]" data-node-id="10:9908" data-name="star">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStar} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[12px] whitespace-nowrap" data-node-id="10:8982">
+            Favoris
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[4px] items-center overflow-clip relative shrink-0 w-[108px]" data-node-id="10:8983" data-name="Destination">
+          <div className="content-stretch flex h-[32px] items-center justify-center overflow-clip relative rounded-[100px] shrink-0 w-[64px]" data-node-id="10:8984" data-name="Indicateur de destination">
+            <div className="relative shrink-0 size-[23px]" data-node-id="10:9911" data-name="layout-grid">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLayoutGrid} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.35] not-italic relative shrink-0 text-[#667184] text-[12px] whitespace-nowrap" data-node-id="10:8986">
+            Catégories
+          </p>
+        </div>
+      </div>
+      <div className="bg-white content-stretch flex h-[24px] items-center justify-center overflow-clip relative shrink-0 w-full" data-node-id="10:8987" data-name="Navigation système">
+        <div className="bg-[#18212f] h-[4px] relative rounded-[100px] shrink-0 w-[108px]" data-node-id="10:8988" data-name="Poignée Android" />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.
